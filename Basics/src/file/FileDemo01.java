@@ -8,6 +8,9 @@ import java.io.File;
  * @Function Description ：
  * 问题：测试构建file类的时候，路径写反斜杠还是斜杠就行？
  * 解答：不管是文件还是目录都可以使用正反斜杠创建。
+ * ps：1. java中"/"等同于"\\",但一般用"/"
+ *     2. windows中的路径用"\"
+ *     3. 在创建文件或者目录的时候的路径，不区分大小写
  */
 public class FileDemo01 {
     public static void main(String[] args){
