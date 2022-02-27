@@ -1,9 +1,10 @@
 # JavaCode
 
+命名规则
 **注意：** 包名小驼峰，类名大驼峰，方法名小驼峰
 
-记录学习Java的过程、知识点、bug等等
-
+记录学习Java的过程、知识点、bug等等。
+个人详细学习记录[博客](https://www.cnblogs.com/CodeWater404/)
 ***
 
 ## Basics
