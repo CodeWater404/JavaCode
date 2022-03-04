@@ -7,7 +7,31 @@
 个人详细学习记录[博客](https://www.cnblogs.com/CodeWater404/)
 ***
 
+## Algorithm
+算法练习
+### [acwing](https://www.acwing.com/activity/)
+
+注意类名要改为Main，去掉包路径；即可运行在acwing上。
+
+1. chapter1(基础算法)
+    1. QuickSort [快速排序](https://www.acwing.com/problem/content/787/)
+    2. NumberK [第k个数](https://www.acwing.com/problem/content/788/)
+    3. 
+
+
+
+
+
+
+
+***
+
+
+
+
+
 ## Basics
+
 Java基础复习
 
 1. collection集合
