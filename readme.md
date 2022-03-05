@@ -13,10 +13,23 @@
 
 注意类名要改为Main，去掉包路径；即可运行在acwing上。
 
+***
+
+#### basic算法基础课
+提示：没有报名的，看不了题目。所以我就不粘贴题目链接了。网站的链接在上面。
 1. chapter1(基础算法)
-    1. QuickSort [快速排序](https://www.acwing.com/problem/content/787/)
-    2. NumberK [第k个数](https://www.acwing.com/problem/content/788/)
+    1. QuickSort快速排序
+    2. NumberK第k个数
     3. 
+    
+***
+
+### leetCode力扣
+
+提示：力扣上面的题目不需要处理输入，直接写思路在函数里面即可。
+
+1. 1051[高度检查器](https://leetcode-cn.com/problems/height-checker/)
+2. 
 
 
 
