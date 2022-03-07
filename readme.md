@@ -56,10 +56,23 @@ Java基础复习
 7. reflect反射
 8. annotation注解
 
+***
+
+## SQL
+
+mysql语句练习
+
+1. tab_user建表
+
+
+***
 
 # Git
 1. git add添加文件的时候区分大小写的，不然会添加不成功。
 2. git push远程分支的时候也是需要区分大小写，不然还是会push不成功。
+
+
+***
 
 # 遇到问题及遗忘
 1. comparator的排序规则如何定义([详情](https://www.cnblogs.com/CodeWater404/p/15922537.html))
