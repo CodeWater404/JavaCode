@@ -60,9 +60,12 @@ Java基础复习
 
 ## SQL
 
-mysql语句练习
-
+mysql语句练习，理论参考[博客](https://www.cnblogs.com/CodeWater404/p/15972099.html)
 1. tab_user建表
+2. multiTableExample多表例子
+3. multiTableExercise多表查询练习
+4. grantAndRevoke管理用户和授权
+
 
 
 ***

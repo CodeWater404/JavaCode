@@ -34,3 +34,5 @@ CREATE TABLE tab_user(
 -- 查询字符占用的长度
 -- select char_length("男")
 
+
+
