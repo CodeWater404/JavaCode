@@ -7,7 +7,12 @@
 个人详细学习记录[博客](https://www.cnblogs.com/CodeWater404/)
 ***
 
+
+
+
+
 ## Algorithm
+
 算法练习
 ### [acwing](https://www.acwing.com/activity/)
 
@@ -58,13 +63,32 @@ Java基础复习
 
 ***
 
+
+
+
+
 ## SQL
 
 mysql语句练习，理论参考[博客](https://www.cnblogs.com/CodeWater404/p/15972099.html)
+
+
+
+### sql
+
 1. tab_user建表
 2. multiTableExample多表例子
 3. multiTableExercise多表查询练习
 4. grantAndRevoke管理用户和授权
+
+
+
+### jdbc
+
+java连接数据库
+
+1. JdbcDemo01快速入门
+2. JdbcDemo02-05 添加、修改、删除数据、创建表（DDL）
+3. 
 
 
 
