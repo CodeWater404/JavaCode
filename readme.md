@@ -84,11 +84,14 @@ mysql语句练习，理论参考[博客](https://www.cnblogs.com/CodeWater404/p/
 
 ### jdbc
 
-java连接数据库
+java连接数据库；db3.sql需要用到练习的sql数据
 
 1. JdbcDemo01快速入门
-2. JdbcDemo02-05 添加、修改、删除数据、创建表（DDL）
-3. 
+2. JdbcDemo02-05 添加、修改、删除数据（DML）、创建表（DDL）
+3. JdbcDemo06查询语句（DQL）if判断
+4. JdbcDemo07查询语句（DQL）while判断
+5. JdbcDemo08、09、10：封装数据、防止sql注入、事务
+6. 
 
 
 
@@ -101,7 +104,8 @@ java连接数据库
 
 ***
 
-# 遇到问题及遗忘
+# 遇到的问题及遗忘
+
 1. comparator的排序规则如何定义([详情](https://www.cnblogs.com/CodeWater404/p/15922537.html))
     > 规则：
     > 从小到大排序，当前对象-比较对象；
