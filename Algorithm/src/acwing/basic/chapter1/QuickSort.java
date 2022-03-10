@@ -1,6 +1,9 @@
 package acwing.basic.chapter1;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * @author ： CodeWater
  * @create ：2022-03-04-17:38
@@ -11,20 +14,34 @@ public class QuickSort {
     public static int[] q = new int[N];
 //    public static int[N] q;
     public static int n;
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-        for( int i = 0 ; i < n ; i++ ){
-            q[i] = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+//        Scanner sc = new Scanner(System.in);
+//        n = sc.nextInt();
+//        for( int i = 0 ; i < n ; i++ ){
+//            q[i] = sc.nextInt();
+//        }
+//        quick_sort( q , 0 , n - 1 );
+//        
+//        for( int i = 0 ; i < n ; i++)
+//            System.out.print(q[i] + " ");
+
+        //        用缓冲流时间会快一点
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(reader.readLine());
+        int[] arr = new int[n];
+        String[] strs = reader.readLine().split(" ");
+        for(int i = 0; i < n; i++){
+            arr[i] = Integer.parseInt(strs[i]);
         }
-        quick_sort( q , 0 , n - 1 );
-        
-        for( int i = 0 ; i < n ; i++)
-            System.out.print(q[i] + " ");
+        quick_sort(arr, 0, n - 1);
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+        reader.close();
     }
 
-//    快速排序
-    public static void quick_sort( int[] arr , int l , int r){
+//    快速排序:其实参数数组写不写无所谓，因为已经静态了；如果是定义的局部数组还是需要写一下然后传入
+    public static void quick_sort( int[] q , int l , int r){
         //当单个区间长度为1的时候就可以不用再分了
         if( l >= r ) return ;
         //定义2个左右遍历指针指针i  j 分界点x(取区间中点)

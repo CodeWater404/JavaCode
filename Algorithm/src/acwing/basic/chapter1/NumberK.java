@@ -1,6 +1,7 @@
 package acwing.basic.chapter1;
 
 import java.util.Scanner;
+
 /**
  * @author ： CodeWater
  * @create ：2022-03-04-18:08
@@ -12,7 +13,7 @@ public class NumberK {
     public static int N = 100010;
     public static int n  , k;
     public static int[] q = new int[N];
-    public static void main(String[] args){
+    public static void main(String[] args)  {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         k = sc.nextInt();
@@ -21,7 +22,8 @@ public class NumberK {
         }
         System.out.println(quickSort(q , 0 , n - 1 , k));
     }
-    
+
+//    其实参数数组写不写无所谓，因为已经静态了；如果是定义的局部数组还是需要写一下然后传入
     public static int quickSort(int[] arr , int l , int r  , int k){
         //找打结果返回
         if( l >= r ) return q[l] ;

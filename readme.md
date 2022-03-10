@@ -25,7 +25,8 @@
 1. chapter1(基础算法)
     1. QuickSort快速排序
     2. NumberK第k个数
-    3. 
+    3. MergeSort归并排序
+    4. 
     
 ***
 
@@ -38,7 +39,21 @@
 
 
 
+#### offer
 
+题源：剑指offer
+
+| [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | [剑指 Offer 04. 二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+|                                                              |                                                              |
+|                                                              |                                                              |
+|                                                              |                                                              |
+|                                                              |                                                              |
+|                                                              |                                                              |
+|                                                              |                                                              |
+|                                                              |                                                              |
+|                                                              |                                                              |
+|                                                              |                                                              |
 
 
 
