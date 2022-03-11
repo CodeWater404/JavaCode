@@ -106,13 +106,42 @@ java连接数据库；db3.sql需要用到练习的sql数据
 3. JdbcDemo06查询语句（DQL）if判断
 4. JdbcDemo07查询语句（DQL）while判断
 5. JdbcDemo08、09、10：封装数据、防止sql注入、事务
-6. 
+6. 除此之外的就是数据库连接池的练习和例子
 
 
 
 ***
 
+
+
+## Web
+
+
+
+Javaweb学习
+
+
+
+### bootstrap
+
+一个前端框架练习
+
+
+
+### xml
+
+xml解析练习
+
+
+
+
+
+
+
+
+
 # Git
+
 1. git add添加文件的时候区分大小写的，不然会添加不成功。
 2. git push远程分支的时候也是需要区分大小写，不然还是会push不成功。
 
