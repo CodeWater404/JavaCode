@@ -1,7 +1,6 @@
 package servlet;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
 
 /**
  * @author ： CodeWater
@@ -10,7 +9,7 @@ import javax.servlet.annotation.WebServlet;
  * 快速入门
  */
 //用注解配置路径
-@WebServlet( "/demo02" )
+//@WebServlet( "/demo" )
 public class ServletDemo implements Servlet {
     @Override
     public void init(ServletConfig servletConfig ) throws ServletException {
