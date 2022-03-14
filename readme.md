@@ -151,7 +151,8 @@ Javaweb学习：涉及到服务器，需要Tomcat等新环境，开的模块。
 Servlet是sun公司制定的一种用来扩展web服务器功能的一种组件规范，web服务器只能只能处理静态资源的请求；使用Servlet来扩展web服务器功能，web服务器收到请求之后就会调用相应的Servlet来处理请求。
 
 1. servlet
-2. request对象
+2. request对象；test包下是个总和案例
+3. 
 
 
 

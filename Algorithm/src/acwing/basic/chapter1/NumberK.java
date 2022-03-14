@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * @author ： CodeWater
  * @create ：2022-03-04-18:08
- * @Function Description ：第k个数
+ * @Function Description ：第k个数（快排的应用）
  * https://www.acwing.com/problem/content/788/
  * 快排每次确定一个最小的数，所以可以用快排优化一下即可。
  */
