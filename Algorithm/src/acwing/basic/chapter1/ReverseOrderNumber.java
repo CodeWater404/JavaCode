@@ -34,7 +34,7 @@ public class ReverseOrderNumber {
             while( l < r ){
                 //加1是因为上面l到r少一个数；上面写的是下标范围，但不是长度
                 int mid = l + r  >> 1 ;
-//                这么判断好像是确定范围的下界
+//               必须 这么判断好像是确定范围的下界
                 if( q[mid] >= x ) r = mid;
                 else l = mid + 1;
             }

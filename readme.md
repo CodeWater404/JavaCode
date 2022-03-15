@@ -26,7 +26,12 @@
     1. QuickSort快速排序
     2. NumberK第k个数
     3. MergeSort归并排序
-    4. RangOfNumber数的范围
+    4. ReverseOrderNumber逆序对的数量（归并）
+    5. RangOfNumber数的范围（二分）
+    6. TheCubicRootOfANumber数的三次方根（二分）
+    7. HighPrecisionAddition高精度加法
+    8. HighPrecisionSubtraction高精度减法
+    9. 
     
 ***
 
@@ -153,6 +158,8 @@ Servlet是sun公司制定的一种用来扩展web服务器功能的一种组件�
 1. servlet
 2. request对象；test包下是个总和案例
 3. response对象
+4. cookie（客户端）
+5. session（服务端）
 
 
 
