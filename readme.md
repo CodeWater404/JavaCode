@@ -31,7 +31,10 @@
     6. TheCubicRootOfANumber数的三次方根（二分）
     7. HighPrecisionAddition高精度加法
     8. HighPrecisionSubtraction高精度减法
-    9. 
+    9. HighPrecisionMultiply高精度乘法
+    10. HighPrecisionDivider高精度除法
+    11. PrefixAnd前缀和
+    12. SumOfSubmatrix子矩阵的和
     
 ***
 
