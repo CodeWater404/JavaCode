@@ -34,7 +34,9 @@
     9. HighPrecisionMultiply高精度乘法
     10. HighPrecisionDivider高精度除法
     11. PrefixAnd前缀和
-    12. SumOfSubmatrix子矩阵的和
+    12. SumOfSubmatrix子矩阵的和（前缀和二维应用）
+    13. Difference差分（是前缀和的逆运算）
+    14. 
     
 ***
 
