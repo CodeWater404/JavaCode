@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * @create ：2022-03-04-17:38
  * @Function Description ：快速排序
  */
-public class QuickSort {
+public class _785QuickSort {
     public static int N = 100010;
     public static int[] q = new int[N];
 //    public static int[N] q;

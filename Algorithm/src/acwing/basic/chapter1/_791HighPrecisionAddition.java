@@ -12,7 +12,7 @@ import java.math.BigInteger;
  * 高精度加法：java有大整数类型，所以不用特别处理
  * （当然也可以自己模拟，但是我懒）
  */
-public class HighPrecisionAddition {
+public class _791HighPrecisionAddition {
     public static void main( String[] args ) throws IOException {
 //        3200ms
 //        Scanner sc = new Scanner( new BufferedInputStream( System.in ) );

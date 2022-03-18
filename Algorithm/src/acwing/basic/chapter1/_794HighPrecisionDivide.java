@@ -11,7 +11,7 @@ import java.math.BigInteger;
  * @Function Description ：
  * 高精度除法：要求商和余数
  */
-public class HighPrecisionDivide {
+public class _794HighPrecisionDivide {
     public static void main( String[] args ) throws IOException {
         BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
         BigInteger a = new BigInteger( br.readLine() );

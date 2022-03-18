@@ -5,5 +5,5 @@ package acwing.basic.chapter1;
  * @create ：2022-03-14-11:13
  * @Function Description ：
  */
-public class RangeOfNumbers {
+public class _789RangeOfNumbers {
 }

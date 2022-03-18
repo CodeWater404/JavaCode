@@ -36,7 +36,8 @@
     11. PrefixAnd前缀和
     12. SumOfSubmatrix子矩阵的和（前缀和二维应用）
     13. Difference差分（是前缀和的逆运算）
-    14. 
+    14. DifferenceMatrix差分矩阵（差分二维应用）
+    15. 
     
 ***
 

@@ -7,16 +7,15 @@ import java.math.BigInteger;
 
 /**
  * @author ： CodeWater
- * @create ：2022-03-16-9:29
+ * @create ：2022-03-15-11:42
  * @Function Description ：
- * 高精度乘法
+ * 高精度减法
  */
-public class HighPrecisionMultiply {
+public class _792HighPrecisionSubtraction {
     public static void main( String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
+        BufferedReader br = new BufferedReader( new InputStreamReader( System.in) );
         BigInteger a = new BigInteger( br.readLine() );
         BigInteger b = new BigInteger( br.readLine() );
-        
-        System.out.println( a.multiply( b ) );
+        System.out.println( a.subtract(b) );
     }
 }

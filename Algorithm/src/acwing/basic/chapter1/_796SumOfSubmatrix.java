@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * @Function Description ：
  * 子矩阵的和（前缀和的二维应用）
  */
-public class SumOfSubmatrix {
+public class _796SumOfSubmatrix {
     public static int N = 1010;
     public static int n , m , q;
     public static int[][] a = new int[N][N];

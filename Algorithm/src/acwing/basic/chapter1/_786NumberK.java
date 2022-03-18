@@ -9,7 +9,7 @@ import java.util.Scanner;
  * https://www.acwing.com/problem/content/788/
  * 快排每次确定一个最小的数，所以可以用快排优化一下即可。
  */
-public class NumberK {
+public class _786NumberK {
     public static int N = 100010;
     public static int n  , k;
     public static int[] q = new int[N];

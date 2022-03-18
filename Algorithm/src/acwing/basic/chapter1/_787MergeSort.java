@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
  * @create ：2022-03-10-11:13
  * @Function Description ：归并排序
  */
-public class MergeSort {
+public class _787MergeSort {
 
     public static int N = 100010;
     public static int[] q = new int[N];

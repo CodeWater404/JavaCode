@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
  * 数的范围（二分）
  * 有问题遗留，明天看
  */
-public class ReverseOrderNumber {
+public class _788ReverseOrderNumber {
     public static int N = 100010;
     public static int[] q = new int[N];
     //n个数据，m次查询

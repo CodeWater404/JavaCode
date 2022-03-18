@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * @Function Description ：
  * 差分
  */
-public class Difference {
+public class _797Difference {
     // 数据范围
     public static int N = 100010;
     // n个数

@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * @Function Description ：
  * 前缀和
  */
-public class PrefixAnd {
+public class _795PrefixAnd {
     //数据范围
     public static int N = 100010;
     //a原数组；s前缀和数组

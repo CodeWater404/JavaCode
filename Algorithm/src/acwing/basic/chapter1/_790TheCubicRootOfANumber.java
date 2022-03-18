@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
  * 数的三次方根：
  *  对于本题来说：不管什么数，取三次方之后，一定会在（-10000,10000）之间，所以这就是边界
  */
-public class TheCubicRootOfANumber {
+public class _790TheCubicRootOfANumber {
     public static void main( String[] args ) throws IOException {
         BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
         double x = Double.parseDouble( br.readLine() );
