@@ -43,6 +43,7 @@
             <th>操作</th>
         </tr>
 
+<%--        UserListServlet里面设置了reques的属性user并且传入，然后指定转发给list。jsp--%>
         <c:forEach items="${users}" var="user" varStatus="s" >
             <tr>
                 <td>${s.count}</td>

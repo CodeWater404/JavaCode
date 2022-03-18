@@ -12,5 +12,9 @@
   </head>
   <body>
        hello,world!
+  
+  <%
+    System.out.println( "index.jsp...." );
+  %>
   </body>
 </html>
