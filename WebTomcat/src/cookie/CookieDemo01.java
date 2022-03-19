@@ -25,5 +25,9 @@ public class CookieDemo01 extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Cookie c = new Cookie( "msg" , "hello" );
         resp.addCookie( c );
+        System.out.println(
+                "hello，to" +
+                        ""
+        );
     }
 }
