@@ -12,7 +12,7 @@ import java.util.HashMap;
  * Output: [3,9,20,null,null,15,7]
  *
  */
-public class BuildTree {
+public class _7BuildTree {
 //    键为结点元素值；值为结点下标
     private Map<Integer, Integer> indexMap;
 

@@ -9,7 +9,7 @@ import java.util.Set;
  * @Function Description ：剑指offer 03
  * 数组中重复的数字
  */
-public class FindRepeatNumber {
+public class _3FindRepeatNumber {
     //方法一：开数组存
     public int findRepeatNumber(int[] nums) {
         int[] count = new int[nums.length];

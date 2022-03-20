@@ -6,7 +6,7 @@ package offer;
  * @Function Description ：
  * 剑指 Offer 05. 替换空格
  */
-public class ReplaceSpace {
+public class _5ReplaceSpace {
     public String replaceSpace(String s) {
         int length = s.length();
         char[] temp = new char[ length * 3 ];

@@ -16,7 +16,7 @@ import java.util.Stack;
  * }
  * 
  */
-public class ReversePrint {
+public class _6ReversePrint {
     public int[] reversePrint(ListNode head) {
 
         //用栈！！！！

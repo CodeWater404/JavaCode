@@ -6,7 +6,7 @@ package offer;
  * @Function Description ：剑指 Offer 04. 
  * 二维数组中的查找
  */
-public class FindNumber {
+public class _4FindNumber {
     //暴力
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
         //可能为空

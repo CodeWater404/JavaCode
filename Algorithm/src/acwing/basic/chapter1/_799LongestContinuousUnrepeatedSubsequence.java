@@ -1,4 +1,4 @@
-package acwing.basic.chapter1.doublePointer;
+package acwing.basic.chapter1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,9 @@ import java.io.InputStreamReader;
  */
 public class _799LongestContinuousUnrepeatedSubsequence {
     public static int N = 100010;
+//    a数组记录输入数组元素
     public static int[] a = new int[N];
+//    记录输入元素的个数
     public static int[] s = new int[N];
     public static int n;
 

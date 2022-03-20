@@ -6,7 +6,7 @@ package offer;
  * @Function Description ：
  * 剑指 Offer 10- I. 斐波那契数列：求第n项
  */
-public class Fib {
+public class _10_1Fib {
 
     public int fib(int n) {
         final int MOD = 1000000007;

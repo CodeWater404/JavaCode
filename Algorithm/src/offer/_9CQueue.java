@@ -9,12 +9,12 @@ import java.util.LinkedList;
  * @Function Description ：
  * 剑指 Offer 09. 用两个栈实现队列
  */
-class CQueue {
+class _9CQueue {
     //Deque双端队列；虽然题目说是用两个栈模拟队列；但是实现的时候用队列来处理模拟栈实现队列效果
     Deque<Integer> stack1;
     Deque<Integer> stack2;
 
-    public CQueue() {
+    public _9CQueue() {
         //多态；第一个栈用来插入，第二个用来删除
         stack1 = new LinkedList<Integer>();
         stack2 = new LinkedList<Integer>();
