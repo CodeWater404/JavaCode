@@ -37,7 +37,9 @@
     12. SumOfSubmatrix子矩阵的和（前缀和二维应用）
     13. Difference差分（是前缀和的逆运算）
     14. DifferenceMatrix差分矩阵（差分二维应用）
-    15. doublePointer 双指针
+    15. 799、800、2816：doublePointer 双指针
+    16. _801Number of 1 in binary 二进制中1的个数
+    17. 
     
 ***
 

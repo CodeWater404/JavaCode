@@ -25,7 +25,9 @@ public class _2816JudgementSubquence {
         str = br.readLine().split(" ");
         for( int i = 0 ; i < m ; i++ )b[i] = Integer.parseInt( str[i] );
         int i = 0 , j = 0 ;
+//  i是扫描小的序列a ； j是扫描大的序列b
         while( i < n && j < m ){
+//            相等的时候，i才走。因为要判断a是否在b中。
             if( a[i] == b[j] ) i++;
             /*注意这里b的指针，不管ij是否相等都要往右移动，如果加个else就是
             不等才移相等不移，这就错了，因为一个元素不能复用。等不等都得移
