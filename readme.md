@@ -22,25 +22,30 @@
 
 #### basic算法基础课
 提示：没有报名的，看不了题目。所以我就不粘贴题目链接了。网站的链接在上面。
-1. chapter1(基础算法)
-    1. QuickSort快速排序
-    2. NumberK第k个数
-    3. MergeSort归并排序
-    4. ReverseOrderNumber逆序对的数量（归并）
-    5. RangOfNumber数的范围（二分）
-    6. TheCubicRootOfANumber数的三次方根（二分）
-    7. HighPrecisionAddition高精度加法
-    8. HighPrecisionSubtraction高精度减法
-    9. HighPrecisionMultiply高精度乘法
-    10. HighPrecisionDivider高精度除法
-    11. PrefixAnd前缀和
-    12. SumOfSubmatrix子矩阵的和（前缀和二维应用）
-    13. Difference差分（是前缀和的逆运算）
-    14. DifferenceMatrix差分矩阵（差分二维应用）
-    15. 799、800、2816：doublePointer 双指针
-    16. _801Number of 1 in binary 二进制中1的个数
-    17. 
+1. chapter1—–基础算法
+
+    快排、归并、二分、高精度（没有手动模拟）、前缀和、差分、双指针、位运算、
+
+    |                 算法                 |                                                     |
+    | :----------------------------------: | :-------------------------------------------------: |
+    |          QuickSort快速排序           |                   NumberK第k个数                    |
+    |          MergeSort归并排序           |       ReverseOrderNumber逆序对的数量（归并）        |
+    |     RangOfNumber数的范围（二分）     |      TheCubicRootOfANumber数的三次方根（二分）      |
+    |   HighPrecisionAddition高精度加法    |         HighPrecisionSubtraction高精度减法          |
+    |   HighPrecisionMultiply高精度乘法    |           HighPrecisionDivider高精度除法            |
+    |           PrefixAnd前缀和            |     SumOfSubmatrix子矩阵的和（前缀和二维应用）      |
+    |  Difference差分（是前缀和的逆运算）  |      DifferenceMatrix差分矩阵（差分二维应用）       |
+    | 799、800、2816：doublePointer 双指针 | _801Number of 1 in binary 二进制中1的个数（位运算） |
+    |         _802离散化（待更新）         |             _803IntervalMerging区间合并             |
+
     
+
+2. chapter2—-数据结构
+
+
+
+
+
 ***
 
 ### leetCode力扣
@@ -179,11 +184,17 @@ Servlet是sun公司制定的一种用来扩展web服务器功能的一种组件�
 
 
 
-
-
-
-
 ***
+
+
+
+## JQuery
+
+暂时不做了解
+
+
+
+
 
 
 
@@ -201,6 +212,37 @@ Servlet是sun公司制定的一种用来扩展web服务器功能的一种组件�
     > 规则：
     > 从小到大排序，当前对象-比较对象；
     > 从大到小排序，比较对象-当前对象。
+    >
+    > 
+    >
+    > 实现比较的两种方法：
+    >
+    > 1. Comparable：类继承接口的：
+    >
+    >    ~~~java
+    >    public class Student implements Comparable<Student>{
+    >         private int age;
+    >        @Override
+    >        public int compareTo(Student o) {
+    >            return this.age-o.age;//升序
+    >        }
+    >    }
+    >    ~~~
+    >
+    > 2. Comparator：排序时直接写规则如Collections.sort或 Arrays.sort
+    >
+    >    ~~~java
+    >    Collections.sort(list, new Comparator<Student>() {
+    >        @Override
+    >        public int compare(Student o1, Student o2) {
+    >            return o2.getAge()-o1.getAge();//以学生的年龄降序
+    >        }
+    >    });
+    >    ~~~
+    >
+    >    
+
+    
 2. 泛型的上下限
     > 1. 设置泛型对象的**上限**使用extends,表示参数类型只能是该类型或该类型的子类<br>
     >     格式：< ? extends 类>       <br>
