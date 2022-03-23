@@ -73,7 +73,7 @@ public class _803IntervalMerging {
         int start = Integer.MIN_VALUE, end = Integer.MIN_VALUE ;
 
         for( Interval i : intervals ){
-            // //遍历的下一个区间跟当前这个区间没有交集的话
+            // end记录的上一个区间右端点跟当前这个区间左端点没有交集
             if( end < i.start ) {
                 // //这里的这个判断是防止把最开始自己定义无穷大的区间给放进去
                 if( start != Integer.MIN_VALUE )
