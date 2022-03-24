@@ -49,7 +49,7 @@ import java.io.InputStreamReader;
  */
 public class _826SingleLinkedList {
     public static int N = 100010;
-    // 头指针
+    // head头指针，并不是头结点！！！！头插的是偶头结点一直在变；同时head也在变，指向第一个
     public static int head = -1 ;
     // 下标
     public static int idx = 0 ;
@@ -73,7 +73,7 @@ public class _826SingleLinkedList {
                 add_to_head( x );
             }else if( op.equals( "D" ) ){
                 k = Integer.parseInt( str[1] );
-                // 第一个插入的
+                // 如果删除的是第一个插入的，head更新指向要删除的下一个结点
                 if( k ==  0 )head = ne[head];
                     // 下标从0开始，所以k应该是k-1。这里必须要写else，不然会出错越界。不知道为啥cpp不用。。。
                 else remove( k - 1 );
@@ -93,7 +93,7 @@ public class _826SingleLinkedList {
         }
     }
 
-    // 头插
+    // 头插，在最前面插入
     public static void add_to_head( int x ){
         /*x赋给当前下标指向的数组位置，ne赋head，head赋idx后移；idx下标更新*/
         e[idx] = x;

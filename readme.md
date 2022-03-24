@@ -26,11 +26,11 @@
 
 #### basic算法基础课
 提示：没有报名的，看不了题目。所以我就不粘贴题目链接了。网站的链接在上面。
-1. chapter1—–基础算法
+1. chapter1
 
     快排、归并、二分、高精度（没有手动模拟）、前缀和、差分、双指针、位运算、
 
-    |                 算法                 |                                                     |
+    |               基础算法               |                                                     |
     | :----------------------------------: | :-------------------------------------------------: |
     |          QuickSort快速排序           |                   NumberK第k个数                    |
     |          MergeSort归并排序           |       ReverseOrderNumber逆序对的数量（归并）        |
@@ -46,12 +46,12 @@
 
 2. chapter2—-数据结构
 
-    |                            |      |
-    | -------------------------- | ---- |
-    | _826SingleLinkedList单链表 |      |
-    |                            |      |
-    |                            |      |
-    |                            |      |
+    | 数据结构                   |                      |
+    | -------------------------- | -------------------- |
+    | _826SingleLinkedList单链表 | _827DoubleLinkedList |
+    |                            |                      |
+    |                            |                      |
+    |                            |                      |
 
     
 
@@ -81,7 +81,7 @@
 | [_5ReplaceSpace](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | [_6ReversePrint](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) |
 | [_7BuildTree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) | [_9CQueue](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) |
 | [_10_1Fib](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) | [_10_2FrogJumpingSteps](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) |
-|                                                              |                                                              |
+| [_11MinimumNumberOfRotationArray](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
@@ -271,6 +271,6 @@ JQuery、Ajax暂时不做了解；了解一下json
     >     格式：< ? extends 类>       <br>
     > 2. 设置泛型对象的**下限**使用super,表示参数类型只能是该类型或该类型的父类：<br>
     >    格式：< ? super 类> 
-
-
+    
+3. Java是向下取整（浮点数到整数）
 
