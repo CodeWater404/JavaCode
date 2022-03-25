@@ -81,7 +81,7 @@ public class _827DoubleLinkedList {
                 add( l[1] , x );
             }else if ( op.equals( "D" ) ){
                 k = Integer.parseInt( str[1] );
-                //0和1已经用过； idx下标从2开始，第k个就是k+1
+                //0和1已经用过； idx下标从2开始，第k个就是k+1（另外注意，第k个数不包括自己设定的0,1结点）
                 remove( k + 1 );
             }else if( op.equals( "IL" ) ){
                 k = Integer.parseInt( str[1] );
@@ -96,6 +96,7 @@ public class _827DoubleLinkedList {
             }
         }
 
+//        注意这个遍历的开始是从0的右指针指向的结点开始！！！！！不是从i=0开始
         for( int i = r[0] ; i != 1 ; i = r[i] )
             System.out.print( e[i] + " " );
     }
