@@ -54,7 +54,7 @@
     | _826SingleLinkedList单链表 | _827DoubleLinkedList双链表            |
     | _828Stack栈                | _829Queue队列                         |
     | _830MonotoneStack单调栈    | _154SlidingWindow滑动窗口（单调队列） |
-    |                            |                                       |
+    | _831KMPCharacterString     |                                       |
 
     
 
