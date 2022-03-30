@@ -47,14 +47,19 @@
 
 2. chapter2
 
-    单链表，双链表，栈，队列，单调栈，单调队列，KMP，Trie，并查集，堆，哈希表
+    单链表，双链表，栈，队列，单调栈，单调队列，KMP，Trie树（高效的存储和查找字符串集合的数据结构），并查集，堆，哈希表
 
-    | 数据结构                   |                                       |
-    | -------------------------- | ------------------------------------- |
-    | _826SingleLinkedList单链表 | _827DoubleLinkedList双链表            |
-    | _828Stack栈                | _829Queue队列                         |
-    | _830MonotoneStack单调栈    | _154SlidingWindow滑动窗口（单调队列） |
-    | _831KMPCharacterString     |                                       |
+    | 数据结构                             |                                           |
+    | ------------------------------------ | ----------------------------------------- |
+    | _826SingleLinkedList单链表           | _827DoubleLinkedList双链表                |
+    | _828Stack栈                          | _829Queue队列                             |
+    | _830MonotoneStack单调栈              | _154SlidingWindow滑动窗口（单调队列）     |
+    | _831KMPCharacterString（KMP）        | _835TrieStringStatistics   trie字符串统计 |
+    | _143MaximumXORPair最大异或对（Trie） |                                           |
+    |                                      |                                           |
+    |                                      |                                           |
+    |                                      |                                           |
+    |                                      |                                           |
 
     
 
