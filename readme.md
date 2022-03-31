@@ -55,7 +55,7 @@
     | _828Stack栈                          | _829Queue队列                             |
     | _830MonotoneStack单调栈              | _154SlidingWindow滑动窗口（单调队列）     |
     | _831KMPCharacterString（KMP）        | _835TrieStringStatistics   trie字符串统计 |
-    | _143MaximumXORPair最大异或对（Trie） |                                           |
+    | _143MaximumXORPair最大异或对（Trie） | _836MergeSet合并集合（并查集）            |
     |                                      |                                           |
     |                                      |                                           |
     |                                      |                                           |
