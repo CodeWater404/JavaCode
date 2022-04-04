@@ -57,7 +57,7 @@
     | _831KMPCharacterString（KMP）              | _835TrieStringStatistics   trie字符串统计         |
     | _143MaximumXORPair最大异或对（Trie）       | _836MergeSet合并集合（并查集）                    |
     | _3302ExpressionEvaluation表达式求值（ 栈） | _837NumberOfConnectedBlocks连通块的数量（并查集） |
-    | _240FoodChain食物链（并查集）              |                                                   |
+    | _240FoodChain食物链（并查集）              | _838HeapSort堆排序                                |
     |                                            |                                                   |
     |                                            |                                                   |
 
