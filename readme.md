@@ -57,8 +57,8 @@
     | _831KMPCharacterString（KMP）              | _835TrieStringStatistics   trie字符串统计         |
     | _143MaximumXORPair最大异或对（Trie）       | _836MergeSet合并集合（并查集）                    |
     | _3302ExpressionEvaluation表达式求值（ 栈） | _837NumberOfConnectedBlocks连通块的数量（并查集） |
-    | _240FoodChain食物链（并查集）              | _838HeapSort堆排序                                |
-    |                                            |                                                   |
+    | _240FoodChain食物链（并查集）              | _838HeapSort堆排序（只有down）                    |
+    | _839SimulatedHeap模拟堆（堆的5个操作）     |                                                   |
     |                                            |                                                   |
 
     
@@ -235,7 +235,9 @@ JQuery、Ajax暂时不做了解；了解一下json
 
 spring学习
 
-
+1. demo1入门
+2. demo2依赖注入（对象属性的、属性是集合的、bean的单例多例）
+3. 
 
 
 
