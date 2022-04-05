@@ -237,7 +237,9 @@ spring学习
 
 1. demo1入门
 2. demo2依赖注入（对象属性的、属性是集合的、bean的单例多例）
-3. 
+3. demo3使用注解进行配置
+4. demo4 Aop切面
+5. demo5 jdbctemplate
 
 
 
