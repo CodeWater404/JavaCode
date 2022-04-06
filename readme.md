@@ -45,7 +45,7 @@
 
     
 
-2. chapter2
+2. chapter2（都是用数组模拟的）
 
     单链表，双链表，栈，队列，单调栈，单调队列，KMP，Trie树（高效的存储和查找字符串集合的数据结构），并查集，堆，哈希表
 
@@ -58,7 +58,7 @@
     | _143MaximumXORPair最大异或对（Trie）       | _836MergeSet合并集合（并查集）                    |
     | _3302ExpressionEvaluation表达式求值（ 栈） | _837NumberOfConnectedBlocks连通块的数量（并查集） |
     | _240FoodChain食物链（并查集）              | _838HeapSort堆排序（只有down）                    |
-    | _839SimulatedHeap模拟堆（堆的5个操作）     |                                                   |
+    | _839SimulatedHeap模拟堆（堆的5个操作）     | _840SimulateHash哈希表                            |
     |                                            |                                                   |
 
     
