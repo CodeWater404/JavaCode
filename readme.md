@@ -240,6 +240,7 @@ spring学习
 3. demo3使用注解进行配置
 4. demo4 Aop切面
 5. demo5 jdbctemplate
+6. demo6 事务、log4j2
 
 
 
