@@ -3,9 +3,6 @@ package demo6.service;
 import demo6.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author ： CodeWater
@@ -16,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
  * 
  */
 @Service
-@Transactional(readOnly = false,timeout = -1 ,propagation = Propagation.REQUIRED ,isolation = Isolation.REPEATABLE_READ )//加在类上就是所有的方法都有事务
+//@Transactional(readOnly = false,timeout = -1 ,propagation = Propagation.REQUIRED ,isolation = Isolation.REPEATABLE_READ )//加在类上就是所有的方法都有事务
 public class UserService {
     @Autowired
     private UserDao userDao;
