@@ -250,7 +250,20 @@ spring学习
 
 入门练习
 
-1. 
+
+
+
+
+## SopringMVC-demo2
+
+
+
+1. @RequestMapping的各种属性
+2. @RequestParam
+
+
+
+
 
 
 
