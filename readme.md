@@ -89,7 +89,7 @@
 | [_5ReplaceSpace](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | [_6ReversePrint](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) |
 | [_7BuildTree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) | [_9CQueue](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) |
 | [_10_1Fib](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) | [_10_2FrogJumpingSteps](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) |
-| [_11MinimumNumberOfRotationArray](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |                                                              |
+| [_11MinimumNumberOfRotationArray](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) | [_12PathInMatrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)矩阵中的路径 |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |

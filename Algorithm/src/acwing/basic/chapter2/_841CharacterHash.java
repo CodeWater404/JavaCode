@@ -72,7 +72,7 @@ public class _841CharacterHash {
         // 初始化。
         p[0] = 1;
         for( int i = 1 ; i <= n ; i++ ){
-            // 输入字符串
+            // 输入字符串；另外一种接受输入str[i] = str2.charAt( i - 1);  str2直接readLine
             str[i] = str2[i - 1];
             //   处理前缀字符串的哈希值（这里不太理解。。。。。）
             h[i] = h[i - 1] * P + str[i];//公式，预处理前缀哈希的值，因为是P进制，所以中间乘的是P
