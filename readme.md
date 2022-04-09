@@ -254,12 +254,26 @@ spring学习
 
 
 
-## SopringMVC-demo2
+## SpringMVC-demo2
 
 
 
 1. @RequestMapping的各种属性
-2. @RequestParam
+2. @RequestParam请求参数
+3. @RequestHeader头
+4. @CookieValue值
+5. 通过实体类参数获取请求参数
+6. 解决乱码问题
+
+
+
+
+
+## SpringMVC-demo3
+
+
+
+1. 使用servletAPI获取request域对象共享数据
 
 
 
