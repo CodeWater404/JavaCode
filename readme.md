@@ -121,6 +121,14 @@ Java基础复习
 
 
 
+## notes
+
+
+
+各种代码笔记
+
+
+
 
 
 ## SQL
@@ -274,10 +282,26 @@ spring学习
 
 
 1. 使用servletAPI获取request域对象共享数据
+2. 使用ModelAndView获取request域对象共享数据
+3. 使用Model获取request域对象共享数据
+4. 使用Map获取request域对象共享数据
+5. 使用modelMap获取request域对象共享数据
+6. 使用servletAPI获取session域对象共享数据
+7. 使用servletAPI获取application域对象共享数据
+8. thymeleafView视图
+9. InternalResourceView转发视图
+10. RedirectView重定向视图
+11. 视图控制器spingmvc.xml中配置view-controller
 
 
 
 
+
+
+
+## SpringMVC-jsp
+
+1. 基本运行入门
 
 
 
