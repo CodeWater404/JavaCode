@@ -17,12 +17,32 @@
 
 ## Algorithm
 
-算法练习
+算法练习。
+
+> 调试代码：
+>
+> 1. 一般**cout**输出中间变量；
+> 2. 遇到***\*Runtime Error\**** (RE)、segment fault一个个删除代码看那部分对结果有影响的。
+
+
+
+
+
 ### [acwing](https://www.acwing.com/activity/)
 
 注意类名要改为Main，去掉包路径；即可运行在acwing上。
 
+
+
+
+
 ***
+
+
+
+
+
+
 
 #### basic算法基础课
 
@@ -304,6 +324,12 @@ spring学习
 1. 基本运行入门
 
 
+
+## SpringMVC-rest
+
+1. 显示用户信息
+2. 删除用户
+3. 
 
 # Git
 
