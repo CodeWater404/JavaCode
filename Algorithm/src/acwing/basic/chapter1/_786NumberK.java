@@ -38,7 +38,7 @@ public class _786NumberK {
                 q[j] = temp;
             }
         }
-        //退出while是，排完一趟，可以确定出一个位置的数，k小于左边长度，说明在左区间内，
+        //退出while时，排完一趟，可以确定出一个位置的数，k小于左边长度，说明在左区间内，
         // 继续递归左边区间；否则就在右边区间，注意右边区间传k时要减掉左边区间的长度
         if( k <= j - l + 1) return quickSort( q , l , j ,  k );
         else return quickSort( q , j + 1 , r ,  k - (j - l + 1) );

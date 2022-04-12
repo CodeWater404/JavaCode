@@ -14,6 +14,7 @@ public class _787MergeSort {
     public static int[] q = new int[N];
     public static int[] temp = new int[N];
 
+//y:    这种把q数组写成全局，传不传q都一样
     // public static void merge_sort( int[] q , int l , int r ){
     //     if( l >= r ) return ;
     //     int mid = l + r >> 1;
@@ -31,7 +32,7 @@ public class _787MergeSort {
     //     for(  i = l , j = 0 ; i <= r ; i ++ , j++ ) q[i] = temp[j];
     // }
 
-    // 另外一种去掉传数组的,其实差不多，可能考虑到语言性能方面的原因？
+    // 其余：另外一种去掉传数组的,其实差不多，可能考虑到语言性能方面的原因？
     public static void merge_sort(int l,int r){
         if(l==r) return;
 

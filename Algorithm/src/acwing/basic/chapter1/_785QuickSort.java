@@ -44,7 +44,7 @@ public class _785QuickSort {
     public static void quick_sort( int[] q , int l , int r){
         //当单个区间长度为1的时候就可以不用再分了
         if( l >= r ) return ;
-        //定义2个左右遍历指针指针i  j 分界点x(取区间中点)
+        //定义2个左右遍历指针指针i  j 分界点x(取区间中点)  （下面的额i+j可以换成l+r，其实不影响）
         int i = l - 1 , j = r + 1 , x = q[(i + j ) / 2];
         while(i < j){
             //当当前指针所指的元素小于分界点的时候，i往后走
@@ -59,7 +59,7 @@ public class _785QuickSort {
                 q[j] = temp;
             }
         }
-        //递归左右区间
+        //递归左右区间，下面的j不能换成i，退出while后，ij的值不一定相等！！！！！！也有i>j的情况画个图可以理解这个区间问题
         quick_sort( q,  l , j );
         quick_sort( q , j + 1 , r );
     }

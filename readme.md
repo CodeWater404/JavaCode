@@ -329,7 +329,27 @@ spring学习
 
 1. 显示用户信息
 2. 删除用户
-3. 
+3. 添加用户
+4. 修改用户
+
+
+
+
+
+## Spring-demo4
+
+HttpMessageController
+
+1. requestBody请求体
+2. requestEntity请求实体
+3. responseBody响应体
+4. responseEntity响应实体
+5. 文件下载
+6. 文件上传
+
+
+
+
 
 # Git
 
