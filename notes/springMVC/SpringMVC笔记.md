@@ -1526,7 +1526,7 @@ public class ExceptionController {
 
 ### 1、创建初始化类，代替web.xml
 
-在Servlet3.0环境中，容器会在类路径中查找实现javax.servlet.ServletContainerInitializer接口的类，如果找到的话就用它来配置Servlet容器。
+在Servlet3.0环境中，容器会在类路径中查找实现javax.servlet.ServletContainerInitializer接口的类，如果找到的话就用它来配置Servlet容器（也就是tomcat服务器）。
 Spring提供了这个接口的实现，名为SpringServletContainerInitializer，这个类反过来又会查找实现WebApplicationInitializer的类并将配置的任务交给它们来完成。Spring3.2引入了一个便利的WebApplicationInitializer基础实现，名为AbstractAnnotationConfigDispatcherServletInitializer，当我们的类扩展了AbstractAnnotationConfigDispatcherServletInitializer并将其部署到Servlet3.0容器的时候，容器会自动发现它，并用它来配置Servlet上下文。
 
 ```java
@@ -1684,11 +1684,11 @@ public String index(){
 
 作用：统一处理请求和响应，整个流程控制的中心，由它调用其它组件处理用户的请求
 
-- HandlerMapping：**处理器映射器**，不需要工程师开发，由框架提供
+- HandlerMapping：**处理器映射器**，不需要工程师开发，由框架提供（@RequestMapping）
 
 作用：根据请求的url、method等信息查找Handler，即控制器方法
 
-- Handler：**处理器**，需要工程师开发
+- Handler：**处理器**，需要工程师开发（其实就是控制器Controller）
 
 作用：在DispatcherServlet的控制下Handler对具体的用户请求进行处理
 
