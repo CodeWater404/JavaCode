@@ -1,5 +1,9 @@
 package mybatis.mapper;
 
+import mybatis.pojo.User;
+
+import java.util.List;
+
 /**
  * @author ： CodeWater
  * @create ：2022-04-14-21:15
@@ -16,4 +20,12 @@ public interface UserMapper {
     
 //    添加用户信息
     int insertUser();
+//    修改用户信息
+    void updateUser();
+//    删除用户信息
+    void deleteUser();
+//    根据id查询用户
+    User getUserById();
+//    查询所有用户信息
+    List<User> getAllUsers();
 }

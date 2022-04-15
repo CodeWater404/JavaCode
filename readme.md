@@ -372,6 +372,15 @@ HttpMessageController
 
 
 
+## MyBatis-demo2
+
+1. 增删改查
+2. 方法里有不同参数进行查询
+3. 不同返回值类型进行查询
+4. 
+
+
+
 # Git
 
 1. git add添加文件的时候区分大小写的，不然会添加不成功。

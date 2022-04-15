@@ -14,6 +14,17 @@ public class _786NumberK {
     public static int n  , k;
     public static int[] q = new int[N];
     public static void main(String[] args)  {
+
+        // 用缓冲流490ms
+        /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String[] strs = reader.readLine().split(" ");
+        n = Integer.parseInt(strs[0]);
+        k = Integer.parseInt(strs[1]);
+      
+        strs = reader.readLine().split(" ");
+        for(int i = 0; i < n; i++){
+            q[i] = Integer.parseInt(strs[i]);
+        }*/
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         k = sc.nextInt();
@@ -25,9 +36,8 @@ public class _786NumberK {
 
 //    其实参数数组写不写无所谓，因为已经静态了；如果是定义的局部数组还是需要写一下然后传入
     public static int quickSort(int[] arr , int l , int r  , int k){
-        //找打结果返回
+        //确定左边最小的结果返回
         if( l >= r ) return q[l] ;
-        // 每趟排序选取的枢纽不一样，所以l+r/2 ， 而不是ij
         int i = l - 1 , j = r + 1 , x = q[(l + r ) / 2];
         while( i < j ){
             do i++ ; while(q[i] < x);
