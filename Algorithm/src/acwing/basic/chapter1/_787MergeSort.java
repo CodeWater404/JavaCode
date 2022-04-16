@@ -17,6 +17,7 @@ public class _787MergeSort {
 //y:    这种把q数组写成全局，传不传q都一样
     // public static void merge_sort( int[] q , int l , int r ){
     //     if( l >= r ) return ;
+//    这里的mid是取得下标。   而快排就直接取得中间值作为枢纽
     //     int mid = l + r >> 1;
     //     merge_sort( q , l , mid );
     //     merge_sort( q , mid + 1 , r );
@@ -28,7 +29,7 @@ public class _787MergeSort {
 
     //     while( i <= mid ) temp[k++] = q[i++];
     //     while( j <= r ) temp[k++] = q[j++];
-
+//i是从l开始遍历直到r结束！！！！！！！！！！！！！！！！！！！！！！！！！！
     //     for(  i = l , j = 0 ; i <= r ; i ++ , j++ ) q[i] = temp[j];
     // }
 
