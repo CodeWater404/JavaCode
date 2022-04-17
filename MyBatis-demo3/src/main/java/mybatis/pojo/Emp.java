@@ -1,11 +1,13 @@
 package mybatis.pojo;
 
+import java.io.Serializable;
+
 /**
  * @author ： CodeWater
  * @create ：2022-04-16-17:40
  * @Function Description ：
  */
-public class Emp {
+public class Emp implements Serializable {
     private Integer eid;
     private String empName;
     private Integer age;
