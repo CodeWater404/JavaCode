@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.subject;
 
 /**
  * @author ： CodeWater
@@ -6,7 +6,7 @@ package leetCode;
  * @Function Description ：1051高度检查器
  * https://leetcode-cn.com/problems/height-checker/
  */
-public class HeightChecker1051 {
+public class _1051HeightChecker {
     //count不能定义为静态，否则过不了
 //    public static int count = 0;
     

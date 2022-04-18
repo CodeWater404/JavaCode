@@ -16,8 +16,10 @@ public class _790TheCubicRootOfANumber {
         BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
         double x = Double.parseDouble( br.readLine() );
         double l = -10000 , r = 10000;
+//        多取2位比较保险
         while( r - l > 1e-8 ){
             double mid = (l + r ) / 2;
+//            中间点大于n。缩小右边界
             if( mid * mid * mid >= x ) r = mid;
             else l = mid ;
         }

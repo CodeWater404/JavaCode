@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.subject;
 
 /**
  * @author ： CodeWater
@@ -6,7 +6,7 @@ package leetCode;
  * @Function Description ：最长特殊子序列
  * 
  */
-public class LongestSpecialSequence521 {
+public class _521LongestSpecialSequence {
 
     public int findLUSlength(String a, String b) {
 /*

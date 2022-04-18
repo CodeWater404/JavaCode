@@ -83,7 +83,23 @@
 
     
 
-3. 
+3. chapter3
+
+    | 搜索与图论                 |      |
+    | -------------------------- | ---- |
+    | _842ArrangeNumbers排列数字 |      |
+    |                            |      |
+    |                            |      |
+    |                            |      |
+    |                            |      |
+    |                            |      |
+    |                            |      |
+    |                            |      |
+    |                            |      |
+
+    
+
+4. 
 
 
 
@@ -95,8 +111,9 @@
 
 提示：力扣上面的题目不需要处理输入，直接写思路在函数里面即可。
 
-1. 1051[高度检查器](https://leetcode-cn.com/problems/height-checker/)
-2. 
+
+
+
 
 
 
@@ -110,7 +127,7 @@
 | [_7BuildTree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) | [_9CQueue](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) |
 | [_10_1Fib](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) | [_10_2FrogJumpingSteps](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) |
 | [_11MinimumNumberOfRotationArray](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) | [_12PathInMatrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)矩阵中的路径 |
-|                                                              |                                                              |
+| _13RangeOfMotionOfRobot机器人的运动范围                      |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
