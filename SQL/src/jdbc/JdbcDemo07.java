@@ -12,54 +12,54 @@ import java.sql.Statement;
  * @Function Description ：执行DQL查询语句（改用while处理if）
  */
 public class JdbcDemo07 {
-    public static void main( String[] args ){
+    public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
-        try{
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection( "jdbc:mysql:///db3" ,"root" , "root" );
+            conn = DriverManager.getConnection("jdbc:mysql:///db3", "root", "root");
             String sql = " select * from account ";
             stmt = conn.createStatement();
-            rs = stmt.executeQuery( sql );
-            while( rs.next() ){
-                int id = rs.getInt( 1 );
-                String name = rs.getString( "name" );
+            rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                int id = rs.getInt(1);
+                String name = rs.getString("name");
                 //获取这一行的第三列
-                double balance = rs.getDouble( 3 );
-                System.out.println( id + "---" + name + "---" + balance + "---" );
+                double balance = rs.getDouble(3);
+                System.out.println(id + "---" + name + "---" + balance + "---");
             }
- 
-        }catch( ClassNotFoundException e ){
+
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        }catch( SQLException e ){
+        } catch (SQLException e) {
             e.printStackTrace();
-        }finally{
-            if( rs != null ){
-                try{
+        } finally {
+            if (rs != null) {
+                try {
                     rs.close();
-                }catch(SQLException e ){
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-            
-            if( stmt != null ){
-                try{
+
+            if (stmt != null) {
+                try {
                     stmt.close();
-                }catch( SQLException e ){
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                
+
             }
-            
-            if( conn != null ){
-                try{
+
+            if (conn != null) {
+                try {
                     conn.close();
-                }catch( SQLException e ){
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-            
+
         }
     }
 }

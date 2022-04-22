@@ -24,17 +24,17 @@ public class C3P0Demo02 {
 //                conn.close();
 //            }
 //        }
-        
+
         testNameConfig();
     }
-    
-//    封装成函数
-    public static void testNameConfig( ) throws SQLException{
+
+    //    封装成函数
+    public static void testNameConfig() throws SQLException {
         DataSource ds = new ComboPooledDataSource();
-        for(int i = 1 ; i < 11 ; i++ ){
+        for (int i = 1; i < 11; i++) {
             Connection conn = ds.getConnection();
-            System.out.println( i + ": " + conn );
+            System.out.println(i + ": " + conn);
         }
-        
+
     }
 }

@@ -12,45 +12,45 @@ import java.sql.Statement;
  * account表修改记录
  */
 public class JdbcDemo03 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;
-        try{
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection( "jdbc:mysql:///db3" , "root" , "root" );
+            conn = DriverManager.getConnection("jdbc:mysql:///db3", "root", "root");
             String sql = "update account set balance = 1500 where id = 4 ";
             stmt = conn.createStatement();
-            int count = stmt.executeUpdate( sql );
-            System.out.println( count );
-            if( count > 0 ){
-                System.out.println( "修改成功！" );
-                
-            }else{
-                System.out.println( "修改失败。。。。" );
+            int count = stmt.executeUpdate(sql);
+            System.out.println(count);
+            if (count > 0) {
+                System.out.println("修改成功！");
+
+            } else {
+                System.out.println("修改失败。。。。");
             }
-        }catch( ClassNotFoundException e ){
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        }catch( SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
-        }finally{
-            if( stmt != null ){
-                try{
+        } finally {
+            if (stmt != null) {
+                try {
                     stmt.close();
-                    
-                }catch( SQLException e ){
+
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-            
-            if( conn != null ){
-                try{
+
+            if (conn != null) {
+                try {
                     conn.close();
-                }catch( SQLException e ){
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-            
+
         }
-        
+
     }
 }

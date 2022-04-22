@@ -1,6 +1,7 @@
 package jdbc.domain;
 
 import java.util.Date;
+
 /**
  * @author ： CodeWater
  * @create ：2022-03-09-11:03
@@ -16,81 +17,81 @@ public class Emp {
     //奖金
     private double bonus;
     private int dept_id;
-    
-    public int getId(){
+
+    public int getId() {
         return id;
     }
-    
-    public void setId( int id ){
+
+    public void setId(int id) {
         this.id = id;
     }
-    
-    public String getEname(){
-        return ename ;
+
+    public String getEname() {
+        return ename;
     }
-    
-    public void setEname( String name ){
-        this.ename = name ;
+
+    public void setEname(String name) {
+        this.ename = name;
     }
-    
-    public int getJob_id(){
+
+    public int getJob_id() {
         return job_id;
     }
-    
-    public void setJob_id( int job_id ){
+
+    public void setJob_id(int job_id) {
         this.job_id = job_id;
     }
-    
-    public int getMgr(){
+
+    public int getMgr() {
         return mgr;
     }
-    
-    public void setMgr( int mgr ){
-        this.mgr = mgr ;
+
+    public void setMgr(int mgr) {
+        this.mgr = mgr;
     }
-    
-    public Date getJoindate( ){
+
+    public Date getJoindate() {
         return joindate;
     }
-    
-    public void setJoindate( Date joindate ){
+
+    public void setJoindate(Date joindate) {
         this.joindate = joindate;
     }
-    
-    public double getSalary(){
+
+    public double getSalary() {
         return salary;
     }
-    
-    public void setSalary( double salary ){
+
+    public void setSalary(double salary) {
         this.salary = salary;
     }
-    
-    public double getBonus(){
+
+    public double getBonus() {
         return bonus;
     }
-    
-    public void setBonus( double bonus ){
+
+    public void setBonus(double bonus) {
         this.bonus = bonus;
     }
-    
-    public int getDept_id(){
+
+    public int getDept_id() {
         return dept_id;
     }
-    
-    public void setDept_id( int dept_id ){
+
+    public void setDept_id(int dept_id) {
         this.dept_id = dept_id;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Emp{" +
-                "id=" + id + 
+                "id=" + id +
                 ",ename=" + ename +
                 ",job_id=" + job_id +
                 ",mgr=" + mgr +
                 ",joindate=" + joindate +
                 ",salary=" + salary +
-                ",bonus=" + bonus + 
+                ",bonus=" + bonus +
                 ",dept_id=" + dept_id +
                 "}";
     }

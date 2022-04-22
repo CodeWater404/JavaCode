@@ -17,14 +17,14 @@ import java.io.IOException;
 public class JsoupDemo01 {
     public static void main(String[] args) throws IOException {
         String path = JsoupDemo01.class.getClassLoader().getResource("xml/student.xml").getPath();
-        
-        Document document = Jsoup.parse( new File(path) , "utf-8" );
-        Elements elements = document.getElementsByTag( "name" );
-        
-        System.out.println( elements.size() );
-        
+
+        Document document = Jsoup.parse(new File(path), "utf-8");
+        Elements elements = document.getElementsByTag("name");
+
+        System.out.println(elements.size());
+
         Element element = elements.get(0);
         String name = element.text();
-        System.out.println( name );
+        System.out.println(name);
     }
 }

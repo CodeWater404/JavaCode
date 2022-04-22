@@ -15,7 +15,7 @@ public class C3P0Demo01 {
     public static void main(String[] args) throws SQLException {
         DataSource ds = new ComboPooledDataSource();
         Connection conn = ds.getConnection();
-        
-        System.out.println( conn );
+
+        System.out.println(conn);
     }
 }

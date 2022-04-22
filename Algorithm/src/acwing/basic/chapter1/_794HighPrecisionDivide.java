@@ -16,6 +16,7 @@ public class _794HighPrecisionDivide {
         BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
         BigInteger a = new BigInteger( br.readLine() );
         BigInteger b = new BigInteger( br.readLine() );
+//        divide方法只返回商 ； divideAndRemainder返回一个数组：第一个是商，第二个是余数
         BigInteger[] s = a.divideAndRemainder( b );
         System.out.println( s[0] );
         System.out.println( s[1] );

@@ -10,11 +10,11 @@ import org.springframework.jdbc.core.JdbcTemplate;
  * jdbctemplate入门
  */
 public class JdbcTemplateDemo01 {
-    
-    public static void main(String[] args){
-        JdbcTemplate template = new JdbcTemplate( JDBCUtils2.getDataSource() );
+
+    public static void main(String[] args) {
+        JdbcTemplate template = new JdbcTemplate(JDBCUtils2.getDataSource());
         String sql = "update account set balance = 5000 where id = ?";
-        int count = template.update( sql , 3 );
-        System.out.println( count );
+        int count = template.update(sql, 3);
+        System.out.println(count);
     }
 }

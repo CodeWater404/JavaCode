@@ -13,24 +13,24 @@ import java.sql.SQLException;
  * 使用新的工具类
  */
 public class DruidDemo02 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Connection conn = null;
         PreparedStatement pstmt = null;
-        try{
+        try {
             conn = JDBCUtils2.getConnection();
             String sql = "insert into account values(null , ? , ? )";
             //获取pstmt对象
-            pstmt = conn.prepareStatement( sql );
-            pstmt.setString( 1 , "王五" );
-            pstmt.setDouble( 2 , 3000 );
-            
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, "王五");
+            pstmt.setDouble(2, 3000);
+
             int count = pstmt.executeUpdate();
-            System.out.println( count );
-            
-        }catch( SQLException e ){
+            System.out.println(count);
+
+        } catch (SQLException e) {
             e.printStackTrace();
-        }finally{
-            JDBCUtils2.close( pstmt , conn );
+        } finally {
+            JDBCUtils2.close(pstmt, conn);
         }
     }
 }

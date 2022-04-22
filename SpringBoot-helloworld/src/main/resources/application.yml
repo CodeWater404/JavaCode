@@ -1,0 +1,38 @@
+person:
+  userName: zhangsan
+  boss: true
+  birth: 2022/4/22
+  age: 18
+#  数组写法
+#  interests: [篮球 , 足球]
+  interests: 
+    - 篮球
+    - 足球
+    - 18
+#  list
+  animal: [阿毛 , 阿狗]
+#  map写法
+#  score: 
+#    english: 80
+#    math: 90
+  score: [english: 80 , math: 70]
+  salarys: 
+    - 999.3
+    - 654.8
+    - 7657
+#    类
+  pet:
+    name: 阿狗
+    weight: 99.88
+#    复杂map
+  allPets:
+    sick: 
+      - {name: 阿狗 , weight: 99.99}
+      - name: 阿毛
+        weight: 88.4
+      - name: 啊冲
+        weight: 76.3
+    heath: 
+      - 
+    
+    

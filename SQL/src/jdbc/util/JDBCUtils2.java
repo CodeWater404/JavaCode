@@ -16,59 +16,60 @@ import java.util.Properties;
  * @Function Description ：数据库Druid连接池的工具类
  */
 public class JDBCUtils2 {
-    
+
     private static DataSource ds;
+
     static {
-        try{
+        try {
             Properties pro = new Properties();
-            pro.load( JDBCUtils.class.getClassLoader().getResourceAsStream( "druid.properties" ) );
-            ds = DruidDataSourceFactory.createDataSource( pro );
-            
-        }catch( IOException e ){
+            pro.load(JDBCUtils.class.getClassLoader().getResourceAsStream("druid.properties"));
+            ds = DruidDataSourceFactory.createDataSource(pro);
+
+        } catch (IOException e) {
             e.printStackTrace();
-        }catch( Exception e ){
+        } catch (Exception e) {
             e.printStackTrace();
-            
+
         }
     }
-    
+
     public static Connection getConnection() throws SQLException {
         return ds.getConnection();
     }
-    
-    public static void close( Statement stmt , Connection conn ){
-        close( null , stmt , conn );
+
+    public static void close(Statement stmt, Connection conn) {
+        close(null, stmt, conn);
     }
-    
-    public static void close(ResultSet rs , Statement stmt , Connection conn ){
-        if( rs != null ){
-            try{
+
+    public static void close(ResultSet rs, Statement stmt, Connection conn) {
+        if (rs != null) {
+            try {
                 rs.close();
-            }catch( SQLException e ){
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        
-        if( stmt != null ){
-            try{
+
+        if (stmt != null) {
+            try {
                 stmt.close();
-            }catch( SQLException e ){
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        
-        if( conn != null ){
-            try{
+
+        if (conn != null) {
+            try {
                 conn.close();
-                
-            }catch( SQLException e ){
+
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        
+
     }
-    
-    public static DataSource getDataSource(){
+
+    public static DataSource getDataSource() {
         return ds;
     }
 }
