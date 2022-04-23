@@ -16,9 +16,9 @@ import java.util.ArrayList;
  */
 public class SerializeableDemo01 {
     public static void main(String[] args) throws Exception {
-        Student student = new Student("老王" , "laoW");
-        Student student2 = new Student("老张" , "laoZ" );
-        Student student3 = new Student( "老李" , "laoL" );
+        Student student = new Student("老王", "laoW");
+        Student student2 = new Student("老张", "laoZ");
+        Student student3 = new Student("老李", "laoL");
 
         ArrayList<Student> arrayList = new ArrayList<>();
         arrayList.add(student);
@@ -31,19 +31,19 @@ public class SerializeableDemo01 {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("list.txt"));
         ArrayList<Student> list = (ArrayList<Student>) ois.readObject();
 
-        for( int i =  0 ; i < list.size() ; i ++){
+        for (int i = 0; i < list.size(); i++) {
             Student s = list.get(i);
-            System.out.println(s.getName() + "---" + s.getPwd() );
+            System.out.println(s.getName() + "---" + s.getPwd());
         }
     }
-    
+
     private static void serializ(ArrayList<Student> arrayList) throws Exception {
         String path = "./Basics/src/io/list.txt";
         //创建序列化流
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream( path ));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(path));
         //写出对象
         oos.writeObject(arrayList);
-        oos.close();    
-        
+        oos.close();
+
     }
 }

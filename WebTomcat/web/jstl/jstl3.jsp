@@ -39,25 +39,25 @@ foreach:相当于java代码的for语句
                 index:容器中元素的索引，从0开始
                 count:循环次数，从1开始
 --%>
-    <c:forEach begin="1" end="10" var="i" step="2" varStatus="s" >
-        <%--i是数字  s.index是下标   s.count是遍历了多少个数字--%>
-        ${i} <h3>${ s.index}</h3> <h4> ${s.count}</h4> <br/>
-    </c:forEach>
+<c:forEach begin="1" end="10" var="i" step="2" varStatus="s">
+    <%--i是数字  s.index是下标   s.count是遍历了多少个数字--%>
+    ${i} <h3>${ s.index}</h3> <h4> ${s.count}</h4> <br/>
+</c:forEach>
 
-    <hr>
+<hr>
 
-    <%
-        List list = new ArrayList();
-        list.add( "aaa" );
-        list.add( "bbb" );
-        list.add( "ccc" );
+<%
+    List list = new ArrayList();
+    list.add("aaa");
+    list.add("bbb");
+    list.add("ccc");
 //        设置list到域中去；下面就可以遍历list
-        request.setAttribute( "list" , list );
-    %>
+    request.setAttribute("list", list);
+%>
 
-    <c:forEach items="${list}" var="str" varStatus="s">
-<%--        str是元素的内容--%>
-        ${ s.index }${s.count} ${str} <br/>
-    </c:forEach>
+<c:forEach items="${list}" var="str" varStatus="s">
+    <%--        str是元素的内容--%>
+    ${ s.index }${s.count} ${str} <br/>
+</c:forEach>
 </body>
 </html>

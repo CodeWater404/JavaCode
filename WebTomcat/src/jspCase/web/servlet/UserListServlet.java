@@ -19,7 +19,7 @@ import java.util.List;
  * web层，显示页面的
  */
 
-@WebServlet( "/userListServlet" )
+@WebServlet("/userListServlet")
 public class UserListServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -27,13 +27,13 @@ public class UserListServlet extends HttpServlet {
         UserService service = new UserServiceImpl();
         List<User> users = service.findAll();
         //2.将list存入request域
-        req.setAttribute( "users" , users );
+        req.setAttribute("users", users);
         //3.转发到list.jsp
-        req.getRequestDispatcher( "/jspCase/list.jsp" ).forward( req , resp );
+        req.getRequestDispatcher("/jspCase/list.jsp").forward(req, resp);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 }

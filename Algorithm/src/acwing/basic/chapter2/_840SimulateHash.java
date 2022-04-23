@@ -8,7 +8,6 @@ import java.io.InputStreamReader;
  * @author ： CodeWater
  * @create ：2022-04-06-11:42
  * @Function Description ：模拟散列表
- * 
  */
 public class _840SimulateHash {
     /*开放寻址法，取的数要是原数据范围的2-3倍，且最好是一个质数（n如果为偶数，那么就会使
@@ -23,45 +22,45 @@ public class _840SimulateHash {
     // n操作次数
     public static int n;
 
-    public static void main( String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] str = br.readLine().split(" ");
-        n = Integer.parseInt( str[0] );
+        n = Integer.parseInt(str[0]);
 
         // 初始化哈希表
-        for( int i = 0 ; i < N ; i++ )h[i] = Null;
+        for (int i = 0; i < N; i++) h[i] = Null;
 
-        while( n-- > 0 ){
+        while (n-- > 0) {
             str = br.readLine().split(" ");
             String op = str[0];
             int x;
             // 插入一个数
-            if( op.equals("I") ){
-                x = Integer.parseInt( str[1] );
+            if (op.equals("I")) {
+                x = Integer.parseInt(str[1]);
                 h[find(x)] = x;
-            }else{
+            } else {
                 // 查询一个数
-                x = Integer.parseInt( str[1] );
+                x = Integer.parseInt(str[1]);
                 // 表中该位置不是Null则有这个数
-                if(h[find(x)] != Null ) System.out.println( "Yes" );
-                else System.out.println( "No" );
+                if (h[find(x)] != Null) System.out.println("Yes");
+                else System.out.println("No");
 
             }
         }
     }
 
     // 查询哈希表中是否有一个数x
-    public static int find( int x ){
+    public static int find(int x) {
  /*t哈希值。把−109≤x≤109映射到1≤N≤105 。
     Java中：取模运算，负数取模是负数，正数取模是正数。所以这里+N之后就一定
     是一个整数，然后再模N，变回正数的模。
     */
-        int t = ( x % N + N ) % N;
+        int t = (x % N + N) % N;
         // 哈希出的位置有值了，往后找
-        while( h[t] != Null && h[t] != x ){
+        while (h[t] != Null && h[t] != x) {
             t++;
             // 找到结尾还是有值，再从头找
-            if( t == N ) t = 0;
+            if (t == N) t = 0;
         }
         // 返回位置
         return t;

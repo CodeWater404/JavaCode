@@ -12,9 +12,9 @@
             byName根据属性名称注入 ，注入值bean的id值和类属性名称一样
             byType根据属性类型注入
     -->
-    <bean id="emp" class="demo2.autowire.Emp" autowire="byType" >
-        
+    <bean id="emp" class="demo2.autowire.Emp" autowire="byType">
+
     </bean>
-    
+
     <bean id="dept" class="demo2.autowire.Dept"></bean>
 </beans>

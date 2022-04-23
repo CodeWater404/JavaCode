@@ -20,12 +20,12 @@ class _9CQueue {
         stack2 = new LinkedList<Integer>();
     }
 
-//    插入
+    //    插入
     public void appendTail(int value) {
         stack1.push(value);
     }
 
-//    删除；当第二个栈不空就弹出；为空但第一个栈不空就按次序弹到第二个。弹完栈2在出一个；两个栈都空则-1
+    //    删除；当第二个栈不空就弹出；为空但第一个栈不空就按次序弹到第二个。弹完栈2在出一个；两个栈都空则-1
     public int deleteHead() {
         // 如果第二个栈为空
         if (stack2.isEmpty()) {

@@ -13,19 +13,19 @@ import java.io.IOException;
 //@WebFilter( "/*" )
 public class FilterDemo01 implements Filter {
     @Override
-    public void init(FilterConfig filterConfig ) throws ServletException {
-        
+    public void init(FilterConfig filterConfig) throws ServletException {
+
     }
-    
+
     @Override
-    public void doFilter(ServletRequest servletRequest , ServletResponse servletResponse , FilterChain filterChain) throws IOException , ServletException {
-        System.out.println( "filterDemo01被执行了。。。" );
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        System.out.println("filterDemo01被执行了。。。");
         //放行.在测试过滤器之前，记得注释这句，
-        filterChain.doFilter( servletRequest , servletResponse );
+        filterChain.doFilter(servletRequest, servletResponse);
     }
-    
+
     @Override
-    public void destroy(){
-        
+    public void destroy() {
+
     }
 }

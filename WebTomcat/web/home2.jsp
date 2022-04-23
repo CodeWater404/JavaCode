@@ -12,12 +12,12 @@
     <title>Title</title>
 </head>
 <body>
-    <% System.out.println( "hi~~~~~~" );
-    %>
+<% System.out.println("hi~~~~~~");
+%>
 
-    <% pageContext.setAttribute( "msg" , "hello" );
-    %>
+<% pageContext.setAttribute("msg", "hello");
+%>
 
-    <%= pageContext.getAttribute( "msg" ) %>
+<%= pageContext.getAttribute("msg") %>
 </body>
 </html>

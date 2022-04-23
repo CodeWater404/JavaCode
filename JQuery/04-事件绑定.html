@@ -5,7 +5,7 @@
     <title>事件绑定</title>
     <script src="web/js/jquery-3.3.1.min.js">
     </script>
-    
+
     <script>
         // window.onload = function(){
         //     // 给b1按钮添加单击事件
@@ -21,7 +21,7 @@
         //        alert("abc"); 
         //     });
         // });
-        
+
         // function  fun1(){
         //     alert("aaa");
         // }
@@ -30,35 +30,35 @@
         // }
         // window.onload = fun1;
         // window.onload = fun2;
-        
+
         // $( function(){
         //     alert( 123 );
         // });
         // $( function(){
         //     alert( 3424 );
         // });
-/*
-    window.onload  和 $(function) 区别
-        * window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
-        * $(function)可以定义多次的。
- */
-        
-    $( function (){
-            $("#div1").css("background-color","red");
+        /*
+            window.onload  和 $(function) 区别
+                * window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+                * $(function)可以定义多次的。
+         */
+
+        $(function () {
+            $("#div1").css("background-color", "red");
             //这种的可以点击，用来查看是否写的正确
-            $("#div2").css("backgroundColor","pink");
-    });
-        
+            $("#div2").css("backgroundColor", "pink");
+        });
+
     </script>
 </head>
 <body>
-    <div id="div1">div1....</div>
-    <div id="div2">div2.....</div>
-    <input type="button" value="点我" id="b1">
+<div id="div1">div1....</div>
+<div id="div2">div2.....</div>
+<input type="button" value="点我" id="b1">
 
 
-    <script>
-       
-    </script>
+<script>
+
+</script>
 </body>
 </html>

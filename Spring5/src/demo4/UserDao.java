@@ -6,6 +6,7 @@ package demo4;
  * @Function Description ：
  */
 public interface UserDao {
-    public int add( int a , int b );
-    public String update(String b );
+    public int add(int a, int b);
+
+    public String update(String b);
 }

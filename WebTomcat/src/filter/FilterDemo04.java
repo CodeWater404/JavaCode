@@ -13,15 +13,15 @@ import java.io.IOException;
 //@WebFilter( "/user/*" )
 //@WebFilter( "*.jsp" )
 public class FilterDemo04 implements Filter {
-    public void doFilter(ServletRequest req , ServletResponse resp , FilterChain chain) throws ServletException , IOException {
-        System.out.println( "filterDemo04...." );
+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
+        System.out.println("filterDemo04....");
     }
-    
-    public void init(FilterConfig config ) throws ServletException{
-        
+
+    public void init(FilterConfig config) throws ServletException {
+
     }
-    
-    public void destroy(){
-        
+
+    public void destroy() {
+
     }
 }

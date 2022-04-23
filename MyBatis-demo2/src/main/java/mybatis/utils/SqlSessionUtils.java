@@ -14,17 +14,17 @@ import java.io.InputStream;
  * @Function Description ：
  */
 public class SqlSessionUtils {
-    public static SqlSession getSqlSession(){
+    public static SqlSession getSqlSession() {
         SqlSession sqlSession = null;
-        try{
+        try {
             InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
-            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build( is );
-            sqlSession = sqlSessionFactory.openSession( true );
-            
-        }catch( IOException e ){
+            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+            sqlSession = sqlSessionFactory.openSession(true);
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return sqlSession;
     }
-    
+
 }

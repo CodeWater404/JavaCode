@@ -8,7 +8,7 @@
     <artifactId>MyBatis-MBG</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    
+
     <dependencies>
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -31,7 +31,7 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-<!--        分页插件，mybatis-config中也要设置-->
+        <!--        分页插件，mybatis-config中也要设置-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>

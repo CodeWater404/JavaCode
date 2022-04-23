@@ -13,13 +13,13 @@ import java.io.IOException;
  * @Function Description ：
  * 演示Request对象获取请求行
  */
-@WebServlet( "/requestDemo01" )
+@WebServlet("/requestDemo01")
 public class RequestDemo01 extends HttpServlet {
-    protected void doPost(HttpServletRequest request , HttpServletResponse response ) throws ServletException , IOException {
-        
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
-    
-    protected void doGet(HttpServletRequest request , HttpServletResponse response ) throws ServletException , IOException {
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         /*
             1. 获取请求方式 ：GET
                 * String getMethod()
@@ -40,25 +40,25 @@ public class RequestDemo01 extends HttpServlet {
 
          */
         String method = request.getMethod();
-        System.out.println( method );
-        
+        System.out.println(method);
+
         String contextPath = request.getContextPath();
-        System.out.println( contextPath );
-        
+        System.out.println(contextPath);
+
         String servletPath = request.getServletPath();
-        System.out.println( servletPath );
-        
+        System.out.println(servletPath);
+
         String queryString = request.getQueryString();
-        System.out.println( queryString );
-        
+        System.out.println(queryString);
+
         String requestURI = request.getRequestURI();
         StringBuffer requestURL = request.getRequestURL();
-        System.out.println( requestURI + "I-------L" +requestURL );
-        
+        System.out.println(requestURI + "I-------L" + requestURL);
+
         String protocol = request.getProtocol();
-        System.out.println( protocol );
-        
+        System.out.println(protocol);
+
         String remoteAddr = request.getRemoteAddr();
-        System.out.println( remoteAddr );
+        System.out.println(remoteAddr);
     }
 }

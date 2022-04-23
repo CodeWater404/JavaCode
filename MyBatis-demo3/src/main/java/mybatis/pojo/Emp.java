@@ -13,7 +13,7 @@ public class Emp implements Serializable {
     private Integer age;
     private String sex;
     private String email;
-//    一对多
+    //    一对多
     private Dept dept;
 
     @Override

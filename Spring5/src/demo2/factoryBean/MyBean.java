@@ -11,19 +11,19 @@ import org.springframework.beans.factory.FactoryBean;
 public class MyBean implements FactoryBean<Course> {
     /*factory的bean类型在这里确定*/
     @Override
-    public Course getObject() throws Exception{
+    public Course getObject() throws Exception {
         Course course = new Course();
-        course.setCname( "abc" );
+        course.setCname("abc");
         return course;
     }
-    
+
     @Override
-    public Class<?> getObjectType(){
+    public Class<?> getObjectType() {
         return null;
     }
-    
+
     @Override
-    public boolean isSingleton(){
+    public boolean isSingleton() {
         return false;
     }
 }

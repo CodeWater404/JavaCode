@@ -10,6 +10,6 @@ import org.springframework.context.annotation.Configuration;
  * 用类代替xml配置
  */
 @Configuration
-@ComponentScan(basePackages={"demo3"})
+@ComponentScan(basePackages = {"demo3"})
 public class SpringConfig {
 }

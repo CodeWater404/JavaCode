@@ -25,7 +25,7 @@
             </dataSource>
         </environment>
     </environments>
-    
+
     <mappers>
         <package name="mybatis.mapper"/>
     </mappers>

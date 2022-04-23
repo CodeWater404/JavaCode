@@ -13,12 +13,12 @@ public class _3FindRepeatNumber {
     //方法一：开数组存
     public int findRepeatNumber(int[] nums) {
         int[] count = new int[nums.length];
-        for( int i = 0 ; i < nums.length ; i++ ){
-            count[nums[i]] ++;
+        for (int i = 0; i < nums.length; i++) {
+            count[nums[i]]++;
         }
-        for( int i = 0 ; i < nums.length ; i++ ){
-            if( count[i] >= 2 ){
-                return  i;
+        for (int i = 0; i < nums.length; i++) {
+            if (count[i] >= 2) {
+                return i;
             }
         }
         //没有重复
@@ -29,9 +29,9 @@ public class _3FindRepeatNumber {
     public int findRepeatNumber2(int[] nums) {
         Set<Integer> set = new HashSet<Integer>();
         int repeat = -1;
-        for(int num : nums ){
-            if( !set.add(num) ){
-                repeat = num ;
+        for (int num : nums) {
+            if (!set.add(num)) {
+                repeat = num;
                 break;
             }
         }

@@ -14,9 +14,9 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order(1)
 public class PersonProxy {
-    @Before(value="execution( * demo4.aopanno.User.add(..) )")
-    public void before(){
-        System.out.println( "Person before....." );
+    @Before(value = "execution( * demo4.aopanno.User.add(..) )")
+    public void before() {
+        System.out.println("Person before.....");
     }
-    
+
 }

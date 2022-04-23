@@ -17,7 +17,7 @@ import java.util.List;
  * 7. 打印整个队伍的Person对象信息。
  */
 public class ArrayListDemo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //第一只队伍
         ArrayList<String> one = new ArrayList<>();
         one.add("迪丽热巴");
@@ -40,45 +40,45 @@ public class ArrayListDemo {
         two.add("张二狗");
 
         List<String> oneA = new ArrayList<>();
-        for(String name : one){
-            if( name.length() == 3){
+        for (String name : one) {
+            if (name.length() == 3) {
                 oneA.add(name);
             }
         }
-        
+
         List<String> oneB = new ArrayList<>();
-        for( int i = 0  ; i < 3 ; i++ ){
+        for (int i = 0; i < 3; i++) {
             oneB.add(oneA.get(i));
         }
-        
-        
+
+
         //--------------------
         List<String> twoA = new ArrayList<>();
-        for(String name : two){
-            if( name.startsWith("张") ){
+        for (String name : two) {
+            if (name.startsWith("张")) {
                 twoA.add(name);
             }
         }
-        
+
         List<String> twoB = new ArrayList<>();
-        for( int i = 2 ; i < twoA.size() ; i++ ){
-            twoB.add(twoA.get(i));    
+        for (int i = 2; i < twoA.size(); i++) {
+            twoB.add(twoA.get(i));
         }
-        
+
         //合并
         List<String> totalNames = new ArrayList<>();
         totalNames.addAll(oneB);
         totalNames.addAll(twoB);
-        
-        List<Person> totalPersonList =  new ArrayList<>();
-        for(String name : totalNames){
-            totalPersonList.add( new Person(name) );
+
+        List<Person> totalPersonList = new ArrayList<>();
+        for (String name : totalNames) {
+            totalPersonList.add(new Person(name));
         }
-        
+
         //打印
-        for(Person person : totalPersonList ){
+        for (Person person : totalPersonList) {
             System.out.println(person);
         }
-        
+
     }
 }

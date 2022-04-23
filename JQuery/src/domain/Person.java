@@ -11,13 +11,13 @@ import java.util.Date;
  * json测试用
  */
 public class Person {
-    private String name ;
+    private String name;
     private int age;
     private String gender;
 
 
     //@JsonIgnore // 忽略该属性,就不会打印输出
-    @JsonFormat( pattern = "yyyy-MM-dd" )
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
 
     @Override

@@ -14,7 +14,7 @@ import java.io.IOException;
 //@WebServlet( "/demo02" )
 public class ServletDemo02 extends GenericServlet {
     @Override
-    public void service(ServletRequest servletRequest , ServletResponse servletResponse ) throws ServletException , IOException {
-        System.out.println( "demo02...." );
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+        System.out.println("demo02....");
     }
 }

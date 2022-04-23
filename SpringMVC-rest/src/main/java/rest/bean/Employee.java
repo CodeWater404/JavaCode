@@ -10,14 +10,15 @@ public class Employee {
     private String lastName;
     private String email;
     private Integer gender;
-    
-    public Employee(){}
-    
-    public Employee( Integer id , String lastName , String email , Integer gender ){
+
+    public Employee() {
+    }
+
+    public Employee(Integer id, String lastName, String email, Integer gender) {
         this.id = id;
         this.lastName = lastName;
         this.email = email;
-        this.gender = gender ;
+        this.gender = gender;
     }
 
     public Integer getId() {

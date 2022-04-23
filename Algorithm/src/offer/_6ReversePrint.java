@@ -6,15 +6,14 @@ import java.util.Stack;
  * @author ： CodeWater
  * @create ：2022-03-11-17:38
  * @Function Description ：
- * 
+ * <p>
  * 剑指 Offer 06. 从尾到头打印链表
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
+ * int val;
+ * ListNode next;
+ * ListNode(int x) { val = x; }
  * }
- * 
  */
 public class _6ReversePrint {
     public int[] reversePrint(ListNode head) {
@@ -37,10 +36,13 @@ public class _6ReversePrint {
         return a;
     }
 }
-    
+
 
 class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
-  }
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+    }
+}

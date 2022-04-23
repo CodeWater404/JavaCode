@@ -7,49 +7,50 @@ import java.util.Objects;
  * @create ：2022-02-23-13:56
  * @Function Description ：
  */
-public class Student{
+public class Student {
     private String name;
     private int age;
 
-    public Student(){}
+    public Student() {
+    }
 
-    public Student(String name , int age){
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public void setAge(int age){
+    public void setAge(int age) {
         this.age = age;
     }
 
     @Override
-    public boolean equals( Object o){
-        if( this == o ){
+    public boolean equals(Object o) {
+        if (this == o) {
             return true;
         }
-        if( o == null || getClass() != o.getClass() ){
+        if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Student student = (Student)o;
+        Student student = (Student) o;
 //        使用Objects工具类需要导包java.util.Objects
-        return age == student.age && Objects.equals( name , student.name );
+        return age == student.age && Objects.equals(name, student.name);
 
     }
-    
+
     @Override
-    public int hashCode(){
-        return Objects.hash(name , age);
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }

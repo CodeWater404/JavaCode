@@ -11,7 +11,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * 完全使用注解的配置类
  */
 @Configuration
-@ComponentScan( basePackages={"demo4"})
-@EnableAspectJAutoProxy( proxyTargetClass=true)
+@ComponentScan(basePackages = {"demo4"})
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class ConfigAop {
 }

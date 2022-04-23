@@ -9,15 +9,15 @@ import java.io.InputStreamReader;
  * @create ：2022-04-18-13:49
  * @Function Description ：842.排列数字
  * 给定一个整数 n，将数字 1∼n 排成一排，将会有很多种排列方法。
- *
+ * <p>
  * 现在，请你按照字典序将所有的排列方法输出。
- *
+ * <p>
  * 输入格式
  * 共一行，包含一个整数 n。
- *
+ * <p>
  * 输出格式
  * 按字典序输出所有排列方案，每个方案占一行。
- *
+ * <p>
  * 数据范围
  * 1≤n≤7
  * 输入样例：
@@ -37,28 +37,28 @@ public class _842ArrangeNumbers {
     // st标记数是否遍历到
     public static boolean[] st = new boolean[N];
     // 整数n
-    public static int n ;
+    public static int n;
 
-    public static void main(String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader(System.in ) ) ;
-        n = Integer.parseInt( br.readLine() );
-        dfs( 0 );
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        n = Integer.parseInt(br.readLine());
+        dfs(0);
 
     }
 
     // 深搜，u当前搜到的层次
-    public static void dfs( int u ){
+    public static void dfs(int u) {
         // 搜到最后一层，输出path中存储结果
-        if( u == n ){
-            for( int i = 0 ; i < n ; i++ )
-                System.out.print( path[i] + " " );
+        if (u == n) {
+            for (int i = 0; i < n; i++)
+                System.out.print(path[i] + " ");
             System.out.println();
         }
 
         // 从1开始遍历，n属于（1，n）范围
-        for( int i = 1 ; i <= n ; i++ ){
+        for (int i = 1; i <= n; i++) {
             // i没有遍历过，就加入到方案中，然后递归搜索下一层
-            if( !st[i] ){
+            if (!st[i]) {
                 st[i] = true;
                 path[u] = i;
                 dfs(u + 1);

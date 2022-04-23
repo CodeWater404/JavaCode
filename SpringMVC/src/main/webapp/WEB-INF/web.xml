@@ -25,7 +25,7 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>springMVC</servlet-name>
         <!--设置springMVC的核心控制器所能处理的请求的请求路径
@@ -33,5 +33,5 @@
         但是/不能匹配.jsp请求路径的请求-->
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-    
+
 </web-app>

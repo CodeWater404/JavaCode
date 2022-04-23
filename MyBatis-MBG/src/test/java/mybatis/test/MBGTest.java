@@ -19,16 +19,16 @@ import java.io.InputStream;
  */
 public class MBGTest {
     @Test
-    public void testMBG(){
-        try{
-            InputStream is = Resources.getResourceAsStream( "mybatis-config.xml" );
-            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build( is );
-            SqlSession sqlSession = sqlSessionFactory.openSession( true );
-            EmpMapper mapper = sqlSession.getMapper( EmpMapper.class );
+    public void testMBG() {
+        try {
+            InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+            SqlSession sqlSession = sqlSessionFactory.openSession(true);
+            EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
 //            查询所有数据，null没有条件就是所有
 //            List<Emp> list = mapper.selectByExample( null );
 //            list.forEach( emp -> System.out.println( emp ));
-            
+
 //            根据条件来查询，有提供对应的方法
             EmpExample example = new EmpExample();
 //            example.createCriteria().andEmpNameEqualTo( "田七" );
@@ -39,14 +39,14 @@ public class MBGTest {
 //            example.or().andDidIsNotNull();
 //            List<Emp> list = mapper.selectByExample( example );
 //            list.forEach( emp -> System.out.println( emp ) );
-            
+
 //            根据主键修改,如果参数有null也会修改数据库
 //            mapper.updateByPrimaryKey( new Emp( 1 , "admin" , 25 , "男" , "123" , null ));
 //            根据主键选择性修改，遇到null参数就不会更新数据库中的字段(注意，参数null直接写不会修改数据库；如果“null”有引号还是会修改！！！！)
-            mapper.updateByPrimaryKeySelective( new Emp( 1 , "zhasnag" , null , "男" , null , null ));
-            
+            mapper.updateByPrimaryKeySelective(new Emp(1, "zhasnag", null, "男", null, null));
+
 //            插入的功能也类似
-        }catch( IOException e ){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

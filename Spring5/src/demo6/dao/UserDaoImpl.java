@@ -13,16 +13,16 @@ import org.springframework.stereotype.Repository;
 public class UserDaoImpl implements UserDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
-    
+
     @Override
-    public void reduceMoney(){
+    public void reduceMoney() {
         String sql = "update t_account set money= money -? where username=?";
-        jdbcTemplate.update( sql , 100 , "lucy" );
+        jdbcTemplate.update(sql, 100, "lucy");
     }
-    
+
     @Override
-    public void addMoney(){
+    public void addMoney() {
         String sql = "update t_account set money=money+ ? where username=?";
-        jdbcTemplate.update( sql , 100 , "mary" );
+        jdbcTemplate.update(sql, 100, "mary");
     }
 }

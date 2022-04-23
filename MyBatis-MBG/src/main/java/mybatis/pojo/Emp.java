@@ -78,7 +78,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.eid
      *
      * @return the value of t_emp.eid
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public Integer getEid() {
@@ -90,7 +89,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.eid
      *
      * @param eid the value for t_emp.eid
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public void setEid(Integer eid) {
@@ -102,7 +100,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.emp_name
      *
      * @return the value of t_emp.emp_name
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public String getEmpName() {
@@ -114,7 +111,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.emp_name
      *
      * @param empName the value for t_emp.emp_name
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public void setEmpName(String empName) {
@@ -126,7 +122,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.age
      *
      * @return the value of t_emp.age
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public Integer getAge() {
@@ -138,7 +133,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.age
      *
      * @param age the value for t_emp.age
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public void setAge(Integer age) {
@@ -150,7 +144,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.sex
      *
      * @return the value of t_emp.sex
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public String getSex() {
@@ -162,7 +155,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.sex
      *
      * @param sex the value for t_emp.sex
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public void setSex(String sex) {
@@ -174,7 +166,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.email
      *
      * @return the value of t_emp.email
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public String getEmail() {
@@ -186,7 +177,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.email
      *
      * @param email the value for t_emp.email
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public void setEmail(String email) {
@@ -198,7 +188,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.did
      *
      * @return the value of t_emp.did
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public Integer getDid() {
@@ -210,7 +199,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.did
      *
      * @param did the value for t_emp.did
-     *
      * @mbggenerated Sun Apr 17 16:48:25 CST 2022
      */
     public void setDid(Integer did) {

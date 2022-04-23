@@ -7,7 +7,7 @@ package demo4.aopxml;
  * 增强类，但是使用xml来进行，具体看bean2
  */
 public class BookProxy {
-    public void before(){
-        System.out.println( "before...." );
+    public void before() {
+        System.out.println("before....");
     }
 }

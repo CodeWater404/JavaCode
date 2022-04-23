@@ -7,23 +7,23 @@ import java.io.*;
  * @create ：2022-03-28-12:59
  * @Function Description ：kmp字符串
  * 给定一个模式串S，以及一个模板串P，所有字符串中只包含大小写英文字母以及阿拉伯数字。
- *
+ * <p>
  * 模板串P在模式串S中多次作为子串出现。
- *
+ * <p>
  * 求出模板串P在模式串S中所有出现的位置的起始下标。
- *
+ * <p>
  * 输入格式
  * 第一行输入整数N，表示字符串P的长度。
- *
+ * <p>
  * 第二行输入字符串P。
- *
+ * <p>
  * 第三行输入整数M，表示字符串S的长度。
- *
+ * <p>
  * 第四行输入字符串S。
- *
+ * <p>
  * 输出格式
  * 共一行，输出所有出现位置的起始下标（下标从0开始计数），整数之间用空格隔开。
- *
+ * <p>
  * 数据范围
  * 1≤N≤105
  * 1≤M≤106
@@ -32,7 +32,7 @@ import java.io.*;
  * aba
  * 5
  * ababa
- *
+ * <p>
  * 输出样例：
  * 0 2
  */
@@ -58,20 +58,20 @@ public class _831KMPCharacterString {
     public static char[] p = new char[N];
     public static char[] s = new char[M];
     public static int[] ne = new int[N];
-    public static int n , m ;
+    public static int n, m;
 
-    public static void main( String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
-        BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ) );
-        String[] str = br.readLine().split( " " );
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        String[] str = br.readLine().split(" ");
 //        获取输入
-        n = Integer.parseInt( str[0] );
-        str = br.readLine().split( " " );
-        for( int i = 1 ; i <= n ; i++ )p[i] = str[0].charAt(i - 1);
-        str = br.readLine().split( " " );
-        m = Integer.parseInt( str[0] );
-        str = br.readLine().split( " " );
-        for( int i = 1 ; i <= m ; i++ ) s[i] = str[0].charAt( i - 1);
+        n = Integer.parseInt(str[0]);
+        str = br.readLine().split(" ");
+        for (int i = 1; i <= n; i++) p[i] = str[0].charAt(i - 1);
+        str = br.readLine().split(" ");
+        m = Integer.parseInt(str[0]);
+        str = br.readLine().split(" ");
+        for (int i = 1; i <= m; i++) s[i] = str[0].charAt(i - 1);
         
         /*获取输入另外一种写法：
         * int n = Integer.parseInt(br.readLine());
@@ -80,20 +80,20 @@ public class _831KMPCharacterString {
         * */
 
         //求解模板串pnext
-        for( int i = 2 , j = 0 ; i <= n ; i++ ){
-            while( j != 0 && p[i] != p[j + 1] ) j = ne[j];
-            if( p[i] == p[j + 1] ) j++;
+        for (int i = 2, j = 0; i <= n; i++) {
+            while (j != 0 && p[i] != p[j + 1]) j = ne[j];
+            if (p[i] == p[j + 1]) j++;
             ne[i] = j;
         }
 
         // kmp匹配
-        for( int i = 1 , j = 0 ; i <= m ; i++ ){
-            while( j != 0 && s[i] != p[j + 1] ) j = ne[j];
-            if( s[i] == p[j + 1] ) j++;
-            if( j == n ){
+        for (int i = 1, j = 0; i <= m; i++) {
+            while (j != 0 && s[i] != p[j + 1]) j = ne[j];
+            if (s[i] == p[j + 1]) j++;
+            if (j == n) {
                 // i减掉模板串p的长度就是s和p开始相等的下标
                 // System.out.print( i - n + " " );//超时了。。。。
-                bw.write( i - n + " " );
+                bw.write(i - n + " ");
                 j = ne[j];
             }
         }

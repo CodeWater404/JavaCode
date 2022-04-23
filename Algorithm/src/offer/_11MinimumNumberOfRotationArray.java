@@ -8,16 +8,16 @@ package offer;
 public class _11MinimumNumberOfRotationArray {
     public int minArray(int[] numbers) {
         // 二分（具体看官方解答）
-        int low = 0 , high = numbers.length - 1 ;
-        while( low < high ){
-            int mid = ( low + high ) >> 1 ;
-            if( numbers[mid] < numbers[high] ){
+        int low = 0, high = numbers.length - 1;
+        while (low < high) {
+            int mid = (low + high) >> 1;
+            if (numbers[mid] < numbers[high]) {
                 high = mid;
-            }else if ( numbers[mid] > numbers[high] ){
+            } else if (numbers[mid] > numbers[high]) {
                 low = mid + 1;
-            }else{
+            } else {
                 //numbers[mid] == numbers[high]
-                high --;
+                high--;
             }
         }
         return numbers[low];

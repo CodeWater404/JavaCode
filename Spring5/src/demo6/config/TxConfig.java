@@ -17,11 +17,11 @@ import javax.sql.DataSource;
  * 完全注解开发的配置类
  */
 @Configuration
-@ComponentScan( basePackages="demo6")
+@ComponentScan(basePackages = "demo6")
 @EnableTransactionManagement //开启事务
 public class TxConfig {
     @Bean
-    public DruidDataSource getDruidDataSource(){
+    public DruidDataSource getDruidDataSource() {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql:///user_db");
@@ -29,19 +29,19 @@ public class TxConfig {
         dataSource.setPassword("root");
         return dataSource;
     }
-    
+
     @Bean//这种是传参的；另外一种是set那里直接写dataSource的函数；不过建议用传参的
-    public JdbcTemplate  getJdbcTemplate(DataSource dataSource){
+    public JdbcTemplate getJdbcTemplate(DataSource dataSource) {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
-        jdbcTemplate.setDataSource( dataSource );
+        jdbcTemplate.setDataSource(dataSource);
         return jdbcTemplate;
     }
-    
+
     @Bean//创建事务管理器
-    public DataSourceTransactionManager getDataSourceTransactionManager( DataSource dataSource ){
+    public DataSourceTransactionManager getDataSourceTransactionManager(DataSource dataSource) {
         DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
-        transactionManager.setDataSource( dataSource );
+        transactionManager.setDataSource(dataSource);
         return transactionManager;
-    } 
-    
+    }
+
 }

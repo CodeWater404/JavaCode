@@ -13,11 +13,11 @@ import java.io.PrintWriter;
  * @create ：2022-03-14-14:58
  * @Function Description ：
  */
-@WebServlet( "/responseDemo04" )
+@WebServlet("/responseDemo04")
 public class ResponseDemo04 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 
     @Override
@@ -28,9 +28,9 @@ public class ResponseDemo04 extends HttpServlet {
 //        resp.setHeader( "content-type" , "text/html;charset=utf-8" );
 
         //简单的形式，设置编码
-        resp.setContentType( "text/html;charset=utf-8" );
+        resp.setContentType("text/html;charset=utf-8");
         PrintWriter pw = resp.getWriter();
-        pw.write( "你好" );
-        
+        pw.write("你好");
+
     }
 }

@@ -18,7 +18,7 @@ import java.util.stream.Stream;
  * 7. 打印整个队伍的Person对象信息。
  */
 public class StreamDemo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         List<String> one = new ArrayList<>();
         one.add("迪丽热巴");
         one.add("宋远桥");
@@ -41,12 +41,12 @@ public class StreamDemo {
 
 //        第一个队伍只要名字为3个字的成员姓名；筛选之后只要前三个
         Stream<String> streamOne = one.stream().filter(s -> s.length() == 3).limit(3);
-        
+
 //        第二个队伍只要姓张的；筛选之后不要前2个人
-        Stream<String> streamTwo = two.stream().filter(s -> s.startsWith("张") ).skip(2);
-        
+        Stream<String> streamTwo = two.stream().filter(s -> s.startsWith("张")).skip(2);
+
         //合并2个队伍（：：方法引用；格式：类名：方法名）
-        Stream.concat( streamOne , streamTwo ).map(Person::new).forEach(System.out::println);
-        
+        Stream.concat(streamOne, streamTwo).map(Person::new).forEach(System.out::println);
+
     }
 }

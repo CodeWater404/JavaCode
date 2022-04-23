@@ -12,21 +12,21 @@ import java.util.function.Function;
  * 3. 将上一步的int数字累加100，得到结果int数字。
  */
 public class FunctionDemo03 {
-    private static int getAgeNum(String str , Function<String , String > one , Function<String , Integer> two , Function<Integer , Integer> three){
+    private static int getAgeNum(String str, Function<String, String> one, Function<String, Integer> two, Function<Integer, Integer> three) {
         //第一个one做完只有紧跟着two，two做完之后three，他们的参数是str
         return one.andThen(two).andThen(three).apply(str);
     }
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         String str = "赵丽颖,20";
         /*1.第一个lambda分隔出20
-        * 2.第二个lamdba把字符20解析为int
-        * 3.第三个lambda自身加100
-        */
-        int age = getAgeNum(str , 
-                s -> s.split(",")[1] ,
-                s -> Integer.parseInt(s) ,
-                n -> n += 100 );
+         * 2.第二个lamdba把字符20解析为int
+         * 3.第三个lambda自身加100
+         */
+        int age = getAgeNum(str,
+                s -> s.split(",")[1],
+                s -> Integer.parseInt(s),
+                n -> n += 100);
         System.out.println(age);
     }
 }

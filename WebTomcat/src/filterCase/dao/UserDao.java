@@ -25,13 +25,15 @@ public interface UserDao {
 
     /**
      * 查询总记录数
-     * @return
+     *
      * @param condition
+     * @return
      */
     int findTotalCount(Map<String, String[]> condition);
 
     /**
      * 分页查询每页记录
+     *
      * @param start
      * @param rows
      * @param condition

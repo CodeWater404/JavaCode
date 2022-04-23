@@ -7,7 +7,7 @@
     <!--List<Emp> getEmpByCondition(Emp emp);-->
     <select id="getEmpByConditionOne" resultType="Emp">
         select * from t_emp where 1=1
-        <if test="empName != null and empName !='' " >
+        <if test="empName != null and empName !='' ">
             emp_name = #{empName}
         </if>
         <if test="age != null and age != '' ">
@@ -22,9 +22,9 @@
     </select>
 
     <!--List<Emp> getEmpByCondition(Emp emp);-->
-<!--    测试where标签-->
+    <!--    测试where标签-->
     <select id="getEmpByConditionTwo" resultType="Emp">
-        select * from t_emp 
+        select * from t_emp
         <where>
             <if test="empName != null and empName != '' ">
                 emp_name = #{empName}
@@ -40,12 +40,12 @@
             </if>
         </where>
     </select>
-    
+
     <!--测试trim标签-->
     <!--List<Emp> getEmpByCondition(Emp emp);-->
     <select id="getEmpByConditionThree" resultType="Emp">
         select * from t_emp
-        <trim prefix="where" suffixOverrides="and | or" >
+        <trim prefix="where" suffixOverrides="and | or">
             <if test="empName != null and empName != '' ">
                 emp_name = #{empName} and
             </if>
@@ -53,7 +53,7 @@
                 age = #{age} or
             </if>
             <if test="sex != null and sex != '' ">
-                sex = #{sex} and 
+                sex = #{sex} and
             </if>
             <if test="email != null and email != '' ">
                 email = #{email}
@@ -84,60 +84,60 @@
             </choose>
         </where>
     </select>
-    
+
     <!--int deleteMoreByArray(@Param("eids") Integer[] eids);-->
-    <delete id="deleteMoreByArray" >
-<!-- 第一种写法
-        delete from t_emp where eid in
-        (
-            <foreach collection="eids" item="eid"  separator="," >
-                #{eid}
-            </foreach>
-        )    
-        -->
-        
+    <delete id="deleteMoreByArray">
+        <!-- 第一种写法
+                delete from t_emp where eid in
+                (
+                    <foreach collection="eids" item="eid"  separator="," >
+                        #{eid}
+                    </foreach>
+                )    
+                -->
+
         <!-- 第二种写法  
         delete from t_emp where eid in 
         <foreach collection="eids" item="eid" separator="," open="(" close=")">
             #{eid}
         </foreach>
         -->
-        
+
         <!-- 第三种写法  -->
-        delete from t_emp where 
+        delete from t_emp where
         <foreach collection="eids" item="eid" separator="or">
             eid = #{eid}
         </foreach>
     </delete>
-    
-    
+
+
     <!--批量删除-->
-    <insert id="insertMoreByList" >
+    <insert id="insertMoreByList">
         insert into t_emp values
         <foreach collection="emps" item="emp" separator=",">
             ( null , #{emp.empName} , #{emp.age} , #{emp.sex} , #{emp.email} ,null)
         </foreach>
     </insert>
-    
+
     <!--测试sql片段-->
-    <sql id="empColumns" >eid,emp_name,age,sex,email</sql>
+    <sql id="empColumns">eid,emp_name,age,sex,email</sql>
     <select id="getEmpByCondition" resultType="Emp">
         select <include refid="empColumns"></include>  from t_emp
         <trim prefix="where" suffixOverrides="and | or">
             <if test="empName != null and empName != '' ">
                 emp_name = #{empName} and
-            </if> 
-             <if test="age != null and age != '' ">
-                 age = #{age} or
-             </if>
-             <if test="sex != null and sex != '' ">
-                 sex = #{sex} and
-             </if>
-             <if test="email != null and email != '' ">
-                 email = #{email}
-             </if>
+            </if>
+            <if test="age != null and age != '' ">
+                age = #{age} or
+            </if>
+            <if test="sex != null and sex != '' ">
+                sex = #{sex} and
+            </if>
+            <if test="email != null and email != '' ">
+                email = #{email}
+            </if>
         </trim>
     </select>
-    
-    
+
+
 </mapper>

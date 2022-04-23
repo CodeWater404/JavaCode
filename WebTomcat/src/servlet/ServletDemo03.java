@@ -14,13 +14,13 @@ import java.io.IOException;
 //@WebServlet( "/demo03")
 public class ServletDemo03 extends HttpServlet {
     @Override
-    protected void doGet( HttpServletRequest httpServletRequest , HttpServletResponse httpServletResponse ) throws ServletException , IOException {
+    protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
         System.out.println("doGet...........");
     }
-    
+
     @Override
-    protected void doPost( HttpServletRequest httpServletRequest , HttpServletResponse httpServletResponse ) throws ServletException , IOException {
-        System.out.println( "doPost....." );
+    protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+        System.out.println("doPost.....");
     }
-    
+
 }

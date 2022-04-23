@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
  * spring5新功能:log4j2(需要放在src下才生效；如果是maven工程的话，需要放在resource下）
  */
 public class UserLog {
-    private static final Logger log = LoggerFactory.getLogger( UserLog.class ) ;
-    
-    public static void main( String[] args ){
-        log.info( "hello log4j2" );
-        log.warn( "hell log4j 2" );
+    private static final Logger log = LoggerFactory.getLogger(UserLog.class);
+
+    public static void main(String[] args) {
+        log.info("hello log4j2");
+        log.warn("hell log4j 2");
     }
 }

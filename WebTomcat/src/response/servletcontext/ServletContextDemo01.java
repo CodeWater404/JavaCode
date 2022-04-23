@@ -13,11 +13,11 @@ import java.io.IOException;
  * @create ：2022-03-14-16:11
  * @Function Description ：
  */
-@WebServlet( "/servletContextDemo01" )
+@WebServlet("/servletContextDemo01")
 public class ServletContextDemo01 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 
     @Override

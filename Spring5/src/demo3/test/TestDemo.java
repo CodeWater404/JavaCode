@@ -14,19 +14,19 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class TestDemo {
     @Test
-    public void testService1(){
-        ApplicationContext context = new ClassPathXmlApplicationContext( "/demo3/bean1.xml" );
-        UserService userService = context.getBean( "userService" , UserService.class );
-        System.out.println( userService );
+    public void testService1() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("/demo3/bean1.xml");
+        UserService userService = context.getBean("userService", UserService.class);
+        System.out.println(userService);
         userService.add();
     }
-    
-//    测试完全用注解开发的
+
+    //    测试完全用注解开发的
     @Test
-    public void testService2(){
-        ApplicationContext context = new AnnotationConfigApplicationContext( SpringConfig.class );
-        UserService userService = context.getBean( "userService" , UserService.class );
-        System.out.println( userService );
+    public void testService2() {
+        ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
+        UserService userService = context.getBean("userService", UserService.class);
+        System.out.println(userService);
         userService.add();
     }
 }

@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-<!--    监听器最早执行，然后是过滤器，然后才是servlet；所以在过滤器这里设置编码解决乱码问题-->
+    <!--    监听器最早执行，然后是过滤器，然后才是servlet；所以在过滤器这里设置编码解决乱码问题-->
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>
         <filter-class>
@@ -25,8 +25,8 @@
         <filter-name>CharacterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    
-    
+
+
     <!--注册前端控制器DispatcherServlet-->
     <servlet>
         <servlet-name>DispatcherServlet</servlet-name>
@@ -37,10 +37,10 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>DispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-    
+
 </web-app>

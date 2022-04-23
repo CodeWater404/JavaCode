@@ -9,29 +9,29 @@ import java.io.InputStreamReader;
  * @create ：2022-04-05-14:41
  * @Function Description ：模拟堆（实现堆的所有功能，三个函数组合使用）
  * 维护一个集合，初始时集合为空，支持如下几种操作：
- *
+ * <p>
  * I x，插入一个数 x；
  * PM，输出当前集合中的最小值；
  * DM，删除当前集合中的最小值（数据保证此时的最小值唯一）；
  * D k，删除第 k 个插入的数；
  * C k x，修改第 k 个插入的数，将其变为 x；
  * 现在要进行 N 次操作，对于所有第 2 个操作，输出当前集合的最小值。
- *
+ * <p>
  * 输入格式
  * 第一行包含整数 N。
- *
+ * <p>
  * 接下来 N 行，每行包含一个操作指令，操作指令为 I x，PM，DM，D k 或 C k x 中的一种。
- *
+ * <p>
  * 输出格式
  * 对于每个输出指令 PM，输出一个结果，表示当前集合中的最小值。
- *
+ * <p>
  * 每个结果占一行。
- *
+ * <p>
  * 数据范围
  * 1≤N≤105
  * −109≤x≤109
  * 数据保证合法。
- *
+ * <p>
  * 输入样例：
  * 8
  * I -10
@@ -69,92 +69,95 @@ PS：为了简化代码，对于每个点的更改情况，我们不写判断，
     public static int[] ph = new int[N];
     // length是堆的实际长度，n操作次数，
     // m:当前是插入的第几个数。因为删除的时候要删除第k个插入的数，所以要用个变量存下来
-    public static int length , n , m;
+    public static int length, n, m;
 
-    public static void main( String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
-        String[] str = br.readLine().split( " " );
-        n = Integer.parseInt(str[0]) ;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] str = br.readLine().split(" ");
+        n = Integer.parseInt(str[0]);
 
-        while( n-- > 0 ){
+        while (n-- > 0) {
             str = br.readLine().split(" ");
             String op = str[0];
-            int k , x;
-            if( op.equals("I") ){
+            int k, x;
+            if (op.equals("I")) {
                 // 插入一个数，直接插到最后，对这个这个数进行up，使堆有序
-                x = Integer.parseInt( str[1] );
+                x = Integer.parseInt(str[1]);
                 length++;
                 m++;
                 // 映射同时记录，如：ph[m] = length第m个插入的数在堆中是length
-                ph[m] = length ; hp[length] = m;
+                ph[m] = length;
+                hp[length] = m;
                 h[length] = x;
-                up( length );
-            }else if( op.equals("PM") )System.out.println( h[1] );
-            else if( op.equals("DM") ){
+                up(length);
+            } else if (op.equals("PM")) System.out.println(h[1]);
+            else if (op.equals("DM")) {
                 // 删除最小值：堆顶和最后一个数交换，交换后length更新，同时堆顶down
-                heapSwap( 1 , length );
+                heapSwap(1, length);
                 length--;
                 down(1);
-            }else if( op.equals("D") ){
+            } else if (op.equals("D")) {
                 // 删除第k个数，和最后一个数交换，然后down（k），up(k)，只会执行一个
-                k = Integer.parseInt( str[1] );
+                k = Integer.parseInt(str[1]);
                 //这里一定要更新k变成在堆中的位置
                 k = ph[k];
-                heapSwap( k , length );
+                heapSwap(k, length);
                 length--;
-                down(k); up(k);
-            }else{
+                down(k);
+                up(k);
+            } else {
                 // 修改第k个插入的数
-                k = Integer.parseInt( str[1] );
-                x = Integer.parseInt( str[2] );
+                k = Integer.parseInt(str[1]);
+                x = Integer.parseInt(str[2]);
                 // 获取第k个数在堆中的位置，
                 k = ph[k];
                 // 更改这个位置的值
                 h[k] = x;
                 // 排序，使之有序
-                down(k); up(k);
+                down(k);
+                up(k);
             }
         }
     }
 
     // 交换
-    public static void swap( int[] arr , int a , int b ){
+    public static void swap(int[] arr, int a, int b) {
         int temp = arr[a];
         arr[a] = arr[b];
         arr[b] = temp;
     }
 
     // 堆中两个元素的交换，同时第几个数的映射也要更改
-    public static void heapSwap( int a , int b ){
+    public static void heapSwap(int a, int b) {
         // 先改第几个插入的数在堆中的位置，下面的实际就是ph[hp[a]]和ph[hp[b]]的交换
-        swap( ph , hp[a] , hp[b] );
+        swap(ph, hp[a], hp[b]);
         //再改堆中的数到第几个插入树的映射
-        swap( hp , a , b );
+        swap(hp, a, b);
         // 交换元素值
-        swap( h , a , b );
+        swap(h, a, b);
     }
 
     // down操作，一个数过大，下沉
-    public static void down( int u ){
+    public static void down(int u) {
         // t记录最小值
-        int t = u ;
-        if( u * 2 <= length && h[u * 2] < h[t] )t = u * 2;
-        if( u * 2 + 1 <= length && h[u * 2 + 1] < h[t] ) t = u * 2 + 1;
+        int t = u;
+        if (u * 2 <= length && h[u * 2] < h[t]) t = u * 2;
+        if (u * 2 + 1 <= length && h[u * 2 + 1] < h[t]) t = u * 2 + 1;
         // u不是最小值，就发生交换；否则不需要
-        if( u != t ){
+        if (u != t) {
             // 交换两个结点的位置
-            heapSwap( u , t );
+            heapSwap(u, t);
             // 递归处理t，看是否还比其孩子小
-            down( t );
+            down(t);
         }
     }
 
     // up操作，一个数过小，需要上升
-    public static void up( int u ){
+    public static void up(int u) {
         // 孩子结点比父结点小
-        while( u / 2 > 0 && h[u / 2] > h[u] ){
+        while (u / 2 > 0 && h[u / 2] > h[u]) {
             // 交换两个结点的位置
-            heapSwap( u / 2 , u );
+            heapSwap(u / 2, u);
             // 更新u结点的位置
             u /= 2;
         }

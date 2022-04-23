@@ -16,22 +16,22 @@ import java.lang.reflect.InvocationTargetException;
 
 public class BeanUtilsTest {
     @Test
-    public void test(){
+    public void test() {
         User user = new User();
-        try{
+        try {
             //设置user的属性
-            BeanUtils.setProperty( user , "hehe" , "male" );
-            System.out.println( user );
-            
+            BeanUtils.setProperty(user, "hehe", "male");
+            System.out.println(user);
+
 //            拿到指定属性
-            String gender = BeanUtils.getProperty( user , "hehe" );
-            System.out.println( gender );
-            
-        }catch( IllegalAccessException e ){
+            String gender = BeanUtils.getProperty(user, "hehe");
+            System.out.println(gender);
+
+        } catch (IllegalAccessException e) {
             e.printStackTrace();
-        }catch( InvocationTargetException e ){
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
-        }catch( NoSuchMethodException e ){
+        } catch (NoSuchMethodException e) {
             e.printStackTrace();
         }
     }

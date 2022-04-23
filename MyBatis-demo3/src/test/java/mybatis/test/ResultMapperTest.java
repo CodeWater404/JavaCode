@@ -21,74 +21,73 @@ import java.util.List;
  * <setting name="mapUnderscoreToCamelCase" value="true"/>
  * c>通过resultMap设置自定义的映射关系
  * <resultMap id="empResultMap" type="Emp">
- *     <id property="eid" column="eid"></id>
- *     <result property="empName" column="emp_name"></result>
- *     <result property="age" column="age"></result>
- *     <result property="sex" column="sex"></result>
- *     <result property="email" column="email"></result>
+ * <id property="eid" column="eid"></id>
+ * <result property="empName" column="emp_name"></result>
+ * <result property="age" column="age"></result>
+ * <result property="sex" column="sex"></result>
+ * <result property="email" column="email"></result>
  * </resultMap>
- * 
+ * <p>
  * 处理多对一的映射关系：
  * a>级联属性赋值
  * b>association
  * c>分步查询
- * 
+ * <p>
  * 处理一对多的映射关系
  * a>collection
  * b>分步查询
- * 
  */
 public class ResultMapperTest {
-    
+
     @Test
-    public void testGetAllEmp(){
+    public void testGetAllEmp() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        EmpMapper mapper = sqlSession.getMapper( EmpMapper.class );
+        EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         List<Emp> list = mapper.getAllEmp();
-        list.forEach( emp -> System.out.println( emp ) );
+        list.forEach(emp -> System.out.println(emp));
     }
-    
+
     //    查询员工及部门
     @Test
-    public void testGetEmpAndDept(){
-        SqlSession sqlSession  = SqlSessionUtils.getSqlSession();
-        EmpMapper mapper = sqlSession.getMapper( EmpMapper.class );
-        Emp emp = mapper.getEmpAndDept( 2 );
-        System.out.println( emp );
-    }
-    
-//    查询员工信息及其部门，通过分步查询
-    @Test
-    public void testGetEmpAndDeptByStep(){
+    public void testGetEmpAndDept() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        EmpMapper mapper = sqlSession.getMapper( EmpMapper.class );
-        Emp emp = mapper.getEmpAndDeptByStepOne( 3 );
+        EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+        Emp emp = mapper.getEmpAndDept(2);
+        System.out.println(emp);
+    }
+
+    //    查询员工信息及其部门，通过分步查询
+    @Test
+    public void testGetEmpAndDeptByStep() {
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+        Emp emp = mapper.getEmpAndDeptByStepOne(3);
 //        分步查询出个人、部门
 //        System.out.println( emp );
 //        开启延迟加载，只差个人名字,部门就不会查了；如果不开的话，会先全部查出，在输出
-        System.out.println( emp.getEmpName() );
-        System.out.println( "---------------------------------" );
-        System.out.println( emp.getDept() );
-    }
-    
-//    查询部门及其员工
-    @Test
-    public void testDeptAndEmp(){
-        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        DeptMapper mapper = sqlSession.getMapper( DeptMapper.class );
-        Dept dept = mapper.getDeptAndEmp( 1 );
-        System.out.println( dept );
+        System.out.println(emp.getEmpName());
+        System.out.println("---------------------------------");
+        System.out.println(emp.getDept());
     }
 
-//    查询部门及其员工，分步查询
+    //    查询部门及其员工
     @Test
-    public void testDeptAndEmpByStep(){
+    public void testDeptAndEmp() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        DeptMapper mapper = sqlSession.getMapper( DeptMapper.class );
-        Dept dept = mapper.getDeptAndEmpByStepOne(2 );
+        DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
+        Dept dept = mapper.getDeptAndEmp(1);
+        System.out.println(dept);
+    }
+
+    //    查询部门及其员工，分步查询
+    @Test
+    public void testDeptAndEmpByStep() {
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
+        Dept dept = mapper.getDeptAndEmpByStepOne(2);
 //        输出所有信息
 //        System.out.println( dept );
 //        只输出部门，不会查员工，延迟
-        System.out.println( dept.getDeptName() );
+        System.out.println(dept.getDeptName());
     }
 }

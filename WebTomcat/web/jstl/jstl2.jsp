@@ -19,21 +19,21 @@
             3.使用when标签做数字判断         相当于case
             4.otherwise标签做其他情况的声明  相当于default
     --%>
-    <%
-        request.setAttribute( "number" , 7 );    
-    %>
+<%
+    request.setAttribute("number", 7);
+%>
 <%--相当于java的switch--%>
-    <c:choose>
-<%--        test引号里面不要有多余的空格，否则不符合--%>
-        <c:when test="${number == 1}">星期一</c:when>
-        <c:when test="${number == 2}">星期二</c:when>
-        <c:when test="${number == 3}">星期三</c:when>
-        <c:when test="${number == 4}">星期四</c:when>
-        <c:when test="${number == 5}">星期五</c:when>
-        <c:when test="${number == 6}">星期六</c:when>
-        <c:when test="${number == 7}">星期天</c:when>
-        
-        <c:otherwise>数字输入有误</c:otherwise>
-    </c:choose>
+<c:choose>
+    <%--        test引号里面不要有多余的空格，否则不符合--%>
+    <c:when test="${number == 1}">星期一</c:when>
+    <c:when test="${number == 2}">星期二</c:when>
+    <c:when test="${number == 3}">星期三</c:when>
+    <c:when test="${number == 4}">星期四</c:when>
+    <c:when test="${number == 5}">星期五</c:when>
+    <c:when test="${number == 6}">星期六</c:when>
+    <c:when test="${number == 7}">星期天</c:when>
+
+    <c:otherwise>数字输入有误</c:otherwise>
+</c:choose>
 </body>
 </html>

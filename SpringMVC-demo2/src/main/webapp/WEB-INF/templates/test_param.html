@@ -5,24 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>测试请求参数</h1>
-    <br/>
-    <!--测试的时候还是需要手动输入参数?username=admin&password=12，以请求的参数为准
-    。也不知下面的参数赋初值有啥用？不赋报错-->
-    <a th:href="@{/testServletAPI(username='admin' , password=123 ) }">测试使用servletAPI获取请求参数</a>
-    <br/>
-    <a th:href="@{/testParam(username='admin2' , password=123456)}" >测试使用控制器的形参获取参数</a>
-    <br/>
+<h1>测试请求参数</h1>
+<br/>
+<!--测试的时候还是需要手动输入参数?username=admin&password=12，以请求的参数为准
+。也不知下面的参数赋初值有啥用？不赋报错-->
+<a th:href="@{/testServletAPI(username='admin' , password=123 ) }">测试使用servletAPI获取请求参数</a>
+<br/>
+<a th:href="@{/testParam(username='admin2' , password=123456)}">测试使用控制器的形参获取参数</a>
+<br/>
 <!--    浏览器地址后param跳到这个html，提交这个表单之后才会跟ParamController匹配-->
-    <form th:action="@{/testParam}" method="get">
-        用户名：<input type="text" name="user_name"> <br/>
-        密码：<input type="password" name="password"> <br/>
-        爱好：<br/>
-        <input type="checkbox" name="hobby" value="a" >a <br/>
-        <input type="checkbox" name="hobby" value="b" >b <br/>
-        <input type="checkbox" name="hobby" value="c" >c <br/>
-        <input type="submit" value="测试使用控制器的形参获取多个重名参数值">
-    </form>
+<form th:action="@{/testParam}" method="get">
+    用户名：<input type="text" name="user_name"> <br/>
+    密码：<input type="password" name="password"> <br/>
+    爱好：<br/>
+    <input type="checkbox" name="hobby" value="a">a <br/>
+    <input type="checkbox" name="hobby" value="b">b <br/>
+    <input type="checkbox" name="hobby" value="c">c <br/>
+    <input type="submit" value="测试使用控制器的形参获取多个重名参数值">
+</form>
 
 <!--    <form th:action="@{/testParam2}" method="get">-->
 <!--        用户名：<input type="text" name="username"> <br/>-->
@@ -35,16 +35,16 @@
 <!--    </form>-->
 <!--    <br/>-->
 
-    <!--get方法不会出现乱码，因为出现是tomcat造成，已经在server.xml中设置过编码-->
-    <form th:action="@{/testBean}" method="post" >
-        用户名：<input type="text" name="username" > <br/>
-        密码：<input type="password" name="password" > <br/>
-        性别：<input type="radio" name="sex" value="男" >男<br/>
-                <input type="radio" name="sex" value="女" >女<br/>
-        年龄：<input type="text" name="age" > <br/>
-        邮箱：<input type="text" name="email" > <br/>
-        <input type="submit" value="使用实体类接受请求参数" >
-    </form>
+<!--get方法不会出现乱码，因为出现是tomcat造成，已经在server.xml中设置过编码-->
+<form th:action="@{/testBean}" method="post">
+    用户名：<input type="text" name="username"> <br/>
+    密码：<input type="password" name="password"> <br/>
+    性别：<input type="radio" name="sex" value="男">男<br/>
+    <input type="radio" name="sex" value="女">女<br/>
+    年龄：<input type="text" name="age"> <br/>
+    邮箱：<input type="text" name="email"> <br/>
+    <input type="submit" value="使用实体类接受请求参数">
+</form>
 
 </body>
 </html>

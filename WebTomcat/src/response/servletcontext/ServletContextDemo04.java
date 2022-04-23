@@ -13,17 +13,17 @@ import java.io.IOException;
  * @create ：2022-03-14-16:12
  * @Function Description ：
  */
-@WebServlet( "/servletContextDemo04" )
+@WebServlet("/servletContextDemo04")
 public class ServletContextDemo04 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletContext context = this.getServletContext();
-        Object msg = context.getAttribute( "msg" );
-        System.out.println( msg );
+        Object msg = context.getAttribute("msg");
+        System.out.println(msg);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 }

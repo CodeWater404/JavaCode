@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    
+
     <script>
         /* 点击超链接或者图片，需要换一张
                 1.给超链接和图片绑定单击事件
                 2.重新设置图片的src属性值*/
-        window.onload = function(){
-            var img = document.getElementById( "checkCode" );
-            img.onclick = function(){
+        window.onload = function () {
+            var img = document.getElementById("checkCode");
+            img.onclick = function () {
                 var date = new Date().getTime();
                 img.src = "/checkCodeServlet?" + date;
             }
@@ -18,7 +18,7 @@
     </script>
 </head>
 <body>
-    <img id="checkCode" src="/checkCodeServlet" />
-    <a id="change" href="" >看不清换一张？</a>
+<img id="checkCode" src="/checkCodeServlet"/>
+<a id="change" href="">看不清换一张？</a>
 </body>
 </html>

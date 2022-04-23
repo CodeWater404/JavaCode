@@ -11,20 +11,20 @@ import java.net.URLEncoder;
  * @Function Description ：
  */
 public class DownLoadUtils {
-    public static String getFileName( String agent  , String filename ) throws UnsupportedEncodingException {
-        if( agent.contains( "MSIE" ) ){
+    public static String getFileName(String agent, String filename) throws UnsupportedEncodingException {
+        if (agent.contains("MSIE")) {
             //IE
-            filename = URLEncoder.encode( filename , "utf-8" );
-            filename = filename.replace( "+" , " " );
-            
-        }else if( agent.contains( "Firefox" ) ){
+            filename = URLEncoder.encode(filename, "utf-8");
+            filename = filename.replace("+", " ");
+
+        } else if (agent.contains("Firefox")) {
             BASE64Encoder base64Encoder = new BASE64Encoder();
-            filename = "=?utf-8?B?" + base64Encoder.encode( filename.getBytes("utf-8") ) + "?=_";
-            
-        }else{
-            filename = URLEncoder.encode( filename , "utf-8" );
+            filename = "=?utf-8?B?" + base64Encoder.encode(filename.getBytes("utf-8")) + "?=_";
+
+        } else {
+            filename = URLEncoder.encode(filename, "utf-8");
         }
         return filename;
     }
-    
+
 }

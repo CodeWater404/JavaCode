@@ -14,22 +14,22 @@ import java.io.IOException;
  * @Function Description ：
  * Cookie快速入门
  */
-@WebServlet( "/cookieDemo02" )
+@WebServlet("/cookieDemo02")
 public class CookieDemo02 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Cookie[] cs = req.getCookies();
-        if( cs != null ){
-            for( Cookie c : cs ){
+        if (cs != null) {
+            for (Cookie c : cs) {
                 String name = c.getName();
                 String value = c.getValue();
-                System.out.println( name + " : " + value );
+                System.out.println(name + " : " + value);
             }
         }
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 }

@@ -10,13 +10,12 @@ import java.util.HashMap;
  * 剑指 Offer 07. 重建二叉树
  * Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
  * Output: [3,9,20,null,null,15,7]
- *
  */
 public class _7BuildTree {
-//    键为结点元素值；值为结点下标
+    //    键为结点元素值；值为结点下标
     private Map<Integer, Integer> indexMap;
 
-//    按照的层次遍历序列输出的；参数都是下标索引，这样好理解
+    //    按照的层次遍历序列输出的；参数都是下标索引，这样好理解
     public TreeNode myBuildTree(int[] preorder, int[] inorder, int preorder_left, int preorder_right, int inorder_left, int inorder_right) {
 //        超出范围，空
         if (preorder_left > preorder_right) {
@@ -52,13 +51,16 @@ public class _7BuildTree {
 //        传入的参数是先序和后序的下标；其实也就相当于一段范围内二叉树的范围
         return myBuildTree(preorder, inorder, 0, n - 1, 0, n - 1);
     }
-    
+
 
 }
 
 class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
+    }
 }

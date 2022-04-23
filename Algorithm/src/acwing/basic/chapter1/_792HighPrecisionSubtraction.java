@@ -12,10 +12,10 @@ import java.math.BigInteger;
  * 高精度减法
  */
 public class _792HighPrecisionSubtraction {
-    public static void main( String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in) );
-        BigInteger a = new BigInteger( br.readLine() );
-        BigInteger b = new BigInteger( br.readLine() );
-        System.out.println( a.subtract(b) );
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BigInteger a = new BigInteger(br.readLine());
+        BigInteger b = new BigInteger(br.readLine());
+        System.out.println(a.subtract(b));
     }
 }

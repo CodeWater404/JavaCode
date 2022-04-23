@@ -12,11 +12,11 @@ import java.math.BigInteger;
  * 高精度乘法
  */
 public class _793HighPrecisionMultiply {
-    public static void main( String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
-        BigInteger a = new BigInteger( br.readLine() );
-        BigInteger b = new BigInteger( br.readLine() );
-        
-        System.out.println( a.multiply( b ) );
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BigInteger a = new BigInteger(br.readLine());
+        BigInteger b = new BigInteger(br.readLine());
+
+        System.out.println(a.multiply(b));
     }
 }

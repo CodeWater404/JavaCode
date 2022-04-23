@@ -9,8 +9,9 @@ import org.apache.ibatis.annotations.Param;
  * @Function Description ：
  */
 public interface CacheMapper {
-//    测试一级缓存
+    //    测试一级缓存
     Emp getEmpById(@Param("eid") Integer eid);
-//    测试增删改会清空缓存
-    void insertEmp(Emp emp );
+
+    //    测试增删改会清空缓存
+    void insertEmp(Emp emp);
 }

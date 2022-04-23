@@ -7,14 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
-       hello,world!
-  
-  <%
-    System.out.println( "index.jsp...." );
-  %>
-  </body>
+</head>
+<body>
+hello,world!
+
+<%
+    System.out.println("index.jsp....");
+%>
+</body>
 </html>

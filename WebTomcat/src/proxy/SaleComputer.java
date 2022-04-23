@@ -7,6 +7,7 @@ package proxy;
  * 买电脑的接口
  */
 public interface SaleComputer {
-    public String sale( double money);
+    public String sale(double money);
+
     public void show();
 }

@@ -6,8 +6,8 @@ package reflect;
  * @Function Description ：
  */
 public class Student {
-    
-    public void sleep(){
+
+    public void sleep() {
         System.out.println("sleep...");
     }
 }

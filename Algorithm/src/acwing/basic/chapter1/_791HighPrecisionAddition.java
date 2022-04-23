@@ -13,7 +13,7 @@ import java.math.BigInteger;
  * （当然也可以自己模拟，但是我懒）
  */
 public class _791HighPrecisionAddition {
-    public static void main( String[] args ) throws IOException {
+    public static void main(String[] args) throws IOException {
 //        3200ms
 //        Scanner sc = new Scanner( new BufferedInputStream( System.in ) );
 //        BigInteger a = sc.nextBigInteger();
@@ -21,11 +21,11 @@ public class _791HighPrecisionAddition {
 
 
         // 2080ms
-        BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //可以直接构造
-        BigInteger a = new BigInteger( br.readLine() );
-        BigInteger b = new BigInteger( br.readLine() );
-        System.out.println( a.add(b) );
+        BigInteger a = new BigInteger(br.readLine());
+        BigInteger b = new BigInteger(br.readLine());
+        System.out.println(a.add(b));
 
     }
 }

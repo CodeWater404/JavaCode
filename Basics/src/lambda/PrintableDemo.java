@@ -8,13 +8,13 @@ package lambda;
  * a:helloworld(虽然调用的时候有个参数s，但是实际上没有具体的参数传入)
  */
 public class PrintableDemo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        main中具体指明函数式接口的操作
-        printString(s -> System.out.println(s) );
+        printString(s -> System.out.println(s));
     }
 
-//    printString只管调用printable接口
-    private static void printString(Printable data){
+    //    printString只管调用printable接口
+    private static void printString(Printable data) {
         data.print("Hello, World!");
     }
 }

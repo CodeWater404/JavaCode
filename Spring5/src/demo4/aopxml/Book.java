@@ -6,7 +6,7 @@ package demo4.aopxml;
  * @Function Description ：
  */
 public class Book {
-    public void buy(){
-        System.out.println( "buy....." );
+    public void buy() {
+        System.out.println("buy.....");
     }
 }

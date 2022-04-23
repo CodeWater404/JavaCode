@@ -15,8 +15,8 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
     private UserDao dao = new UserDaoImpl();
-    
-    public List<User> findAll(){
+
+    public List<User> findAll() {
         //调用dao完成查询
         return dao.findAll();
     }

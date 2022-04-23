@@ -16,16 +16,16 @@ public class FileReaderDemo01 {
 //        System.out.println(System.getProperty("user.dir"));
         FileReader fr = new FileReader("e:/javacode/basics/src/io/a.txt");
         //定义变量，保存有效字符个数。其实仅作为判断是否读到空，虽然名字叫len
-        int len ;
+        int len;
         //字符数组，作为装字符串数据的容器
         char[] cbuf = new char[2];
-        
+
         //循环读取，read方法读取到数据返回int数值表示状态，-1为空；里面加个参数是把数据读入到里面去
-        while( (len = fr.read(cbuf)) != -1 ){
+        while ((len = fr.read(cbuf)) != -1) {
             //read方法每次读取一个字符，这里是因为用了字符数组，
-            System.out.println(new String(cbuf));    
+            System.out.println(new String(cbuf));
         }
-        
+
         fr.close();
     }
 }

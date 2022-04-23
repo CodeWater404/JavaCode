@@ -7,32 +7,32 @@
     <select id="getAllUser" resultType="User">
         select * from t_user
     </select>
-    
+
     <select id="getUserByUsername" resultType="User">
         <!--#{}是占位符，不用加'' ; ${}字符串拼接 -->
-      <!--   select * from t_user where username = #{username}  -->
-       select * from t_user where username = '${username}'  
+        <!--   select * from t_user where username = #{username}  -->
+        select * from t_user where username = '${username}'
     </select>
-    
+
     <!--多个参数获取对应的信息-->
     <select id="checkLogin" resultType="User">
-    <!--多个参数传参的时候必须时arg0 , arg1...或者para1,param2.....注意：arg和param可以混着用-->
+        <!--多个参数传参的时候必须时arg0 , arg1...或者para1,param2.....注意：arg和param可以混着用-->
         <!-- select * from t_user where username = #{arg0} and password = #{arg1}  -->
         select * from t_user where username = '${param1}' and password = '${param2}'
     </select>
-    
+
     <!-- 多个参数，但是用注解设置固定的名字传入sql-->
     <select id="checkLoginByParam" resultType="User">
-    <!--接口方法中有注解修饰参数-->
-        select * from t_user where username = #{username} and password = #{password} 
-    </select>
-    
-    <!--//    把多个参数放入map，自定义键名当参数传入sql语句-->
-    <select id="checkLoginByMap" resultType="User">
-<!--username参数是ParamterMapperTest中自定义的map的键名，通过传入map来实现多个参数自定义 名称，不像上面只能用固定的-->
+        <!--接口方法中有注解修饰参数-->
         select * from t_user where username = #{username} and password = #{password}
     </select>
-    
+
+    <!--//    把多个参数放入map，自定义键名当参数传入sql语句-->
+    <select id="checkLoginByMap" resultType="User">
+        <!--username参数是ParamterMapperTest中自定义的map的键名，通过传入map来实现多个参数自定义 名称，不像上面只能用固定的-->
+        select * from t_user where username = #{username} and password = #{password}
+    </select>
+
     <!--接口方法参数是实体类型，把属性值传入sql语句-->
     <insert id="insertUser">
         insert into t_user values( null , #{username} , #{password} , #{age} , #{sex} , #{email} )

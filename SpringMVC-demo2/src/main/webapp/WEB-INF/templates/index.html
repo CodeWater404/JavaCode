@@ -5,36 +5,36 @@
     <title>首页</title>
 </head>
 <body>
-    <h1>首页</h1>
-    <a th:href="@{/hello/testRequestMapping}">测试RequestMapping注解的位置</a>
-    <br/>
-    <a th:href="@{/testRequestMapping}" >测试requestMapping注解的value属性</a>
-    <br/>
-    <a th:href="@{/test}">测试requestMapping注解的value属性</a>
-    <br/>
-    <a th:href="@{/test}">测试requestMapping注解的method属性---get</a>
-    <br/>
-    <form th:action="@{/test}"  method="post">
-        <input type="submit" value="测试requestMapping注解的method属性---post" >
-    </form>
-    <br/>
-    <a th:href="@{/testGetMapping}" >测试GetMapping</a>
-    <br/>
-    <form th:action="@{/testPut}" method="put">
-        <input type="submit" value="测试form表单能否发送put或者delete请求" >
-    </form>
-    <br/>
-    <!--传参匹配：username='admin'写字符参数要单引号，不然会跟外面的“冲突-->
-    <a th:href="@{/testParamsAndHeaders(username='admin',password=12)}">测试RequestMapping注解的params属性</a>
-    <br/>
-    <a th:href="@{/a1a/testAnt}">测试RequestMapping注解的Ant风格（模糊匹配,任意一个）匹配---？</a>
-    <br/>
-    <a th:href="@{/a1a/testAnt}">测试RequestMapping注解的Ant风格（模糊匹配，任意多个）匹配---*</a>
-    <br/>
-    <a th:href="@{/a1a/testAnt}">测试RequestMapping注解的Ant风格（模糊匹配，任意层级）匹配---**</a>
-    <br/>
-    <!--获取传参：id=1 ， user=admin，参数名称加RequestMappingController中的{}站位符-->
-    <a th:href="@{/testPath/1/admin}">测试@RequestMapping支持路径中的占位符----“/1”表示一个参数1</a>
-    <br/>
+<h1>首页</h1>
+<a th:href="@{/hello/testRequestMapping}">测试RequestMapping注解的位置</a>
+<br/>
+<a th:href="@{/testRequestMapping}">测试requestMapping注解的value属性</a>
+<br/>
+<a th:href="@{/test}">测试requestMapping注解的value属性</a>
+<br/>
+<a th:href="@{/test}">测试requestMapping注解的method属性---get</a>
+<br/>
+<form th:action="@{/test}" method="post">
+    <input type="submit" value="测试requestMapping注解的method属性---post">
+</form>
+<br/>
+<a th:href="@{/testGetMapping}">测试GetMapping</a>
+<br/>
+<form th:action="@{/testPut}" method="put">
+    <input type="submit" value="测试form表单能否发送put或者delete请求">
+</form>
+<br/>
+<!--传参匹配：username='admin'写字符参数要单引号，不然会跟外面的“冲突-->
+<a th:href="@{/testParamsAndHeaders(username='admin',password=12)}">测试RequestMapping注解的params属性</a>
+<br/>
+<a th:href="@{/a1a/testAnt}">测试RequestMapping注解的Ant风格（模糊匹配,任意一个）匹配---？</a>
+<br/>
+<a th:href="@{/a1a/testAnt}">测试RequestMapping注解的Ant风格（模糊匹配，任意多个）匹配---*</a>
+<br/>
+<a th:href="@{/a1a/testAnt}">测试RequestMapping注解的Ant风格（模糊匹配，任意层级）匹配---**</a>
+<br/>
+<!--获取传参：id=1 ， user=admin，参数名称加RequestMappingController中的{}站位符-->
+<a th:href="@{/testPath/1/admin}">测试@RequestMapping支持路径中的占位符----“/1”表示一个参数1</a>
+<br/>
 </body>
 </html>

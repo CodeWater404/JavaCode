@@ -5,6 +5,7 @@ import jspCase.domain.User;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import jspCase.util.JDBCUtils;
+
 import java.util.List;
 
 /**
@@ -14,11 +15,11 @@ import java.util.List;
  */
 
 public class UserDaoImpl implements UserDao {
-    private JdbcTemplate template = new JdbcTemplate( JDBCUtils.getDataSource() );
-    
-    public List<User> findAll(){
+    private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
+
+    public List<User> findAll() {
         String sql = "select * from jspcase_user";
-        List<User> users = template.query( sql , new BeanPropertyRowMapper<User>(User.class) );
+        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class));
         return users;
     }
 }

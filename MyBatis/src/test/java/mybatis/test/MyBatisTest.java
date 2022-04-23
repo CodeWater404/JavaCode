@@ -26,34 +26,34 @@ public class MyBatisTest {
     @Test
     public void testMybatis() throws IOException {
         //加载核心配置文件
-        InputStream is = Resources.getResourceAsStream("mybatis-config.xml" );
+        InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
         //获取SqlSessionFactoryBuilder
         SqlSessionFactoryBuilder sqlSessionFactoryBuilder = new SqlSessionFactoryBuilder();
         //获取sqlSessionFactory
         SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBuilder.build(is);
         //获取SqlSession   参数true自动提交
-        SqlSession sqlSession = sqlSessionFactory.openSession( true );
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
         //获取mapper接口对象
-        UserMapper mapper = sqlSession.getMapper( UserMapper.class );
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         //测试功能
         int result = mapper.insertUser();
         //提交事务
 //        sqlSession.commit();
-        System.out.println("result:" + result );
+        System.out.println("result:" + result);
     }
-    
+
     @Test
-    public void testCRUD() throws IOException{
+    public void testCRUD() throws IOException {
         InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
-        SqlSession sqlSession = sqlSessionFactory.openSession( true );
-        UserMapper mapper = sqlSession.getMapper( UserMapper.class );
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 //        mapper.updateUser();
 //        mapper.deleteUser();
 //        User user = mapper.getUserById();
 //        System.out.println( user );
         List<User> list = mapper.getAllUsers();
-        list.forEach(user2 -> System.out.println( user2 ));
-        
+        list.forEach(user2 -> System.out.println(user2));
+
     }
 }

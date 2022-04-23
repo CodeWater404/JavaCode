@@ -6,8 +6,8 @@ package demo1;
  * @Function Description ：
  */
 public class User {
-    
-    public static void add(){
-        System.out.println( "add...." );
+
+    public static void add() {
+        System.out.println("add....");
     }
 }

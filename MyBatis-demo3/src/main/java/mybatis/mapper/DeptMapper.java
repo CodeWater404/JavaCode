@@ -14,8 +14,8 @@ public interface DeptMapper {
      * 分步查询第二步：通过did查询员工所对应的部门
      */
     Dept getEmpAndDeptByStepTwo(@Param("did") Integer did);
-    
-//获取部门以及部门员工的信息  一对多，部门里面有个集合
+
+    //获取部门以及部门员工的信息  一对多，部门里面有个集合
     Dept getDeptAndEmp(@Param("did") Integer did);
 
 

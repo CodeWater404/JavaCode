@@ -24,7 +24,7 @@ public class UpdateUserServlet extends HttpServlet {
         //3.封装对象
         User user = new User();
         try {
-            BeanUtils.populate(user,map);
+            BeanUtils.populate(user, map);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -36,7 +36,7 @@ public class UpdateUserServlet extends HttpServlet {
         service.updateUser(user);
 
         //5.跳转到查询所有Servlet
-        response.sendRedirect(request.getContextPath()+"/userListServlet");
+        response.sendRedirect(request.getContextPath() + "/userListServlet");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

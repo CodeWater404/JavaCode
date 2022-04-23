@@ -13,7 +13,7 @@ import java.util.List;
  * @author ： CodeWater
  * @create ：2022-04-16-23:42
  * @Function Description ：
- * 
+ * <p>
  * 动态SQL：
  * 1、if：根据标签中test属性所对应的表达式决定标签中的内容是否需要拼接到SQL中
  * 2、where：
@@ -36,59 +36,58 @@ import java.util.List;
  * 6、sql标签
  * 设置SQL片段：<sql id="empColumns">eid,emp_name,age,sex,email</sql>
  * 引用SQL片段：<include refid="empColumns"></include>
- * 
  */
 public class DynamicSQLMapperTest {
     @Test
-    public void testGetEmpByCondition(){
+    public void testGetEmpByCondition() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        DynamicSQLMapper mapper =  sqlSession.getMapper( DynamicSQLMapper.class );
+        DynamicSQLMapper mapper = sqlSession.getMapper(DynamicSQLMapper.class);
 //        没有1=1
 //        List<Emp> list = mapper.getEmpByCondition(new Emp(null , "张三" , 23 , "男" ,"123@qq.com" , null) );
 //        有1=1
 //        List<Emp> list = mapper.getEmpByCondition(new Emp(null , "" , null , "男" ,"" , null) );
-        
+
 //        测试where标签,，动态生成
 //        List<Emp> list = mapper.getEmpByCondition( new Emp( null , "" , null , "男" , "" , null ));  
-        
+
 //        测试trim动态生成前后缀  and、or。。。
-        List<Emp> list = mapper.getEmpByCondition( new Emp (null  , "null" , 23 , "null" , "null" , null ) ) ;
-        
+        List<Emp> list = mapper.getEmpByCondition(new Emp(null, "null", 23, "null", "null", null));
+
         System.out.println(list);
-        
+
     }
-    
-//   测试choose标签
+
+    //   测试choose标签
     @Test
-    public void testEmpByChoose(){
+    public void testEmpByChoose() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        DynamicSQLMapper mapper = sqlSession.getMapper( DynamicSQLMapper.class );
+        DynamicSQLMapper mapper = sqlSession.getMapper(DynamicSQLMapper.class);
 //        List<Emp> list = mapper.getEmpByChoose( new Emp( null , "张三" , 23 , "null" , "null" , null ) );
-        List<Emp> list = mapper.getEmpByChoose( new Emp( null , "null" , null , "null" , "null" , null ) );
-        System.out.println( list );
+        List<Emp> list = mapper.getEmpByChoose(new Emp(null, "null", null, "null", "null", null));
+        System.out.println(list);
     }
-    
-//    批量删除
+
+    //    批量删除
     @Test
-    public void testDeleteMoreByArray(){
+    public void testDeleteMoreByArray() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        DynamicSQLMapper mapper = sqlSession.getMapper( DynamicSQLMapper.class  );
-        int result = mapper.deleteMoreByArray( new Integer[]{ 7, 8,  9}) ;
+        DynamicSQLMapper mapper = sqlSession.getMapper(DynamicSQLMapper.class);
+        int result = mapper.deleteMoreByArray(new Integer[]{7, 8, 9});
         System.out.println(result);
     }
-    
-    
-//    测试批量添加
+
+
+    //    测试批量添加
     @Test
-    public void testInsetMoreByList(){
+    public void testInsetMoreByList() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
-        DynamicSQLMapper mapper = sqlSession.getMapper( DynamicSQLMapper.class );
-        Emp emp1 = new Emp(null , "a1" , 23 , "男" , "123@qq.com" , null) ;
-        Emp emp2 = new Emp(null , "a2" , 23 , "男" , "123@qq.com" , null) ;
-        Emp emp3 = new Emp(null , "a3" , 23 , "男" , "123@qq.com" , null) ;
+        DynamicSQLMapper mapper = sqlSession.getMapper(DynamicSQLMapper.class);
+        Emp emp1 = new Emp(null, "a1", 23, "男", "123@qq.com", null);
+        Emp emp2 = new Emp(null, "a2", 23, "男", "123@qq.com", null);
+        Emp emp3 = new Emp(null, "a3", 23, "男", "123@qq.com", null);
 //        asList直接创建一个列表
-        List<Emp> emps = Arrays.asList( emp1 , emp2 , emp3 );
-        
-        System.out.println( mapper.insertMoreByList( emps ) );
+        List<Emp> emps = Arrays.asList(emp1, emp2, emp3);
+
+        System.out.println(mapper.insertMoreByList(emps));
     }
 }

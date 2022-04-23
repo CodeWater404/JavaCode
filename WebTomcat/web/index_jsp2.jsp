@@ -8,8 +8,8 @@
 <%--导入java库--%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
-<%@ page contentType="text/html;charset=gbk" errorPage="500.jsp" 
-    pageEncoding="GBK" language="java" buffer="16kb" %>
+<%@ page contentType="text/html;charset=gbk" errorPage="500.jsp"
+         pageEncoding="GBK" language="java" buffer="16kb" %>
 <%--引入标签库 c是自定义的标签--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -17,9 +17,9 @@
     <title>Title</title>
 </head>
 <body>
-    <% List list = new ArrayList();
-    int i = 3 / 0 ;
-    %>
-    
+<% List list = new ArrayList();
+    int i = 3 / 0;
+%>
+
 </body>
 </html>

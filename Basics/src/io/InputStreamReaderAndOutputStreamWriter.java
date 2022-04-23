@@ -13,13 +13,13 @@ public class InputStreamReaderAndOutputStreamWriter {
         String srcFile = "./Basics/src/io/file_gbk.txt";
         String destFile = "./Basics/src/io/file_utf8.txt";
 
-        InputStreamReader isr = new InputStreamReader(new FileInputStream(srcFile) , "gbk");
+        InputStreamReader isr = new InputStreamReader(new FileInputStream(srcFile), "gbk");
         OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(destFile));
-        
+
         char[] cbuf = new char[1024];
         int len;
-        while((len = isr.read(cbuf)) != -1){
-            osw.write(cbuf , 0 , len );
+        while ((len = isr.read(cbuf)) != -1) {
+            osw.write(cbuf, 0, len);
         }
         osw.close();
         isr.close();

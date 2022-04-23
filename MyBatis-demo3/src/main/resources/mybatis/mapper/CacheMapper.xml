@@ -5,15 +5,15 @@
 <mapper namespace="mybatis.mapper.CacheMapper">
 
     <!--设置二级缓存由第三方提供-->
-    <cache type="org.mybatis.caches.ehcache.EhcacheCache" />
-    
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+
     <!--Emp getEmpByEid(@Param("eid") Integer eid);-->
     <select id="getEmpById" resultType="Emp">
         select * from t_emp where eid = #{eid}
     </select>
-            
+
     <!--//    测试增删改会清空缓存-->
-    <insert id="insertEmp" >
+    <insert id="insertEmp">
         insert into t_emp values(null , #{empName} , #{age} , #{sex} , #{email} , null)
     </insert>
 </mapper>

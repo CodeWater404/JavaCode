@@ -12,16 +12,16 @@ import java.io.IOException;
  * @create ：2022-03-18-15:49
  * @Function Description ：
  */
-@WebServlet( "/user/updateServlet")
+@WebServlet("/user/updateServlet")
 public class ServletDemo01 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println( "user/updateServlet....");
-        req.getRequestDispatcher("/index.jsp").forward( req , resp );
+        System.out.println("user/updateServlet....");
+        req.getRequestDispatcher("/index.jsp").forward(req, resp);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 }

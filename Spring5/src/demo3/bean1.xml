@@ -6,17 +6,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--扫描指定包下所有的-->
+    <!--扫描指定包下所有的-->
     <context:component-scan base-package="demo3"></context:component-scan>
-    
+
     <!--扫描指定的，false：不扫描所有的
     -->
     <context:component-scan base-package="demo3" use-default-filters="false">
         <!--扫描类型带有Contorller注解的-->
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-        
+
     </context:component-scan>
-    
+
     <!--除了controller的不扫描-->
     <context:component-scan base-package="demo3">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>

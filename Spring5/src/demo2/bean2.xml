@@ -15,7 +15,7 @@
     </util:list>
 
     <!--2 提取list集合类型属性注入使用。（scope="prototype"多实例，默认是单）-->
-    <bean id="book" class="demo2.collectionType.Book" >
+    <bean id="book" class="demo2.collectionType.Book">
         <property name="list" ref="bookList"></property>
     </bean>
 </beans>

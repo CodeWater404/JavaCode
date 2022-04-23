@@ -22,8 +22,8 @@ public class Book {
     public void setAddress(String address) {
         this.address = address;
     }
-    
-    public void testDemo(){
-        System.out.println( bname + " :" + bauthor + ":" + address );
+
+    public void testDemo() {
+        System.out.println(bname + " :" + bauthor + ":" + address);
     }
 }

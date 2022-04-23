@@ -13,11 +13,11 @@ import java.io.IOException;
  * @create ：2022-03-14-16:12
  * @Function Description ：
  */
-@WebServlet( "/servletContextDemo02" )
+@WebServlet("/servletContextDemo02")
 public class ServletContextDemo02 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 
     @Override
@@ -32,9 +32,9 @@ public class ServletContextDemo02 extends HttpServlet {
                3. 获取文件的真实(服务器)路径*/
         ServletContext context = this.getServletContext();
         String filename = "a.jpg";
-        
-        String mimeType = context.getMimeType( filename );
-        System.out.println( mimeType );
+
+        String mimeType = context.getMimeType(filename);
+        System.out.println(mimeType);
     }
-    
+
 }

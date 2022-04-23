@@ -13,17 +13,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class TestAop {
     @Test
-    public void testAopAnno(){
-        ApplicationContext context = new ClassPathXmlApplicationContext( "/demo4/bean1.xml" );
-        User user = context.getBean( "user" , User.class);
+    public void testAopAnno() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("/demo4/bean1.xml");
+        User user = context.getBean("user", User.class);
         user.add();
     }
-    
-//    测试完全用xml的配置增强
+
+    //    测试完全用xml的配置增强
     @Test
-    public void testAopXml(){
-        ApplicationContext context = new ClassPathXmlApplicationContext( "/demo4/bean2.xml" );
-        Book book = context.getBean( "book" , Book.class );
+    public void testAopXml() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("/demo4/bean2.xml");
+        Book book = context.getBean("book", Book.class);
         book.buy();
     }
 }

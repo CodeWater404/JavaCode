@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User login(User user) {
-        return dao.findUserByUsernameAndPassword(user.getUsername(),user.getPassword());
+        return dao.findUserByUsernameAndPassword(user.getUsername(), user.getPassword());
     }
 
     @Override
@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void delSelectedUser(String[] ids) {
-        if(ids != null && ids.length > 0){
+        if (ids != null && ids.length > 0) {
             //1.遍历数组
             for (String id : ids) {
                 //2.调用dao删除
@@ -61,7 +61,7 @@ public class UserServiceImpl implements UserService {
         int currentPage = Integer.parseInt(_currentPage);
         int rows = Integer.parseInt(_rows);
 
-        if(currentPage <=0) {
+        if (currentPage <= 0) {
             currentPage = 1;
         }
         //1.创建空的PageBean对象
@@ -76,11 +76,11 @@ public class UserServiceImpl implements UserService {
         //4.调用dao查询List集合
         //计算开始的记录索引
         int start = (currentPage - 1) * rows;
-        List<User> list = dao.findByPage(start,rows,condition);
+        List<User> list = dao.findByPage(start, rows, condition);
         pb.setList(list);
 
         //5.计算总页码
-        int totalPage = (totalCount % rows)  == 0 ? totalCount/rows : (totalCount/rows) + 1;
+        int totalPage = (totalCount % rows) == 0 ? totalCount / rows : (totalCount / rows) + 1;
         pb.setTotalPage(totalPage);
 
 

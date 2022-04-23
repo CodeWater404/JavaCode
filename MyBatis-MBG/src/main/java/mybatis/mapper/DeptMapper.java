@@ -1,6 +1,7 @@
 package mybatis.mapper;
 
 import java.util.List;
+
 import mybatis.pojo.Dept;
 import mybatis.pojo.DeptExample;
 import org.apache.ibatis.annotations.Param;

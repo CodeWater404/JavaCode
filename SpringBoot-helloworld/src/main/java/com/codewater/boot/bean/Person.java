@@ -20,6 +20,7 @@ import java.util.Set;
 @Data
 @ToString
 public class Person {
+    
     private String userName;
     private Boolean boss;
     private Date birth;

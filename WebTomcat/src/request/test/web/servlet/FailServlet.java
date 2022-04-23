@@ -12,16 +12,16 @@ import java.io.IOException;
  * @create ：2022-03-14-12:14
  * @Function Description ：
  */
-@WebServlet( "/failServlet" )
+@WebServlet("/failServlet")
 public class FailServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType( "text/html;charset=utf-8" );
-        resp.getWriter( ).write("登录失败，用户或密码输入错误。。。");
+        resp.setContentType("text/html;charset=utf-8");
+        resp.getWriter().write("登录失败，用户或密码输入错误。。。");
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost( req , resp );
+        this.doPost(req, resp);
     }
 }

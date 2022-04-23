@@ -12,10 +12,10 @@
 </head>
 <body>
 <%
-    System.out.println( "hello,jsp" );
+    System.out.println("hello,jsp");
     int i = 5;
     String contextPath = request.getContextPath();
-    out.print( contextPath );
+    out.print(contextPath);
 %>
 
 <%!
@@ -24,9 +24,9 @@
 <%= "hello" %>
 
 System.out.println( "hello,jsp " );
-<h1 > hi~ jsp1</h1>
+<h1> hi~ jsp1</h1>
 
-<% response.getWriter().write( "response...." ); %>
+<% response.getWriter().write("response...."); %>
 
 </body>
 </html>

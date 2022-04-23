@@ -24,24 +24,24 @@ c:if标签
             * 一般情况下，test属性值会结合el表达式一起使用
     2. 注意：c:if标签没有else情况，想要else情况，则可以在定义一个c:if标签
 --%>
-    <%
-        //判断request域中的一个list集合是否为空，如果不为null则显示遍历集合
-        List list = new ArrayList();
-        list.add( "aaaa" );
-        request.setAttribute( "list" , list );
-        request.setAttribute( "number" , 4 );
-    %>
+<%
+    //判断request域中的一个list集合是否为空，如果不为null则显示遍历集合
+    List list = new ArrayList();
+    list.add("aaaa");
+    request.setAttribute("list", list);
+    request.setAttribute("number", 4);
+%>
 <%--上面定义了前缀c--%>
-    <c:if test="${ not empty list}" >
-        遍历集合。。。
-    </c:if>
-    <br/>
+<c:if test="${ not empty list}">
+    遍历集合。。。
+</c:if>
+<br/>
 
-    <c:if test="${ number % 2 != 0 }">
-        ${ number}为奇数
-    </c:if>
-    <c:if test="${ number % 2 == 0 }">
-        ${ number}为偶数
-    </c:if>
+<c:if test="${ number % 2 != 0 }">
+    ${ number}为奇数
+</c:if>
+<c:if test="${ number % 2 == 0 }">
+    ${ number}为偶数
+</c:if>
 </body>
 </html>

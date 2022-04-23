@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>首页</h1>
-    <%--这里是jsp页面，所以动态获取路径不用tjymeleaf的th：--%>
-    <a href="${pageContext.request.contextPath}/success">success.jsp</a>
+<h1>首页</h1>
+<%--这里是jsp页面，所以动态获取路径不用tjymeleaf的th：--%>
+<a href="${pageContext.request.contextPath}/success">success.jsp</a>
 
 </body>
 </html>

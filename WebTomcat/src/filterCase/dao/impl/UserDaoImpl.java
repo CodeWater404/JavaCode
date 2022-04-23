@@ -78,23 +78,23 @@ public class UserDaoImpl implements UserDao {
         for (String key : keySet) {
 
             //排除分页条件参数
-            if("currentPage".equals(key) || "rows".equals(key)){
+            if ("currentPage".equals(key) || "rows".equals(key)) {
                 continue;
             }
 
             //获取value
             String value = condition.get(key)[0];
             //判断value是否有值
-            if(value != null && !"".equals(value)){
+            if (value != null && !"".equals(value)) {
                 //有值
-                sb.append(" and "+key+" like ? ");
-                params.add("%"+value+"%");//？条件的值
+                sb.append(" and " + key + " like ? ");
+                params.add("%" + value + "%");//？条件的值
             }
         }
         System.out.println(sb.toString());
         System.out.println(params);
 
-        return template.queryForObject(sb.toString(),Integer.class,params.toArray());
+        return template.queryForObject(sb.toString(), Integer.class, params.toArray());
     }
 
     @Override
@@ -109,17 +109,17 @@ public class UserDaoImpl implements UserDao {
         for (String key : keySet) {
 
             //排除分页条件参数
-            if("currentPage".equals(key) || "rows".equals(key)){
+            if ("currentPage".equals(key) || "rows".equals(key)) {
                 continue;
             }
 
             //获取value
             String value = condition.get(key)[0];
             //判断value是否有值
-            if(value != null && !"".equals(value)){
+            if (value != null && !"".equals(value)) {
                 //有值
-                sb.append(" and "+key+" like ? ");
-                params.add("%"+value+"%");//？条件的值
+                sb.append(" and " + key + " like ? ");
+                params.add("%" + value + "%");//？条件的值
             }
         }
 
@@ -132,6 +132,6 @@ public class UserDaoImpl implements UserDao {
         System.out.println(sql);
         System.out.println(params);
 
-        return template.query(sql,new BeanPropertyRowMapper<User>(User.class),params.toArray());
+        return template.query(sql, new BeanPropertyRowMapper<User>(User.class), params.toArray());
     }
 }

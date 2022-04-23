@@ -14,15 +14,15 @@ import java.net.Socket;
 public class ClientTCP {
     public static void main(String[] args) throws IOException {
         System.out.println("客户端，发送数据");
-        Socket client = new Socket("localhost" , 6666);
+        Socket client = new Socket("localhost", 6666);
         OutputStream os = client.getOutputStream();
         os.write("你好吗？tcp，我来了".getBytes());
-        
+
         //-------客户端解析回写数据
         InputStream in = client.getInputStream();
         byte[] b = new byte[1024];
         int len = in.read(b);
-        System.out.println(new String( b , 0 , len ) );
+        System.out.println(new String(b, 0, len));
         in.close();
         os.close();
         client.close();

@@ -7,32 +7,32 @@
 
     <!--扫描组件-->
     <context:component-scan base-package="rest"></context:component-scan>
-    
+
     <!--thymeleaf解析器-->
     <bean id="viewResolver" class="org.thymeleaf.spring5.view.ThymeleafViewResolver">
-        <property name="order" value="1" />
-        <property name="characterEncoding" value="UTF-8" />
+        <property name="order" value="1"/>
+        <property name="characterEncoding" value="UTF-8"/>
         <property name="templateEngine">
             <bean class="org.thymeleaf.spring5.SpringTemplateEngine">
                 <property name="templateResolver">
                     <bean class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver">
                         <property name="prefix" value="/WEB-INF/templates/"/>
-                        <property name="suffix" value=".html" />
-                        <property name="templateMode" value="HTML5" />
-                        <property name="characterEncoding" value="UTF-8" />
+                        <property name="suffix" value=".html"/>
+                        <property name="templateMode" value="HTML5"/>
+                        <property name="characterEncoding" value="UTF-8"/>
                     </bean>
                 </property>
             </bean>
-            
+
         </property>
     </bean>
-    
+
     <!--视图控制器-->
-    <mvc:view-controller path="/" view-name="index" ></mvc:view-controller>
+    <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
     <mvc:view-controller path="/toAdd" view-name="employee_add"></mvc:view-controller>
     <!--开放对静态资源的访问,如本项目中的static目录下的静态资源。前端控制器不会处理静态资源-->
     <mvc:default-servlet-handler/><!--默认的servlet会处理静态资源-->
-    
+
     <!--开启mvc注解驱动-->
     <mvc:annotation-driven/>
 </beans>

@@ -7,20 +7,20 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    
+
     <!--直接配置连接池-->
-<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
-<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>-->
-<!--        <property name="url" value="jdbc:mysql://localhost:/3306/web"></property>-->
-<!--        <property name="username" value="root"></property>-->
-<!--        <property name="password" value="root"></property>-->
-<!--    </bean>-->
-    
+    <!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+    <!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>-->
+    <!--        <property name="url" value="jdbc:mysql://localhost:/3306/web"></property>-->
+    <!--        <property name="username" value="root"></property>-->
+    <!--        <property name="password" value="root"></property>-->
+    <!--    </bean>-->
+
     <!--引入外部文件-->
     <context:property-placeholder location="classpath:/demo2/jdbc.properties"/>
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="${driverClass"></property>
-        <property name="url" value="${url}" ></property>
+        <property name="url" value="${url}"></property>
         <property name="username" value="${userName}"></property>
         <property name="password" value="${password}"></property>
     </bean>

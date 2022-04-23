@@ -30,8 +30,8 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
-<!--范围设置成已被提供，当把web工程打包成war包之后，那这个servlet的jar就不会存在于被
- 打成war包之后的web  info的leb项目中。因为可以已被服务器提供，tomcat自带 -->
+            <!--范围设置成已被提供，当把web工程打包成war包之后，那这个servlet的jar就不会存在于被
+             打成war包之后的web  info的leb项目中。因为可以已被服务器提供，tomcat自带 -->
             <scope>provided</scope>
         </dependency>
 

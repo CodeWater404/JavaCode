@@ -5,32 +5,32 @@ import java.util.Date;
 
 /**
  * @author ： CodeWater
- * 
  * @create ：2022-03-16-12:22
  * @Function Description ：
  */
 public class User {
     private String name;
-    private int age ;
+    private int age;
     private Date birthday;
 
     /**
      * 逻辑视图
+     *
      * @return
      */
-    public String getBirStr(){
+    public String getBirStr() {
 
-        if(birthday != null){
+        if (birthday != null) {
             //1.格式化日期对象
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             //2.返回字符串即可
             return sdf.format(birthday);
 
-        }else{
+        } else {
             return "";
         }
     }
-    
+
     public String getName() {
         return name;
     }

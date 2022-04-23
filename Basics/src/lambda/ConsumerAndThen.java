@@ -10,14 +10,14 @@ import java.util.function.Consumer;
  * 然后再做一个操作，实现组合。而这个方法就是 Consumer 接口中的default方法 andThen 。
  */
 public class ConsumerAndThen {
-    private static void consumerString(Consumer<String> one , Consumer<String> two){
+    private static void consumerString(Consumer<String> one, Consumer<String> two) {
         one.andThen(two).accept("hello");
     }
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         //lambda
-        consumerString(s -> System.out.println( s.toUpperCase() ),
-                s -> System.out.println( s.toLowerCase() )  
+        consumerString(s -> System.out.println(s.toUpperCase()),
+                s -> System.out.println(s.toLowerCase())
         );
     }
 }

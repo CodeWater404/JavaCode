@@ -4,17 +4,17 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--namespace的名字要跟对应接口的全类名保持一致-->
-<mapper namespace="mybatis.mapper.UserMapper" >
+<mapper namespace="mybatis.mapper.UserMapper">
     <!--id跟接口的方法名保持一致-->
     <!--int insertUser();-->
     <insert id="insertUser">
         insert into t_user values(null , 'admin' , '12345' , '23' , '男', '12345@qq.com')
     </insert>
-    
+
     <update id="updateUser">
         update t_user set username = '张三' where id = 1
     </update>
-    
+
     <delete id="deleteUser">
         delete from t_user where id = 3
     </delete>
@@ -27,11 +27,11 @@
     <select id="getUserById" resultType="mybatis.pojo.User">
         select * from t_user where id = 2
     </select>
-    
+
     <!--在核心配置返回类型的全类名后，就不用写全类名了-->
     <select id="getAllUsers" resultType="User">
         select * from t_user
     </select>
-    
-    
+
+
 </mapper>

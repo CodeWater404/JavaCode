@@ -7,7 +7,7 @@ package request.test.domain;
  * 用户的实体类
  */
 public class User {
-    private int id ;
+    private int id;
     private String username;
     private String password;
     private String gender;

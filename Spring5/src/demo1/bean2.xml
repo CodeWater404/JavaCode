@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="userDaoImpl" class="demo1.dao.UserDaoImpl"></bean>
-    
+
     <bean id="userService" class="demo1.service.UserService">
         <!--注入userDao对象
     name属性：类里面属性名称

@@ -17,24 +17,24 @@ public class _795PrefixAnd {
     public static int[] a = new int[N];
     public static int[] s = new int[N];
 
-    public static void main( String[] args ) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
-        String[] str = br.readLine().split( " " );
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] str = br.readLine().split(" ");
 
-        int n = Integer.parseInt( str[0] );
-        int m = Integer.parseInt( str[1] );
-        str = br.readLine().split( " " );
+        int n = Integer.parseInt(str[0]);
+        int m = Integer.parseInt(str[1]);
+        str = br.readLine().split(" ");
 
 
-        for( int i = 1 ; i <= n ; i++ ) a[i] = Integer.parseInt( str[i - 1] );
-        for( int i = 1 ; i <= n ; i++ ) s[i] = s[ i - 1] + a[i];
+        for (int i = 1; i <= n; i++) a[i] = Integer.parseInt(str[i - 1]);
+        for (int i = 1; i <= n; i++) s[i] = s[i - 1] + a[i];
 
-        while( m-- > 0 ){
-            str = br.readLine().split( " " );
+        while (m-- > 0) {
+            str = br.readLine().split(" ");
 
-            int l = Integer.parseInt( str[0] ) , r = Integer.parseInt( str[1] );
+            int l = Integer.parseInt(str[0]), r = Integer.parseInt(str[1]);
             //s r减掉l前面的和就是（l，r）之间的和
-            System.out.println( s[r] - s[l - 1] );
+            System.out.println(s[r] - s[l - 1]);
         }
 
     }

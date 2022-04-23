@@ -50,28 +50,28 @@ public class FileUpAndDownController {
     }
 
     @RequestMapping("/testUp")
-    public String testUp(MultipartFile photo , HttpSession session) throws IOException{
+    public String testUp(MultipartFile photo, HttpSession session) throws IOException {
 //        获取上传文件的文件名
         String fileName = photo.getOriginalFilename();
         //获取上传的文件的后缀名   lastIndexOf获取最后一个索引，防止有的文件名是“1.1.1.jpg”
-        String suffixName = fileName.substring( fileName.lastIndexOf("."));
+        String suffixName = fileName.substring(fileName.lastIndexOf("."));
         //将UUID作为文件名
-        String uuid = UUID.randomUUID().toString().replaceAll("-" , "" );
+        String uuid = UUID.randomUUID().toString().replaceAll("-", "");
         //将uuid和后缀名拼接后的结果作为最终的文件名（解决文件重名覆盖的问题）
         fileName = uuid + suffixName;
         //通过ServletContext获取服务器中photo目录的路径
         ServletContext servletContext = session.getServletContext();
-        String photoPath = servletContext.getRealPath( "photo" );
-        File file = new File( photoPath);
+        String photoPath = servletContext.getRealPath("photo");
+        File file = new File(photoPath);
         //判断photoPath所对应路径是否存在
-        if(!file.exists() ){
+        if (!file.exists()) {
 //            不存在，创建目录
             file.mkdir();
         }
 //        File.separator是分隔符,不知道/还是.时用
         String finalPath = photoPath + File.separator + fileName;
 //        上传文件，最终会在\target\SpringMVC-demo4-1.0-SNAPSHOT\photo目录下
-        photo.transferTo( new File(finalPath) );
+        photo.transferTo(new File(finalPath));
         return "success";
     }
 }

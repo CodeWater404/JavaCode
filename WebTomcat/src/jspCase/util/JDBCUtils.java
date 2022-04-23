@@ -16,29 +16,29 @@ import java.util.Properties;
  * jdbc工具类，druid连接池
  */
 public class JDBCUtils {
-    private static DataSource ds ;
-    
-    static{
-        try{
+    private static DataSource ds;
+
+    static {
+        try {
             Properties pro = new Properties();
-            InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream( "jspCase/druid.properties" );
-            
-            pro.load( is );
-            
-            ds = DruidDataSourceFactory.createDataSource( pro );
-        }catch( IOException e ){
+            InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream("jspCase/druid.properties");
+
+            pro.load(is);
+
+            ds = DruidDataSourceFactory.createDataSource(pro);
+        } catch (IOException e) {
             e.printStackTrace();
-        }catch( Exception e ){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    
-//    获取连接池对象
-    public static DataSource getDataSource(){
+
+    //    获取连接池对象
+    public static DataSource getDataSource() {
         return ds;
     }
-    
-//    获取连接池对象
+
+    //    获取连接池对象
     public static Connection getConnection() throws SQLException {
         return ds.getConnection();
     }

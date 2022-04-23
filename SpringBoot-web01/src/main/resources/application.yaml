@@ -1,0 +1,8 @@
+#spring:
+#  mvc:
+##    加上这之后访问静态资源就需要加上res路径才可以访问静态; 会影响浏览网页的图标
+#    static-path-pattern: /res/**
+    
+#  resources:
+##设置静态资源为指定文件夹； 设置这个之后要访问index.html就不能再加前缀路径
+#    static-locations: [classpath:/haha/]
