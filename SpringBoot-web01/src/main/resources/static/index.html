@@ -6,5 +6,46 @@
 </head>
 <body>
     <h1>CodeWater , 欢迎您</h1>
+    <br/>
+    测试REST风格：
+    <form action="/user" method="get">
+        <input value="REST--get-- 提交" type="submit" />
+    </form>
+    <form action="/user" method="post">
+        <input value="REST--post-- 提交" type="submit" />
+    </form>
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="put" />
+        <input value="REST--put-- 提交" type="submit"/>
+    </form>
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="delete" />
+        <!--下面这个name是因为webconfig中自定了了的；其余没有自定义的就不会成功访问到正确的方法-->
+        <input name="_m" type="hidden" value="delete" />
+        <input value="REST--delete--- 提交"  type="submit" />
+    </form>
+    <br/>
+
+    测试基本的注解：
+    <ul>
+        <a href="car/3/owner/lisi?age=18&inters=basketball&inters=game"> car/{id}/owner/{username}</a>
+        <li >@PathVariable  路径变量</li>
+        <li>@RequestHeader  获取请求头</li>
+        <li>@RequestParam   后去请求参数</li>
+        <li> @CookieValue     获取Cookie值</li>
+        <li>@RequestBody   获取请求体</li>
+        
+        
+    </ul>
+    
+    <br/>
+    测试表单提交的内容(post)
+    <form action="/save" method="post">
+        测试@RequestBody获取数据 <br/>
+        用户名： <input name="userName" /> <br/>
+        邮箱：  <input name="email" />
+        <input type="submit" valu="提交"  />
+    </form>
+    
 </body>
 </html>
