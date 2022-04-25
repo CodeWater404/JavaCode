@@ -85,21 +85,42 @@
 
 3. chapter3
 
-    | 搜索与图论                 |                        |
-    | -------------------------- | ---------------------- |
-    | _842ArrangeNumbers排列数字 | _843NQueen：n皇后      |
-    | _844Labyrinth走迷宫        | _845EightDigital八数码 |
-    |                            |                        |
-    |                            |                        |
-    |                            |                        |
-    |                            |                        |
-    |                            |                        |
-    |                            |                        |
-    |                            |                        |
+    | 搜索与图论                              |                        |
+    | --------------------------------------- | ---------------------- |
+    | _842ArrangeNumbers排列数字              | _843NQueen：n皇后      |
+    | _844Labyrinth走迷宫                     | _845EightDigital八数码 |
+    | _846TheCenterOfGravityOfTheTree树的重心 |                        |
+    |                                         |                        |
+    |                                         |                        |
+    |                                         |                        |
+    |                                         |                        |
+    |                                         |                        |
+    |                                         |                        |
 
     
 
 4. 
+
+
+
+
+
+#### 算法面试
+
+1. 第一讲
+
+   | acwing                       | leetCode类似                                                 |
+   | ---------------------------- | ------------------------------------------------------------ |
+   | _765SerpentineMatrix蛇形矩阵 | [54螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)和[剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof) |
+   |                              |                                                              |
+   |                              |                                                              |
+   |                              |                                                              |
+
+   
+
+2. 
+
+
 
 
 
