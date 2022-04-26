@@ -85,17 +85,17 @@
 
 3. chapter3
 
-    | 搜索与图论                              |                        |
-    | --------------------------------------- | ---------------------- |
-    | _842ArrangeNumbers排列数字              | _843NQueen：n皇后      |
-    | _844Labyrinth走迷宫                     | _845EightDigital八数码 |
-    | _846TheCenterOfGravityOfTheTree树的重心 |                        |
-    |                                         |                        |
-    |                                         |                        |
-    |                                         |                        |
-    |                                         |                        |
-    |                                         |                        |
-    |                                         |                        |
+    | 搜索与图论                              |                                             |
+    | --------------------------------------- | ------------------------------------------- |
+    | _842ArrangeNumbers排列数字              | _843NQueen：n皇后                           |
+    | _844Labyrinth走迷宫                     | _845EightDigital八数码                      |
+    | _846TheCenterOfGravityOfTheTree树的重心 | _847HierarchyOfPointsInTheGraph图中点的层次 |
+    |                                         |                                             |
+    |                                         |                                             |
+    |                                         |                                             |
+    |                                         |                                             |
+    |                                         |                                             |
+    |                                         |                                             |
 
     
 
@@ -109,16 +109,18 @@
 
 1. 第一讲
 
-   | acwing                       | leetCode类似                                                 |
-   | ---------------------------- | ------------------------------------------------------------ |
-   | _765SerpentineMatrix蛇形矩阵 | [54螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)和[剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof) |
-   |                              |                                                              |
-   |                              |                                                              |
-   |                              |                                                              |
+   | acwing                                       | leetCode类似题目                                             |
+   | -------------------------------------------- | ------------------------------------------------------------ |
+   | _765SerpentineMatrix蛇形矩阵                 | [54螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)和[剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof) |
+   | _1451SingleLinkedListQuickSort单链表快速排序 | [148. 排序链表](https://leetcode-cn.com/problems/sort-list/)和[剑指 Offer II 077. 链表排序](https://leetcode-cn.com/problems/7WHec2/)<br />PS：快排会超时，换一个 |
+   |                                              |                                                              |
+   |                                              |                                                              |
 
-   
+
+
 
 2. 
+3. 
 
 
 
