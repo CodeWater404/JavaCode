@@ -34,8 +34,9 @@
         <li>@RequestParam   后去请求参数</li>
         <li> @CookieValue     获取Cookie值</li>
         <li>@RequestBody   获取请求体</li>
-        
-        
+        <!--这里直接在浏览器地址栏中输入goto的地址即可-->
+        <li>@RequestAttribute    获取request域中的属性</li>
+        <li>@MatrixVariable  矩阵变量</li>
     </ul>
     
     <br/>
@@ -46,6 +47,37 @@
         邮箱：  <input name="email" />
         <input type="submit" valu="提交"  />
     </form>
+    <br/>
+
     
+    /cars/{path}?xxx=xxx&aaa=ccc(这是一般写法) queryString 查询字符串。@RequestParam；<br/>
+    /cars/sell;low=34;brand=byd,audi,yd  ；矩阵变量 <br/>
+    页面开发，cookie禁用了，session里面的内容怎么使用；<br/>
+    session.set(a,b)---> jsessionid ---> cookie ----> 每次发请求携带。<br/>
+    url重写：/abc;jsesssionid=xxxx 把cookie的值使用矩阵变量的方式进行传递.<br/>
+    比较：<br/>
+    /boss/1/2 <br/>
+
+    /boss/1;age=20/2;age=20（矩阵变量，分号“；”前面的是路径）
+    <br/>
+    <a href="/cars/sell;low=34;brand=byd,audi,yd">@MatrixVariable矩阵变量</a>
+    <br/>
+    <a href="/cars/sell;low=23;brand=byd;brand=audi;brand=yd">@MatrixVariable矩阵变量</a>
+    <br/>
+    <a href="/boss/1;age=29/2;age=19">@MatrixVariable获取同名指定的矩阵变量</a>
+    <br/>
+
+    <hr>测试数据绑定,复杂类型：</hr>
+    测试封装pojo：
+    <form action="/saveuser" method="post">
+        姓名：<input name="username" value="zhangsan" /> <br/>
+        年龄：<input name="age" value="18" /> <br/>
+        生日：<input name="birth" value="2019/12/10" /> <br/>
+        宠物姓名：<input name="pet.name" value="阿莫阿" />  <br/>
+        宠物年龄： <input name="per.age" value="20" /> <br/>
+<!--        宠物：<input name="pet" value="阿猫,2" />-->
+            <input type="submit" value="保存" />
+    </form>
+    <br/>
 </body>
 </html>

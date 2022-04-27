@@ -1,5 +1,6 @@
 package boot.controller;
 
+import boot.bean.Person;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
@@ -52,4 +53,41 @@ public class ParameterTestController {
         map.put("content" , content );
         return map;
     }
+    
+//    测试路径中的矩阵变量（用于浏览器禁用cookie时，来传递客户端方面的东西，对应到服务器端中的session）
+    //1、语法： 请求路径：/cars/sell;low=34;brand=byd,audi,yd
+//2、SpringBoot默认是禁用了矩阵变量的功能
+//      手动开启：原理。对于路径的处理。UrlPathHelper进行解析。
+//              removeSemicolonContent（移除分号内容）支持矩阵变量的
+//3、矩阵变量必须有url路径变量才能被解析PathVariable
+    @GetMapping("/cars/{path}")
+    public Map carsSell( @MatrixVariable("low") Integer low ,
+                         @MatrixVariable("brand") List<String> brand ,
+                         @PathVariable("path") String path ){
+        Map<String , Object> map = new HashMap<>();
+        map.put("low" , low);
+        map.put("brand" , brand );
+        map.put("path" , path );
+        
+        return map;
+    } 
+    
+//    矩阵变量中有相同的变量名 , 指定获取哪个
+//    @MatrixVariable(value="age" , pathVar="bossId")指定获取bossid(随意取得键名)的age值（路径中的）
+    @GetMapping("/boss/{bossId}/{empId}")
+    public Map boss(@MatrixVariable(value="age" , pathVar="bossId") Integer bossAge , 
+                    @MatrixVariable(value="age" , pathVar="empId") Integer empAge){
+        Map<String , Object> map = new HashMap<>();
+        map.put("bossAge" , bossAge);
+        map.put("empAge" ,  empAge);
+        
+        return map;
+    }
+    
+//    数据绑定：页面提交的请求数据（GET、POST）都可以和对象属性进行绑定
+    @PostMapping("/saveuser")
+    public Person savauser(Person person ){
+        return person;
+    }
+    
 }
