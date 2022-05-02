@@ -9,7 +9,7 @@ import java.util.List;
  * @Function Description ：螺旋矩阵
  * https://leetcode-cn.com/problems/spiral-matrix/
  */
-public class LeetCode54 {
+public class _54LeetCode {
     class Solution {
         public List<Integer> spiralOrder(int[][] matrix) {
             List<Integer> ans = new ArrayList<>();
