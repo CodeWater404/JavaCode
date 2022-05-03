@@ -18,7 +18,7 @@ import java.util.Map;
  * @create ：2022-03-14-12:15
  * @Function Description ：
  */
-@WebServlet("/loginServlet")
+@WebServlet("/loginServlet2")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

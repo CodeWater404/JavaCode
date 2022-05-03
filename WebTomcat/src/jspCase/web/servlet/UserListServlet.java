@@ -19,7 +19,7 @@ import java.util.List;
  * web层，显示页面的
  */
 
-@WebServlet("/userListServlet")
+@WebServlet("/userListServlet2")
 public class UserListServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

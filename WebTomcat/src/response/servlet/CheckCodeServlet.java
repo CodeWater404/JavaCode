@@ -17,7 +17,7 @@ import java.util.Random;
  * @Function Description ：
  * 验证码案例
  */
-@WebServlet("/checkCodeServlet")
+@WebServlet("/checkCodeServlet2")
 public class CheckCodeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
