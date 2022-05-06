@@ -12,7 +12,7 @@ public class SingletonTest04 {
         Singleton4 instance2 = Singleton4.getInstance();
         System.out.println(instance == instance2); // true
         System.out.println("instance.hashCode=" + instance.hashCode());
-        System.out.println("instance2.hashCode=" + instance2.hashCode())
+        System.out.println("instance2.hashCode=" + instance2.hashCode());
     }
     
 }
