@@ -1,6 +1,8 @@
 package factory.factorymethod.pizzastore.order;
 
-import factory.simplefactory.pizzastore.pizza.Pizza;
+import factory.factorymethod.pizzastore.pizza.LDCheesePizza;
+import factory.factorymethod.pizzastore.pizza.LDPepperPizza;
+import factory.factorymethod.pizzastore.pizza.Pizza;
 
 /**
  * @author ： CodeWater
@@ -8,6 +10,8 @@ import factory.simplefactory.pizzastore.pizza.Pizza;
  * @Function Description ：
  */
 public class LDOrderPizza extends OrderPizza {
+   
+
     @Override
     Pizza createPizza(String orderType) {
         Pizza pizza = null;

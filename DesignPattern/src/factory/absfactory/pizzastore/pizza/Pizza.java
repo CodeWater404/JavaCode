@@ -1,4 +1,4 @@
-package factory.factorymethod.pizzastore.pizza;
+package factory.absfactory.pizzastore.pizza;
 
 //��Pizza �����ɳ���
 public abstract class Pizza {
@@ -7,9 +7,7 @@ public abstract class Pizza {
 	//׼��ԭ����, ��ͬ��������һ������ˣ��������ɳ��󷽷�
 	public abstract void prepare();
 
-	public Pizza() {
-	}
-
+	
 	public void bake() {
 		System.out.println(name + " baking;");
 	}

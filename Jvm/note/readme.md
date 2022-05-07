@@ -122,31 +122,157 @@ iadd： 求和操作
 
 ## 内容
 
-1. 类加载子系统作用
-
-   ![image-20220506163312713](pictures/image-20220506163312713.png)
-
-2. 类加载器角色
-
-   ![image-20220506163517766](pictures/image-20220506163517766.png)
-
-3. 类的加载过程
-
-   ![image-20220506163545969](pictures/image-20220506163545969.png)
-
-   1. 加载
-
-      ![image-20220506163901174](pictures/image-20220506163901174.png)
-
-   2. 链接
-
-      ![image-20220506164149516](pictures/image-20220506164149516.png)
-
-4. 类加载器分类
 
 
+### 类加载子系统作用
+
+![image-20220506163312713](pictures/image-20220506163312713.png)
+
+### 类加载器角色
+
+![image-20220506163517766](pictures/image-20220506163517766.png)
+
+### 类的加载过程
+
+![image-20220506163545969](pictures/image-20220506163545969.png)
+
+1. 加载
+
+   ![image-20220506163901174](pictures/image-20220506163901174.png)
+
+2. 链接
+
+   ![image-20220506164149516](pictures/image-20220506164149516.png)
+
+### 类加载器分类
+
+![image-20220507161508300](pictures/image-20220507161508300.png)
 
 
+
+![	](pictures/image-20220507161706284.png)
+
+
+
+1. 虚拟机自带的加载器
+
+   ![image-20220507164136206](pictures/image-20220507164136206.png)
+
+   ![image-20220507164039917](pictures/image-20220507164039917.png)
+
+   ![image-20220507164302919](pictures/image-20220507164302919.png)
+
+   
+
+2. 用户自定义类加载器
+
+   ![image-20220507165112064](pictures/image-20220507165112064.png)
+
+   > 自定义类加载器的实现步骤：
+   >
+   > ![image-20220507165554223](pictures/image-20220507165554223.png)
+   >
+   > ```java
+   > public class CustomClassLoader extends ClassLoader {
+   >     
+   >     @Override
+   >     protected Class<?> findClass(String name) throws ClassNotFoundException {
+   > 
+   >         try {
+   >             byte[] result = getClassFromCustomPath(name);
+   >             if(result == null){
+   >                 throw new FileNotFoundException();
+   >             }else{
+   >                 return defineClass(name,result,0,result.length);
+   >             }
+   >         } catch (FileNotFoundException e) {
+   >             e.printStackTrace();
+   >         }
+   > 
+   >         throw new ClassNotFoundException(name);
+   >     }
+   > 
+   >     private byte[] getClassFromCustomPath(String name){
+   >         //从自定义路径中加载指定类:细节略
+   >         //如果指定路径的字节码文件进行了加密，则需要在此方法中进行解密操作。
+   >         return null;
+   >     }
+   > 
+   >     public static void main(String[] args) {
+   >         CustomClassLoader customClassLoader = new CustomClassLoader();
+   >         try {
+   >             Class<?> clazz = Class.forName("One",true,customClassLoader);
+   >             Object obj = clazz.newInstance();
+   >             System.out.println(obj.getClass().getClassLoader());
+   >         } catch (Exception e) {
+   >             e.printStackTrace();
+   >         }
+   >     }
+   > }
+   > 
+   > ```
+
+
+
+### 关于`classLoader`
+
+![image-20220507170206810](pictures/image-20220507170206810.png)
+
+![image-20220507170417836](pictures/image-20220507170417836.png)
+
+
+
+### 获取classloader的途径
+
+![image-20220507170705923](pictures/image-20220507170705923.png)
+
+
+
+
+
+## 双亲委派机制
+
+![image-20220507171229161](pictures/image-20220507171229161.png)
+
+
+
+### 工作原理
+
+![image-20220507171633144](pictures/image-20220507171633144.png)
+
+> 优先找上层去处理，上层能够处理就处理，不能处理就交由子类去处理。
+
+
+
+### 优缺点
+
+
+
+#### 优点
+
+![image-20220507172322817](pictures/image-20220507172322817.png)
+
+
+
+###  沙箱安全机制
+
+![image-20220507172626289](pictures/image-20220507172626289.png)
+
+
+
+## 其他
+
+![image-20220507173049161](pictures/image-20220507173049161.png)
+
+
+
+## 对类加载器的引用
+
+![image-20220507173124527](pictures/image-20220507173124527.png)
+
+​                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+# 运行时数据区
 
 
 

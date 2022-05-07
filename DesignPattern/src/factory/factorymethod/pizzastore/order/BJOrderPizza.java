@@ -1,6 +1,8 @@
 package factory.factorymethod.pizzastore.order;
 
-import factory.simplefactory.pizzastore.pizza.Pizza;
+import factory.factorymethod.pizzastore.pizza.BJCheesePizza;
+import factory.factorymethod.pizzastore.pizza.BJPepperPizza;
+import factory.factorymethod.pizzastore.pizza.Pizza;
 
 /**
  * @author ： CodeWater
