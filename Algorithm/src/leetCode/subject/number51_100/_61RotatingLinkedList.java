@@ -1,4 +1,4 @@
-package leetCode.subject.number1_50;
+package leetCode.subject.number51_100;
 
 /**
  * @author ： CodeWater
