@@ -438,7 +438,7 @@
 |                                                              |      |
 | _961[在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) |      |
 |                                                              |      |
-|                                                              |      |
+| _965SingleValueBinaryTree单值二叉树                          |      |
 |                                                              |      |
 |                                                              |      |
 |                                                              |      |
