@@ -5,7 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- *  -XX:StringTableSize=1009
+ * -XX:StringTableSize=1009
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  23:53
  */
@@ -24,7 +25,7 @@ public class StringTest2 {
             br = new BufferedReader(new FileReader("words.txt"));
             long start = System.currentTimeMillis();
             String data;
-            while((data = br.readLine()) != null){
+            while ((data = br.readLine()) != null) {
                 data.intern(); //如果字符串常量池中没有对应data的字符串的话，则在常量池中生成
             }
 
@@ -34,7 +35,7 @@ public class StringTest2 {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if(br != null){
+            if (br != null) {
                 try {
                     br.close();
                 } catch (IOException e) {

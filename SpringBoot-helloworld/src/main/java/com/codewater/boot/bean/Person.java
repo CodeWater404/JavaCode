@@ -16,11 +16,11 @@ import java.util.Set;
  * @Function Description ：
  */
 @Component
-@ConfigurationProperties( prefix = "person")
+@ConfigurationProperties(prefix = "person")
 @Data
 @ToString
 public class Person {
-    
+
     private String userName;
     private Boolean boss;
     private Date birth;
@@ -28,7 +28,7 @@ public class Person {
     private Pet pet;
     private String[] interests;
     private List<String> animal;
-    private Map<String ,Object> score;
+    private Map<String, Object> score;
     private Set<Double> salarys;
-    private Map<String , List<Pet>> allPets; 
+    private Map<String, List<Pet>> allPets;
 }

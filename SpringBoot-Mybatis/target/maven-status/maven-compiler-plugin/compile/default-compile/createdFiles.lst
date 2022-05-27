@@ -1,0 +1,4 @@
+boot\controller\MybatisController.class
+boot\DemoApplication.class
+boot\domain\User.class
+boot\mapper\UserMapper.class

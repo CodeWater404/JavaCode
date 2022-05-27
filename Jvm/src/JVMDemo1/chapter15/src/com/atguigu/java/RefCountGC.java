@@ -3,6 +3,7 @@ package JVMDemo1.chapter15.src.com.atguigu.java;
 /**
  * -XX:+PrintGCDetails
  * 证明：java使用的不是引用计数算法
+ *
  * @author shkstart
  * @create 2020 下午 2:38
  */

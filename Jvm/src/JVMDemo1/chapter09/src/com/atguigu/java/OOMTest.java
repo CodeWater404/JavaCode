@@ -6,7 +6,7 @@ import jdk.internal.org.objectweb.asm.Opcodes;
 /**
  * jdk6/7中：
  * -XX:PermSize=10m -XX:MaxPermSize=10m
- *
+ * <p>
  * jdk8中：
  * -XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=10m
  *

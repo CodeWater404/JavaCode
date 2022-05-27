@@ -5,14 +5,15 @@ package JVMDemo1.chapter02.src.com.atguigu.java;
  * @create 2020 下午 8:40
  */
 public class ClinitTest1 {
-    static class Father{
+    static class Father {
         public static int A = 1;
-        static{
+
+        static {
             A = 2;
         }
     }
 
-    static class Son extends Father{
+    static class Son extends Father {
         public static int B = A;
     }
 

@@ -18,7 +18,7 @@ public class StackTest {
         methodB();
     }
 
-    public void methodB(){
+    public void methodB() {
         int k = 30;
         int m = 40;
     }

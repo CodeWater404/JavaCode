@@ -10,13 +10,13 @@ public class _713SubarrayWithProductLessThanK {
         // 双指针
         public int numSubarrayProductLessThanK(int[] nums, int k) {
             // 特判，数组都是正数，所以k小于2，就没有答案
-            if( k < 2 ) return 0;
+            if (k < 2) return 0;
             // product乘积 ans答案
-            int product = 1 , ans = 0;
+            int product = 1, ans = 0;
             // i左边界 j右边界
-            for( int i = 0 , j = 0 ; i < nums.length ; i++ ){
+            for (int i = 0, j = 0; i < nums.length; i++) {
                 // j一直往右走，停止的情况：到达数组末尾或者子数组i-j的乘积大于k
-                while( j < nums.length && product < k ){
+                while (j < nums.length && product < k) {
                     product *= nums[j];
                     j++;
                 }

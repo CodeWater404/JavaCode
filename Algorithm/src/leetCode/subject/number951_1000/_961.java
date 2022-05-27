@@ -13,8 +13,8 @@ public class _961 {
         public int repeatedNTimes(int[] nums) {
             //哈希表
             Set<Integer> found = new HashSet<>();
-            for( int num : nums ){
-                if( !found.add( num ) ){
+            for (int num : nums) {
+                if (!found.add(num)) {
                     return num;
                 }
             }

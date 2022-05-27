@@ -19,11 +19,11 @@ public class User {
     private Integer age;
     private Pet pet;
 
-//    public User() {
+    //    public User() {
 //    }
 //
 //    
-    public User( String name , Integer age ){
+    public User(String name, Integer age) {
         this.name = name;
         this.age = age;
     }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/Basics/src/io/file_gbk.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Basics/src/io/list.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DesignPattern/src/factory/simplefactory/pizzastore/pizza/Pizza.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-demo1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-web01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebTomcat/src/filterCase/敏感词汇.txt" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

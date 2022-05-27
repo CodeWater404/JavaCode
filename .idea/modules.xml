@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basics/Basics.iml" filepath="$PROJECT_DIR$/Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPattern/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaCode.iml" filepath="$PROJECT_DIR$/.idea/JavaCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jvm/Jvm.iml" filepath="$PROJECT_DIR$/Jvm/Jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBaits.iml" filepath="$PROJECT_DIR$/MyBatis/MyBaits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis-MBG/MyBatis-MBG.iml" filepath="$PROJECT_DIR$/MyBatis-MBG/MyBatis-MBG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis-demo2/MyBatis-demo2.iml" filepath="$PROJECT_DIR$/MyBatis-demo2/MyBatis-demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis-demo3/MyBatis-demo3.iml" filepath="$PROJECT_DIR$/MyBatis-demo3/MyBatis-demo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Redis/Redis.iml" filepath="$PROJECT_DIR$/Redis/Redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQL/SQL.iml" filepath="$PROJECT_DIR$/SQL/SQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring5/Spring5.iml" filepath="$PROJECT_DIR$/Spring5/Spring5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-demo1/SpringBoot-demo1.iml" filepath="$PROJECT_DIR$/SpringBoot-demo1/SpringBoot-demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-helloworld/SpringBoot-helloworld.iml" filepath="$PROJECT_DIR$/SpringBoot-helloworld/SpringBoot-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-web01/SpringBoot-web01.iml" filepath="$PROJECT_DIR$/SpringBoot-web01/SpringBoot-web01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/SpringMVC.iml" filepath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-annotation/SpringMVC-annotation.iml" filepath="$PROJECT_DIR$/SpringMVC-annotation/SpringMVC-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-demo2/SpringMVC-demo2.iml" filepath="$PROJECT_DIR$/SpringMVC-demo2/SpringMVC-demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-demo3/SpringMVC-demo3.iml" filepath="$PROJECT_DIR$/SpringMVC-demo3/SpringMVC-demo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-demo4/SpringMVC-demo4.iml" filepath="$PROJECT_DIR$/SpringMVC-demo4/SpringMVC-demo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-demo5/SpringMVC-demo5.iml" filepath="$PROJECT_DIR$/SpringMVC-demo5/SpringMVC-demo5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-jsp/SpringMVC-jsp.iml" filepath="$PROJECT_DIR$/SpringMVC-jsp/SpringMVC-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-rest/SpringMVC-rest.iml" filepath="$PROJECT_DIR$/SpringMVC-rest/SpringMVC-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web/Web.iml" filepath="$PROJECT_DIR$/Web/Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebTomcat/WebTomcat.iml" filepath="$PROJECT_DIR$/WebTomcat/WebTomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld.iml" filepath="$PROJECT_DIR$/helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Redis/jedis-shangguigu/jedis-shangguigu.iml" filepath="$PROJECT_DIR$/Redis/jedis-shangguigu/jedis-shangguigu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Redis/redis_springboot/redis_springboot.iml" filepath="$PROJECT_DIR$/Redis/redis_springboot/redis_springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-helloworld.iml" filepath="$PROJECT_DIR$/springboot-helloworld.iml" />
+    </modules>
+  </component>
+</project>

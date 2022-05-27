@@ -2,6 +2,7 @@ package JVMDemo1.chapter09.src.com.atguigu.java;
 
 /**
  * non-final的类变量
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  20:37
  */

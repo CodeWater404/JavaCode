@@ -3,18 +3,19 @@ package JVMDemo1.chapter08.src.com.atguigu.java;
 /**
  * 1. 设置堆空间大小的参数
  * -Xms 用来设置堆空间（年轻代+老年代）的初始内存大小
- *      -X 是jvm的运行参数
- *      ms 是memory start
+ * -X 是jvm的运行参数
+ * ms 是memory start
  * -Xmx 用来设置堆空间（年轻代+老年代）的最大内存大小
- *
+ * <p>
  * 2. 默认堆空间的大小
- *    初始内存大小：物理电脑内存大小 / 64
- *             最大内存大小：物理电脑内存大小 / 4
+ * 初始内存大小：物理电脑内存大小 / 64
+ * 最大内存大小：物理电脑内存大小 / 4
  * 3. 手动设置：-Xms600m -Xmx600m
- *     开发中建议将初始堆内存和最大的堆内存设置成相同的值。
- *
+ * 开发中建议将初始堆内存和最大的堆内存设置成相同的值。
+ * <p>
  * 4. 查看设置的参数：方式一： jps   /  jstat -gc 进程id
- *                  方式二：-XX:+PrintGCDetails
+ * 方式二：-XX:+PrintGCDetails
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  20:15
  */

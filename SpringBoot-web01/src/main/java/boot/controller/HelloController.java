@@ -9,34 +9,34 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 public class HelloController {
-    
-//    先出里请求，请求没有才会去找静态资源
+
+    //    先出里请求，请求没有才会去找静态资源
     @RequestMapping("/bug.jpg")
-    public String hello(){
+    public String hello() {
         return "aaa";
     }
-    
-//    @RequestMapping(value="/user" , method= RequestMethod.GET)
+
+    //    @RequestMapping(value="/user" , method= RequestMethod.GET)
     @GetMapping("/user") // 复合注解
-    public String getUser(){
-        return "get---zhangsan" ;
+    public String getUser() {
+        return "get---zhangsan";
     }
-    
-//    @RequestMapping(value="/user" , method=RequestMethod.POST)
+
+    //    @RequestMapping(value="/user" , method=RequestMethod.POST)
     @PostMapping("/user")
-    public String saveUser(){
+    public String saveUser() {
         return "post----zhangsan";
     }
-    
-//    @RequestMapping(value="/user" , method=RequestMethod.PUT)
+
+    //    @RequestMapping(value="/user" , method=RequestMethod.PUT)
     @PutMapping("/user")
-    public String putUser(){
+    public String putUser() {
         return "put----zhangsan";
     }
-    
-//    @RequestMapping(value = "/user" , method=RequestMethod.DELETE)
+
+    //    @RequestMapping(value = "/user" , method=RequestMethod.DELETE)
     @DeleteMapping("/user")
-    public String deleteUser(){
+    public String deleteUser() {
         return "delete-----zhangsan";
     }
 }

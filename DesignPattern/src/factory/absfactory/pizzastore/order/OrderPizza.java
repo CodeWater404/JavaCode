@@ -13,10 +13,12 @@ import java.io.InputStreamReader;
  */
 public class OrderPizza {
     AbsFactory factory;
+
     // 构造器
     public OrderPizza(AbsFactory factory) {
         setFactory(factory);
     }
+
     private void setFactory(AbsFactory factory) {
         Pizza pizza = null;
         String orderType = ""; // 用户输入

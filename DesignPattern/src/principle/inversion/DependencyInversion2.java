@@ -19,6 +19,7 @@ public class DependencyInversion2 {
 interface IReceiver {
     public String getInfo();
 }
+
 class Email2 implements IReceiver {
     public String getInfo() {
         return "电子邮件信息: hello,world";
@@ -31,10 +32,11 @@ class WeiXin implements IReceiver {
         return "微信信息: hello,ok";
     }
 }
+
 //方式 2
 class Person2 {
     //这里我们是对接口的依赖
-    public void receive(IReceiver receiver ) {
+    public void receive(IReceiver receiver) {
         System.out.println(receiver.getInfo());
     }
 }

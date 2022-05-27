@@ -11,18 +11,18 @@ public class OperandStackTest {
         int j = 8;
         int k = i + j;
 
-       // int m = 800;
+        // int m = 800;
 
     }
 
-    public int getSum(){
+    public int getSum() {
         int m = 10;
         int n = 20;
         int k = m + n;
         return k;
     }
 
-    public void testGetSum(){
+    public void testGetSum() {
         //获取上一个栈桢返回的结果，并保存在操作数栈中
         int i = getSum();
         int j = 10;
@@ -32,7 +32,7 @@ public class OperandStackTest {
     程序员面试过程中， 常见的i++和++i 的区别，放到字节码篇章时再介绍。
 
      */
-    public void add(){
+    public void add() {
         //第1类问题：
         int i1 = 10;
         i1++;

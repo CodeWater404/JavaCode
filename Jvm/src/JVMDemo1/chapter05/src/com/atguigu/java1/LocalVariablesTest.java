@@ -16,7 +16,7 @@ public class LocalVariablesTest {
     }
 
     //练习：
-    public static void testStatic(){
+    public static void testStatic() {
         LocalVariablesTest test = new LocalVariablesTest();
         Date date = new Date();
         int count = 10;
@@ -26,7 +26,7 @@ public class LocalVariablesTest {
     }
 
     //关于Slot的使用的理解
-    public LocalVariablesTest(){
+    public LocalVariablesTest() {
         this.count = 1;
     }
 
@@ -66,7 +66,7 @@ public class LocalVariablesTest {
                                                 实例变量：随着对象的创建，会在堆空间中分配实例变量空间，并进行默认赋值
                                        ② 局部变量：在使用前，必须要进行显式赋值的！否则，编译不通过
      */
-    public void test5Temp(){
+    public void test5Temp() {
         int num;
         //System.out.println(num);//错误信息：变量num未进行初始化
     }

@@ -18,18 +18,19 @@ public class SingletonTest07 {
 
 // 静态内部类完成， 推荐使用
 class Singleton7 {
-    
+
     private static volatile Singleton7 instance;
-    
+
     //构造器私有化
-    private Singleton7() {}
-    
+    private Singleton7() {
+    }
+
     //写一个静态内部类,该类中有一个静态属性 Singleton7
     private static class Singleton7Instance {
-//                //不会在singleton7构造的时候执行，而是当调佣这个类的时候在执行（懒加载
+        //                //不会在singleton7构造的时候执行，而是当调佣这个类的时候在执行（懒加载
         private static final Singleton7 INSTANCE = new Singleton7();
     }
-    
+
     //提供一个静态的公有方法，直接返回 Singleton7Instance.INSTANCE============================
     public static synchronized Singleton7 getInstance() {
         return Singleton7Instance.INSTANCE;

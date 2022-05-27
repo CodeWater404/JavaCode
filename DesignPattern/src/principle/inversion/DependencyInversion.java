@@ -25,7 +25,7 @@ class Email {
 //3. 解决思路：引入一个抽象的接口 IReceiver, 表示接收者, 这样 Person 类与接口 IReceiver 发生依赖
 // 因为 Email, WeiXin 等等属于接收的范围，他们各自实现 IReceiver 接口就 ok, 这样我们就符号依赖倒转原则
 class Person {
-    public void receive(Email email ) {
+    public void receive(Email email) {
         System.out.println(email.getInfo());
     }
 }

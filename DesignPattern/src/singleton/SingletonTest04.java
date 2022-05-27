@@ -14,17 +14,20 @@ public class SingletonTest04 {
         System.out.println("instance.hashCode=" + instance.hashCode());
         System.out.println("instance2.hashCode=" + instance2.hashCode());
     }
-    
+
 }
 
 // 懒汉式(线程安全，同步方法)
 class Singleton4 {
     private static Singleton4 instance;
-    private Singleton4() {}
+
+    private Singleton4() {
+    }
+
     //提供一个静态的公有方法，加入同步处理的代码，解决线程安全问题
 //即懒汉式
     public static synchronized Singleton4 getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new Singleton4();
         }
         return instance;

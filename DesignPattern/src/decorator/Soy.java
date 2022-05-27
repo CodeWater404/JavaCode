@@ -12,5 +12,5 @@ public class Soy extends Decorator {
         setDes(" 豆浆 ");
         setPrice(1.5f);
     }
-    
+
 }

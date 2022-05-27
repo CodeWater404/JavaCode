@@ -17,7 +17,7 @@ public class BufferTest2 {
 
         int count = 0;
         try {
-            while(true){
+            while (true) {
                 ByteBuffer byteBuffer = ByteBuffer.allocateDirect(BUFFER);
                 list.add(byteBuffer);
                 count++;

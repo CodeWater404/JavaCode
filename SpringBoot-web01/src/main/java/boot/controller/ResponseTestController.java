@@ -14,15 +14,15 @@ import java.util.Date;
  */
 @Controller
 public class ResponseTestController {
-    
+
     @ResponseBody
     @GetMapping("/test/person")
-    public Person getPerson(){
+    public Person getPerson() {
         Person person = new Person();
         person.setAge(238);
         person.setBirth(new Date());
         person.setUserName("zhangsan");
-        
+
         return person;
     }
 }

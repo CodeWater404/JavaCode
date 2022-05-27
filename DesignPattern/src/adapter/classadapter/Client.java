@@ -12,5 +12,5 @@ public class Client {
         Phone phone = new Phone();
         phone.charging(new VoltageAdapter());
     }
-    
+
 }

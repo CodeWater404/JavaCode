@@ -7,7 +7,6 @@ import java.util.List;
  * @author ： CodeWater
  * @create ：2022-05-03-17:02
  * @Function Description ：迪米特原则
- * 
  */
 public class Demeter {
     public static void main(String[] args) {
@@ -21,9 +20,11 @@ public class Demeter {
 //学校总部员工类
 class Employee {
     private String id;
+
     public void setId(String id) {
         this.id = id;
     }
+
     public String getId() {
         return id;
     }
@@ -32,13 +33,16 @@ class Employee {
 //学院的员工类
 class CollegeEmployee {
     private String id;
+
     public void setId(String id) {
         this.id = id;
     }
+
     public String getId() {
         return id;
     }
 }
+
 //管理学院员工的 管理类
 class CollegeManager {
     //返回学院的所有员工
@@ -67,7 +71,7 @@ class SchoolManager {
         }
         return list;
     }
-    
+
     //该方法完成输出学校总部和学院员工信息(id)
     void printAllEmployee(CollegeManager sub) {
 //分析问题

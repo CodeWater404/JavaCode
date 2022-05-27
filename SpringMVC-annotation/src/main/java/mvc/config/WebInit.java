@@ -13,35 +13,35 @@ import javax.servlet.Filter;
  * web.xml
  */
 //web工程的初始化类， 用来代替web.xml
-    
-public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer  {
+
+public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer {
     /*指定spring的配置类*/
     @Override
-    protected Class<?>[] getRootConfigClasses(){
+    protected Class<?>[] getRootConfigClasses() {
         return new Class[]{SpringConfig.class};
     }
-    
-    
+
+
     /*指定springmvc的配置类*/
     @Override
-    protected Class<?>[] getServletConfigClasses(){
+    protected Class<?>[] getServletConfigClasses() {
         return new Class[]{WebConfig.class};
     }
-    
+
     /*指定dispatcherServlet的映射规则，即url-pattern*/
     @Override
-    protected String[] getServletMappings(){
+    protected String[] getServletMappings() {
         return new String[]{"/"};
     }
-    
+
     /*注册过滤器*/
     @Override
-    protected Filter[] getServletFilters(){
+    protected Filter[] getServletFilters() {
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
-        characterEncodingFilter.setForceResponseEncoding( true );
-        
+        characterEncodingFilter.setForceResponseEncoding(true);
+
         HiddenHttpMethodFilter hiddenHttpMethodFilter = new HiddenHttpMethodFilter();
-        return new Filter[]{characterEncodingFilter , hiddenHttpMethodFilter };
+        return new Filter[]{characterEncodingFilter, hiddenHttpMethodFilter};
     }
 }

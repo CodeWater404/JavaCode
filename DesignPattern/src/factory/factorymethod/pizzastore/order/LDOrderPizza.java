@@ -10,12 +10,12 @@ import factory.factorymethod.pizzastore.pizza.Pizza;
  * @Function Description ：
  */
 public class LDOrderPizza extends OrderPizza {
-   
+
 
     @Override
     Pizza createPizza(String orderType) {
         Pizza pizza = null;
-        if(orderType.equals("cheese")) {
+        if (orderType.equals("cheese")) {
             pizza = new LDCheesePizza();
         } else if (orderType.equals("pepper")) {
             pizza = new LDPepperPizza();

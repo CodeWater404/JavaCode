@@ -20,6 +20,7 @@ public class SingletonTest08 {
 ///使用枚举，可以实现单例, 推荐
 enum Singleton8 {
     INSTANCE; //属性
+
     public void sayOK() {
         System.out.println("ok~");
     }

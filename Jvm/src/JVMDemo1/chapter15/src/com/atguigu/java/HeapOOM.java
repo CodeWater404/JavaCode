@@ -15,12 +15,12 @@ public class HeapOOM {
         ArrayList<HeapOOM> list = new ArrayList<>();
 
         int count = 0;
-        try{
-            while(true){
+        try {
+            while (true) {
                 list.add(new HeapOOM());
                 count++;
             }
-        }catch (Throwable e){
+        } catch (Throwable e) {
             System.out.println("count = " + count);
             e.printStackTrace();
         }

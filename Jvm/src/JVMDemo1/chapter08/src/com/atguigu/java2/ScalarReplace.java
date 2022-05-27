@@ -2,7 +2,8 @@ package JVMDemo1.chapter08.src.com.atguigu.java2;
 
 /**
  * 标量替换测试
- *  -Xmx100m -Xms100m -XX:+DoEscapeAnalysis -XX:+PrintGC -XX:-EliminateAllocations
+ * -Xmx100m -Xms100m -XX:+DoEscapeAnalysis -XX:+PrintGC -XX:-EliminateAllocations
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  12:01
  */

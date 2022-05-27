@@ -1,13 +1,14 @@
 package JVMDemo1.chapter09.src.com.atguigu.java;
 
 /**
- *  测试设置方法区大小参数的默认值
+ * 测试设置方法区大小参数的默认值
+ * <p>
+ * jdk7及以前：
+ * -XX:PermSize=100m -XX:MaxPermSize=100m
+ * <p>
+ * jdk8及以后：
+ * -XX:MetaspaceSize=100m  -XX:MaxMetaspaceSize=100m
  *
- *  jdk7及以前：
- *  -XX:PermSize=100m -XX:MaxPermSize=100m
- *
- *  jdk8及以后：
- *  -XX:MetaspaceSize=100m  -XX:MaxMetaspaceSize=100m
  * @author shkstart  shkstart@126.com
  * @create 2020  12:16
  */

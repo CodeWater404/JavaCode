@@ -22,9 +22,11 @@ class Vehicle2 {
 //处理
         System.out.println(vehicle + " 在公路上运行....");
     }
+
     public void runAir(String vehicle) {
         System.out.println(vehicle + " 在天空上运行....");
     }
+
     public void runWater(String vehicle) {
         System.out.println(vehicle + " 在水中行....");
     }

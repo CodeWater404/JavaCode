@@ -7,7 +7,6 @@ import java.util.List;
  * @author ： CodeWater
  * @create ：2022-05-02-15:53
  * @Function Description ：94二叉树的中序遍历
- * 
  */
 public class _94MiddleOrderOfTraversalOfBinaryTree {
 
@@ -18,8 +17,14 @@ public class _94MiddleOrderOfTraversalOfBinaryTree {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
@@ -30,7 +35,7 @@ public class _94MiddleOrderOfTraversalOfBinaryTree {
     class Solution {
         public List<Integer> inorderTraversal(TreeNode root) {
             List<Integer> ans = new ArrayList<>();
-            inorder( root , ans );
+            inorder(root, ans);
             return ans;
         }
 
@@ -44,11 +49,11 @@ public class _94MiddleOrderOfTraversalOfBinaryTree {
         // }
 
         // 官方题解写法
-        public void inorder( TreeNode node , List<Integer> arr ){
-            if( node == null ) return;
-            inorder( node.left , arr );
-            arr.add( node.val );
-            inorder( node.right , arr );
+        public void inorder(TreeNode node, List<Integer> arr) {
+            if (node == null) return;
+            inorder(node.left, arr);
+            arr.add(node.val);
+            inorder(node.right, arr);
         }
     }
 }

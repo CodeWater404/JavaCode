@@ -20,30 +20,29 @@
     <!-- 修改boot的默认依赖版本   <properties>-->
     <!--        <mysql.version>5.1.43</mysql.version>-->
     <!--    </properties>-->
-    
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        
+
         <!--这个是日志-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        
+
         <!--使用这个依赖后直接ctrl+f9重新编译，就不用再运行了-->
-        <dependency> 
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-        
+
     </dependencies>
-    
-    
-    
+
+
     <build>
         <plugins>
             <plugin>

@@ -27,6 +27,7 @@ class A {
         return num1 - num2;
     }
 }
+
 // B 类继承了 A
 // 增加了一个新功能：完成两个数相加,然后和 9 求和
 class B extends A {
@@ -34,6 +35,7 @@ class B extends A {
     public int func1(int a, int b) {
         return a + b;
     }
+
     public int func2(int a, int b) {
         return func1(a, b) + 9;
     }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis.mapper.SQLMapper">
+    <!--模糊查询：尽量用第三种；#{}不能直接用（因为它是会自动加上‘’的）；-->
+    <select id="getUserByLike" resultType="User">
+        <!--select * from t_user where username like '%${username}%'-->
+        <!--select * from t_user where username like concat('%' , #{username} , '%' )-->
+        select * from t_user where username like "%"#{username}"%"
+    </select>
+
+    <!--使用删除的时候不能用#{}，因为他会自动加上‘’ ，导致格式不正确虽然在idea中执行并不会报错，但
+    没有真正操控到数据。  所以只能使用${}-->
+    <delete id="deleteMore">
+        delete from t_user where id in ( ${ids} )
+    </delete>
+
+    <!--动态查询指定表：同样因为#{}会自动加上‘’所以不能用；因为表名不需要加单引号-->
+    <select id="getUserByTableName" resultType="User">
+        select * from ${tableName}
+    </select>
+
+    <!--测试添加功能，有自增的逐主键-->
+    <!--
+        void insertUser(User user);
+        useGeneratedKeys:设置当前标签中的sql使用了自增的主键
+        keyProperty:将自增的主键的值赋值给传输到映射文件中参数的某个属性
+    -->
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+        insert into t_user values( null , #{username} , #{password} , #{age} , #{sex} , #{email} )
+    </insert>
+</mapper>

@@ -14,20 +14,20 @@ public class _46FullArrangement {
         public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> ans = new ArrayList<List<Integer>>();
             List<Integer> output = new ArrayList<>();
-            for( int i : nums ) output.add( i );
+            for (int i : nums) output.add(i);
 
             int n = nums.length;
-            dfs( n , output , 0 , ans );
+            dfs(n, output, 0, ans);
 
             return ans;
         }
 
-        public void dfs(  int n , List<Integer> output , int u , List<List<Integer>> ans ){
-            if( u == n ) ans.add( new ArrayList<Integer>(output) );
-            for( int i = u ; i < n ; i++ ){
-                Collections.swap( output , u , i );
-                dfs( n , output , u + 1 , ans );
-                Collections.swap( output , u , i );
+        public void dfs(int n, List<Integer> output, int u, List<List<Integer>> ans) {
+            if (u == n) ans.add(new ArrayList<Integer>(output));
+            for (int i = u; i < n; i++) {
+                Collections.swap(output, u, i);
+                dfs(n, output, u + 1, ans);
+                Collections.swap(output, u, i);
             }
         }
 

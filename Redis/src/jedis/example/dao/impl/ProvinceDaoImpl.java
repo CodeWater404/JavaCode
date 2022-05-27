@@ -14,11 +14,12 @@ import java.util.List;
  * @Function Description ：
  */
 public class ProvinceDaoImpl implements ProvinceDao {
-    private JdbcTemplate template = new JdbcTemplate( JDBCUtils.getDataSource() );
+    private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
+
     @Override
-    public List<Province> findAll(){
+    public List<Province> findAll() {
         String sql = "select * from province";
-        List<Province> list = template.query( sql , new BeanPropertyRowMapper<Province>( Province.class ) );
+        List<Province> list = template.query(sql, new BeanPropertyRowMapper<Province>(Province.class));
         return list;
     }
 }

@@ -20,14 +20,14 @@ public class _467AUniqueSubstringInAWrapString {
             int[] dp = new int[26];
             // k临时记录当前字母的子串数量
             int k = 0;
-            for( int i = 0 ; i < p.length() ; i++ ){
+            for (int i = 0; i < p.length(); i++) {
                 // 字符之差为 1 或 -25
-                if( i > 0 && (p.charAt( i ) - p.charAt( i - 1 ) + 26 ) % 26 == 1 ){
+                if (i > 0 && (p.charAt(i) - p.charAt(i - 1) + 26) % 26 == 1) {
                     k++;
-                }else{
+                } else {
                     k = 1;
                 }
-                dp[p.charAt(i) - 'a'] = Math.max( dp[p.charAt(i) - 'a'] , k );
+                dp[p.charAt(i) - 'a'] = Math.max(dp[p.charAt(i) - 'a'], k);
             }
 
             // 所有的子串数量相加

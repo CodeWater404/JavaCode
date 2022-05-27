@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @Autowired
     Person person;
-    
+
     @RequestMapping("/hello")
-    public Person hello(){
+    public Person hello() {
         return person;
     }
 }

@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 public class TestInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("TestInterceptor -------->prehAandler" );
-        
+        System.out.println("TestInterceptor -------->prehAandler");
+
         return true;
     }
 

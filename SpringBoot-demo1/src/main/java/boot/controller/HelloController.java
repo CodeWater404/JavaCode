@@ -18,18 +18,18 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j //记录日志
 public class HelloController {
     @Autowired
-    private Car car ;
-    
+    private Car car;
+
     @RequestMapping("/car")
-    public Car car(){
+    public Car car() {
         return car;
     }
 
     //   测试会不会乱码(boot自动配置了)
     @RequestMapping("/hello2")
-    public String handle01(@RequestParam("name") String name ){
+    public String handle01(@RequestParam("name") String name) {
 //        打印日志
-        log.info( "请求来了。。。。。" );
+        log.info("请求来了。。。。。");
         return "Hello , springboot2 !" + "你好： " + name;
     }
 }

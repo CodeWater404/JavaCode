@@ -17,7 +17,7 @@ public class DependencyPass {
 //通过构造器进行依赖传递
 // OpenAndClose openAndClose = new OpenAndClose(changHong);
 // openAndClose.open();
-        
+
 //通过 setter 方法进行依赖传递
         OpenAndClose openAndClose = new OpenAndClose();
         openAndClose.setTv(changHong);

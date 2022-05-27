@@ -8,21 +8,21 @@ import org.springframework.context.ConfigurableApplicationContext;
  * @author ： CodeWater
  * @create ：2022-04-19-16:28
  * @Function Description ：
- *  主程序类;主配置类
- *  @SpringBootApplication：这是一个SpringBoot应用
+ * 主程序类;主配置类
+ * @SpringBootApplication：这是一个SpringBoot应用
  */
 
-@SpringBootApplication(scanBasePackages="boot")//重新指定路径下的包扫描
+@SpringBootApplication(scanBasePackages = "boot")//重新指定路径下的包扫描
 //@ComponentScan也可以扫描
 public class MainApplication {
-    
-    public static void main( String[] args ){
+
+    public static void main(String[] args) {
         //1、返回我们IOC容器
-        ConfigurableApplicationContext run = SpringApplication.run(MainApplication.class , args );
+        ConfigurableApplicationContext run = SpringApplication.run(MainApplication.class, args);
         //2、查看容器里面的组件
         String[] names = run.getBeanDefinitionNames();
-        for( String name : names ){
-            System.out.println( name );
+        for (String name : names) {
+            System.out.println(name);
         }
 
 //        //3、从容器中获取组件;单实例
@@ -55,17 +55,17 @@ public class MainApplication {
 //        }
 //        DBHelper bean1 = run.getBean( DBHelper.class );
 //        System.out.println( bean1 );
-        
+
 //        测试条件装配：容器中是否有tomcatPet组件
-        boolean tom = run.containsBean( "tomcatPet" );
-        System.out.println( "容器中是否有tomcatPet组件：" + tom );
-        boolean user = run.containsBean( "user01" );
-        System.out.println( "测试容器中是否有user组件：" + user );
-        boolean tom22 = run.containsBean( "tom22" );
-        System.out.println( "测试容器中是否tom22：" + tom22 );
-        boolean haha = run.containsBean( "haha" );
-        boolean hehe = run.containsBean( "hehe" );
-        System.out.println( "haha：" + haha + "   , hehe: " + hehe  );
-        
+        boolean tom = run.containsBean("tomcatPet");
+        System.out.println("容器中是否有tomcatPet组件：" + tom);
+        boolean user = run.containsBean("user01");
+        System.out.println("测试容器中是否有user组件：" + user);
+        boolean tom22 = run.containsBean("tom22");
+        System.out.println("测试容器中是否tom22：" + tom22);
+        boolean haha = run.containsBean("haha");
+        boolean hehe = run.containsBean("hehe");
+        System.out.println("haha：" + haha + "   , hehe: " + hehe);
+
     }
 }

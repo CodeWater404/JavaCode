@@ -17,27 +17,27 @@ import java.io.IOException;
  */
 @WebServlet("/provinceServlet")
 public class ProvinceServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request , HttpServletResponse response ) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //    1，调用service查询
 //        ProvinceService service = new ProvinceServiceImpl();
 //        List<Province> list = service.findAll();
 ////    2.序列化list为json
 //        ObjectMapper mapper = new ObjectMapper();
 //        String json = mapper.writeValueAsString( list );
-        
+
 //        1.调用service查询
         ProvinceService service2 = new ProvinceServiceImpl();
         String json2 = service2.findAllJson();
-        
-        System.out.println( json2 );
-        
+
+        System.out.println(json2);
+
 //        响应结果
-        response.setContentType( "application/json;charset=utf-8" );
-        response.getWriter().write( json2 );
-        
+        response.setContentType("application/json;charset=utf-8");
+        response.getWriter().write(json2);
+
     }
-    
-    protected void doGet( HttpServletRequest request , HttpServletResponse response ) throws ServletException , IOException{
-        this.doPost( request , response );
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doPost(request, response);
     }
 }

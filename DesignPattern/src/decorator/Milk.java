@@ -12,6 +12,6 @@ public class Milk extends Decorator {
         setDes(" 牛奶 ");
         setPrice(2.0f);
     }
-    
-    
+
+
 }

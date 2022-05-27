@@ -21,13 +21,13 @@ public class BufferTest1 {
         for (int i = 0; i < 3; i++) {
             String dest = "F:\\test\\异界BD中字_" + i + ".mp4";
 //            sum += io(src,dest);//54606
-            sum += directBuffer(src,dest);//50244
+            sum += directBuffer(src, dest);//50244
         }
 
-        System.out.println("总花费的时间为：" + sum );
+        System.out.println("总花费的时间为：" + sum);
     }
 
-    private static long directBuffer(String src,String dest) {
+    private static long directBuffer(String src, String dest) {
         long start = System.currentTimeMillis();
 
         FileChannel inChannel = null;
@@ -68,7 +68,7 @@ public class BufferTest1 {
 
     }
 
-    private static long io(String src,String dest) {
+    private static long io(String src, String dest) {
         long start = System.currentTimeMillis();
 
         FileInputStream fis = null;

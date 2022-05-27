@@ -11,10 +11,10 @@ import java.util.Arrays;
 public class _462 {
     class Solution {
         public int minMoves2(int[] nums) {
-            Arrays.sort( nums );
-            int res = 0 , n = nums.length ,mid = nums[ n / 2 ];
-            for( int i = 0 ; i < n ; i++ ){
-                res += Math.abs( nums[i] - mid );
+            Arrays.sort(nums);
+            int res = 0, n = nums.length, mid = nums[n / 2];
+            for (int i = 0; i < n; i++) {
+                res += Math.abs(nums[i] - mid);
             }
 
             return res;

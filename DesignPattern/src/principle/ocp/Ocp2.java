@@ -26,9 +26,11 @@ class GraphicEditor2 {
         s.draw();
     }
 }
+
 //Shape 类，基类
 abstract class Shape2 {
-    int m_type ;
+    int m_type;
+
     abstract void draw();//抽象方法
 }
 
@@ -36,6 +38,7 @@ class Rectangle2 extends Shape2 {
     Rectangle2() {
         super.m_type = 1;
     }
+
     @Override
     public void draw() {
 // TODO Auto-generated method stub
@@ -47,6 +50,7 @@ class Circle2 extends Shape2 {
     Circle2() {
         super.m_type = 2;
     }
+
     @Override
     public void draw() {
 // TODO Auto-generated method stub
@@ -59,6 +63,7 @@ class Triangle2 extends Shape2 {
     Triangle2() {
         super.m_type = 3;
     }
+
     @Override
     public void draw() {
 // TODO Auto-generated method stub
@@ -71,6 +76,7 @@ class OtherGraphic2 extends Shape2 {
     OtherGraphic2() {
         super.m_type = 4;
     }
+
     @Override
     public void draw() {
 // TODO Auto-generated method stub

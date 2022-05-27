@@ -3,6 +3,7 @@ package JVMDemo1.chapter09.src.com.atguigu.java1;
 /**
  * 《深入理解Java虚拟机》中的案例：
  * staticObj、instanceObj、localObj存放在哪里？
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  11:39
  */

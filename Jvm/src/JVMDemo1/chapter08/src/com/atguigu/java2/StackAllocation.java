@@ -3,6 +3,7 @@ package JVMDemo1.chapter08.src.com.atguigu.java2;
 /**
  * 栈上分配测试
  * -Xmx1G -Xms1G -XX:-DoEscapeAnalysis -XX:+PrintGCDetails
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  10:31
  */

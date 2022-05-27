@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Maven" />
+    <file type="web" url="file://$PROJECT_DIR$/MavenTest/MavenTest" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo2" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo3" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo4" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo5" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-jsp" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-rest" />
+    <file type="web" url="file://$PROJECT_DIR$/SSM" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/MavenTest/MavenTest/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-demo3/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-demo4/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-demo5/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBaits/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis-demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis-demo3/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis-MBG/pom.xml" />
+        <option value="$PROJECT_DIR$/SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-web01/pom.xml" />
+        <option value="$PROJECT_DIR$/SprintBoot-Mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/Redis/jedis-shangguigu/pom.xml" />
+        <option value="$PROJECT_DIR$/Redis/pom.xml" />
+        <option value="$PROJECT_DIR$/Redis/redis_springboot/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://mybatis.org/dtd/mybatis-3-config.dtd" location="$PROJECT_DIR$/../笔记和资料/Java尚硅谷/MyBatis教程/笔记/mybatis-3.5.7/org/apache/ibatis/builder/xml/mybatis-3-config.dtd" />
+    <resource url="http://mybatis.org/dtd/mybatis-3-mapper.dtd" location="$PROJECT_DIR$/../笔记和资料/Java尚硅谷/MyBatis教程/笔记/mybatis-3.5.7/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

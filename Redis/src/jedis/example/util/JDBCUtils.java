@@ -15,26 +15,27 @@ import java.util.Properties;
  * @Function Description ：
  */
 public class JDBCUtils {
-    private static DataSource ds ;
-    static{
-        try{
+    private static DataSource ds;
+
+    static {
+        try {
             Properties pro = new Properties();
             InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream("druid.properties");
-            pro.load( is );
-            ds = DruidDataSourceFactory.createDataSource( pro );
-        }catch( IOException e ){
+            pro.load(is);
+            ds = DruidDataSourceFactory.createDataSource(pro);
+        } catch (IOException e) {
             e.printStackTrace();
-        }catch( Exception e ){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    
-//    获取连接池对象
-    public static DataSource getDataSource(){
+
+    //    获取连接池对象
+    public static DataSource getDataSource() {
         return ds;
     }
-    
-//    获取连接对象
+
+    //    获取连接对象
     public static Connection getConnection() throws SQLException {
         return ds.getConnection();
     }

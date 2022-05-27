@@ -5,9 +5,9 @@ package brige;
  * @create ：2022-05-10-16:15
  * @Function Description ：
  */
-public class XiaoMi implements Brand  {
+public class XiaoMi implements Brand {
     @Override
-    public void open(){
+    public void open() {
         System.out.println(" 小米手机开机 ");
     }
 
@@ -16,10 +16,11 @@ public class XiaoMi implements Brand  {
 // TODO Auto-generated method stub
         System.out.println(" 小米手机关机 ");
     }
+
     @Override
     public void call() {
 // TODO Auto-generated method stub
         System.out.println(" 小米手机打电话 ");
     }
-    
+
 }

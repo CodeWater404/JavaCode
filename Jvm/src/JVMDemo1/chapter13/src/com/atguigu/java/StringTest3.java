@@ -6,9 +6,10 @@ import java.util.Set;
 /**
  * jdk6中：
  * -XX:PermSize=6m -XX:MaxPermSize=6m -Xms6m -Xmx6m
- *
+ * <p>
  * jdk8中：
  * -XX:MetaspaceSize=6m -XX:MaxMetaspaceSize=6m -Xms6m -Xmx6m
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  0:36
  */
@@ -18,7 +19,7 @@ public class StringTest3 {
         Set<String> set = new HashSet<String>();
         //在short可以取值的范围内足以让6MB的PermSize或heap产生OOM了。
         short i = 0;
-        while(true){
+        while (true) {
             set.add(String.valueOf(i++).intern());
         }
     }
