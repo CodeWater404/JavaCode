@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="codewater.mybatisplus.mapper.UserMapper">
+    <!--Map<String , Object> selectMapById( Long id );-->
+    <select id="selectMapById" resultType="Map">
+        select id , name , age , email from user wherr id = #{id}
+    </select>
+    
+    <!--Page<User> selectPageVo(@Param("page") Page<User> page , @Param("age") Integer age );-->
+    <!-- 配置文件中配置了类型别名才能不用路径-->
+    <select id="selectPageVo" resultType="User"> 
+        select id , name , email from t_user where age > #{age}
+    </select>
+
+</mapper>

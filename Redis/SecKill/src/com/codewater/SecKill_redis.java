@@ -88,7 +88,7 @@ public class SecKill_redis {
         //jedis.sadd(userKey,uid);
         
         System.out.println( "秒杀成功了。。。。" );
-        jedis.close();
+        jedis.close();  
         return true;
     } 
 }

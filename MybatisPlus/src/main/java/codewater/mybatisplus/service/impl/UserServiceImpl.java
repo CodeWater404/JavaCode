@@ -1,0 +1,17 @@
+package codewater.mybatisplus.service.impl;
+
+import codewater.mybatisplus.mapper.UserMapper;
+import codewater.mybatisplus.pojo.User;
+import codewater.mybatisplus.service.UserService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
+
+/**
+ * @author ： CodeWater
+ * @create ：2022-06-01-15:23
+ * @Function Description ：
+ */
+@Service
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+    
+}

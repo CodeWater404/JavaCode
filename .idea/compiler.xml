@@ -10,21 +10,27 @@
         <module name="MyBaits" />
         <module name="MyBatis-MBG" />
         <module name="SpringMVC" />
-        <module name="SpringMVC-demo5" />
         <module name="SpringMVC-demo4" />
         <module name="SpringMVC-demo3" />
         <module name="SpringMVC-demo2" />
+        <module name="redis_springboot" />
         <module name="SpringMVC-rest" />
         <module name="SSM" />
-        <module name="SpringMVC-annotation" />
-        <module name="SpringBoot-helloworld" />
         <module name="SpringMVC-jsp" />
-        <module name="SpringBoot-web01" />
-        <module name="SpringBoot-demo1" />
         <module name="JavaCode" />
         <module name="MyBatis-demo3" />
         <module name="MyBatis-demo2" />
         <module name="jedis-shangguigu" />
+      </profile>
+      <profile name="Annotation profile for web" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringMVC-demo5" />
+        <module name="SpringMVC-annotation" />
+        <module name="SpringBoot-helloworld" />
+        <module name="SpringBoot-web01" />
+        <module name="SpringBoot-demo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -36,6 +42,7 @@
       <module name="MyBatis-demo2" target="1.8" />
       <module name="MyBatis-demo3" target="1.8" />
       <module name="MyBatis-MBG" target="1.8" />
+      <module name="redis_springboot" target="1.8" />
       <module name="SpringBoot-demo1" target="1.8" />
       <module name="SpringBoot-helloworld" target="1.8" />
       <module name="SpringBoot-Mybatis" target="1.8" />
@@ -60,6 +67,7 @@
       <module name="SpringBoot-helloworld" options="-parameters" />
       <module name="SpringBoot-web01" options="-parameters" />
       <module name="SpringBoot_mybatis" options="-parameters" />
+      <module name="redis_springboot" options="-parameters" />
     </option>
   </component>
 </project>
