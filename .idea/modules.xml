@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyBatis-MBG/MyBatis-MBG.iml" filepath="$PROJECT_DIR$/MyBatis-MBG/MyBatis-MBG.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis-demo2/MyBatis-demo2.iml" filepath="$PROJECT_DIR$/MyBatis-demo2/MyBatis-demo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis-demo3/MyBatis-demo3.iml" filepath="$PROJECT_DIR$/MyBatis-demo3/MyBatis-demo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisPlus/MybatisX/MybatisX.iml" filepath="$PROJECT_DIR$/MybatisPlus/MybatisX/MybatisX.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/Redis.iml" filepath="$PROJECT_DIR$/Redis/Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQL/SQL.iml" filepath="$PROJECT_DIR$/SQL/SQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
@@ -31,6 +32,8 @@
       <module fileurl="file://$PROJECT_DIR$/WebTomcat/WebTomcat.iml" filepath="$PROJECT_DIR$/WebTomcat/WebTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld.iml" filepath="$PROJECT_DIR$/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/jedis-shangguigu/jedis-shangguigu.iml" filepath="$PROJECT_DIR$/Redis/jedis-shangguigu/jedis-shangguigu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisPlusDataSource/mybatis_plus_datasource.iml" filepath="$PROJECT_DIR$/MyBatisPlusDataSource/mybatis_plus_datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisPlus/mybatisplus.iml" filepath="$PROJECT_DIR$/MybatisPlus/mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/redis_springboot/redis_springboot.iml" filepath="$PROJECT_DIR$/Redis/redis_springboot/redis_springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-helloworld.iml" filepath="$PROJECT_DIR$/springboot-helloworld.iml" />
     </modules>

@@ -42,6 +42,9 @@
         <option value="$PROJECT_DIR$/Redis/jedis-shangguigu/pom.xml" />
         <option value="$PROJECT_DIR$/Redis/pom.xml" />
         <option value="$PROJECT_DIR$/Redis/redis_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisPlus/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisPlusDataSource/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisPlus/MybatisX/pom.xml" />
       </list>
     </option>
   </component>
