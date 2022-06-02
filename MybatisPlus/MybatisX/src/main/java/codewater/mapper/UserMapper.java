@@ -9,7 +9,6 @@ public interface UserMapper extends BaseMapper<User> {
 
     int insertSelective(User user);
 
-    int deleteByIdAndName
 }
 
 

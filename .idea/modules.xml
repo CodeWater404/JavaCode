@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/DesignPattern/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern/DesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaCode.iml" filepath="$PROJECT_DIR$/.idea/JavaCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Juc/Juc.iml" filepath="$PROJECT_DIR$/Juc/Juc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jvm/Jvm.iml" filepath="$PROJECT_DIR$/Jvm/Jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBaits.iml" filepath="$PROJECT_DIR$/MyBatis/MyBaits.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis-MBG/MyBatis-MBG.iml" filepath="$PROJECT_DIR$/MyBatis-MBG/MyBatis-MBG.iml" />
