@@ -5,7 +5,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  * @author ： CodeWater
  * @create ：2022-06-03-0:00
- * @Function Description ：演示CountDownLatch
+ * @Function Description ：演示CountDownLatch:减少计数
  * 情景： //6个同学陆续离开教室之后，班长锁门
  */
 public class CountDownLatchDemo {
