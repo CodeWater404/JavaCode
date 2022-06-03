@@ -86,7 +86,7 @@
 
 ## Basics
 
-Java基础复习
+Java基础复习（参考的是黑马）
 
 1. collection集合
 2. file类
@@ -97,7 +97,17 @@ Java基础复习
 7. reflect反射
 8. annotation注解
 
+
+
+
+
+### FunctionProgram
+
 ***
+
+函数式编程（参考B站，三更草堂）
+
+
 
 
 
@@ -211,9 +221,17 @@ JQuery、Ajax暂时不做了解；了解一下json
 
 
 
+## JUC
+
+参考的是尚硅谷
 
 
-***
+
+## JVM
+
+尚硅谷
+
+
 
 
 
@@ -362,7 +380,15 @@ HttpMessageController
 
 ## MybatisPlus
 
-练习
+练习（尚硅谷）
+
+
+
+## MyBatisPlusDataSource
+
+多数据源练习（尚硅谷）
+
+
 
 
 

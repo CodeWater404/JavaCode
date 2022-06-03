@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Basics/Basics.iml" filepath="$PROJECT_DIR$/Basics/Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesignPattern/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basics/FunctionProgram/FunctionProgram.iml" filepath="$PROJECT_DIR$/Basics/FunctionProgram/FunctionProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaCode.iml" filepath="$PROJECT_DIR$/.idea/JavaCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Juc/Juc.iml" filepath="$PROJECT_DIR$/Juc/Juc.iml" />
