@@ -1,6 +1,7 @@
 package lambda;
 
 import java.util.function.IntConsumer;
+import java.util.function.IntPredicate;
 
 /**
  * @author ： CodeWater
@@ -16,9 +17,23 @@ import java.util.function.IntConsumer;
  */
 public class LambdaDemo1 {
     public static void main(String[] args) {
-        foreachArr( v ->{
-            System.out.println( v );
-        });
+        //lambda
+//        foreachArr( v ->{
+//            System.out.println( v );
+//        });
+        
+        //函数是接口常用默认方法
+        printNum2( value -> value % 2 == 0 , value -> value > 4 );
+    }
+
+    public static void printNum2 (IntPredicate intPredicate1 , IntPredicate intPredicate2 ){
+        int[] arr = { 1 , 2, 3, 4 , 5, 6, 7 , 8, 9 , 10 };
+        for( int i : arr ){
+            //符合条件，打印出i
+            if( intPredicate1.and(intPredicate2).test(i) ){
+                System.out.println( i );
+            }
+        }
     }
     
     public static void foreachArr(IntConsumer intConsumer ){
