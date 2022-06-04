@@ -22,7 +22,7 @@ public class LambdaDemo1 {
 //            System.out.println( v );
 //        });
         
-        //函数是接口常用默认方法
+        //函数是接口常用默认方法and
         printNum2( value -> value % 2 == 0 , value -> value > 4 );
     }
 
