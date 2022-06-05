@@ -16,6 +16,7 @@
         <module name="SpringMVC-demo4" />
         <module name="SpringMVC-demo3" />
         <module name="MyBatis-MBG" />
+        <module name="RabbitMQ-hello" />
         <module name="SpringMVC-rest" />
         <module name="SSM" />
         <module name="SpringMVC-jsp" />
@@ -50,6 +51,8 @@
       <module name="mybatis_plus_datasource" target="1.8" />
       <module name="mybatisplus" target="1.8" />
       <module name="MybatisX" target="1.8" />
+      <module name="RabbitMQ" target="1.8" />
+      <module name="RabbitMQ-hello" target="8" />
       <module name="redis_springboot" target="1.8" />
       <module name="SpringBoot-demo1" target="1.8" />
       <module name="SpringBoot-helloworld" target="1.8" />

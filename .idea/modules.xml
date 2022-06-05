@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/MyBatis-demo2/MyBatis-demo2.iml" filepath="$PROJECT_DIR$/MyBatis-demo2/MyBatis-demo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis-demo3/MyBatis-demo3.iml" filepath="$PROJECT_DIR$/MyBatis-demo3/MyBatis-demo3.iml" />
       <module fileurl="file://$PROJECT_DIR$/MybatisPlus/MybatisX/MybatisX.iml" filepath="$PROJECT_DIR$/MybatisPlus/MybatisX/MybatisX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RabbitMQ/RabbitMQ.iml" filepath="$PROJECT_DIR$/RabbitMQ/RabbitMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RabbitMQ/RabbitMQ-hello/RabbitMQ-hello.iml" filepath="$PROJECT_DIR$/RabbitMQ/RabbitMQ-hello/RabbitMQ-hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/Redis.iml" filepath="$PROJECT_DIR$/Redis/Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQL/SQL.iml" filepath="$PROJECT_DIR$/SQL/SQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
