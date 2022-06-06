@@ -9,7 +9,8 @@ import rabbitmq.util.RabbitMqUtils;
  * @author ： CodeWater
  * @create ：2022-06-05-22:03
  * @Function Description ：消费者线程
- * 演示多线程轮训接收生产者发送的消息，用idea自带的"Allow parallel run"功能启动消费者两次
+ * 演示: 多线程轮训接收生产者发送的消息，用idea自带的"Allow parallel run"功能启动消费者两次
+ * (只要有多个消费者线程启动就会轮训消费)
  */
 public class Worker01 {
     public static final String QUEUE_NAME = "hello";

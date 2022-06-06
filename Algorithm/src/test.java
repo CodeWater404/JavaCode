@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import java.text.NumberFormat;
+
 /**
  * @author ： CodeWater
  * @create ：2022-04-08-14:49
@@ -23,4 +25,26 @@ public class test {
         System.out.println(a.length);//3二维的行数
         System.out.println(a[1].length);//2二维的列数
     }
+
+    //测试取模:1000000007
+    //1e9就是10的9次方整数，只不过是浮点数表示的
+    @Test
+    public void test3(){
+//        double a = (1e9 );
+        
+        String a = scientificNotation2String( 1e9 , 10 );
+        System.out.println( a );
+    }
+
+    public static String scientificNotation2String(Double d, int newValue) {
+        String value = null;
+        NumberFormat nf = NumberFormat.getInstance();
+        // 设置此格式中不使用分组
+        nf.setGroupingUsed(false);
+        // 设置数的小数部分所允许的最大位数。
+        nf.setMaximumFractionDigits(newValue);
+        value = nf.format(d);
+        return value;
+    }
+
 }
