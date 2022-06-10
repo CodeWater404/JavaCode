@@ -47,6 +47,7 @@
         <option value="$PROJECT_DIR$/MybatisPlus/MybatisX/pom.xml" />
         <option value="$PROJECT_DIR$/Basics/FunctionProgram/pom.xml" />
         <option value="$PROJECT_DIR$/RabbitMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/RabbitMQ/RabbitMQ-springboot/pom.xml" />
       </list>
     </option>
   </component>

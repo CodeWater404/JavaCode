@@ -16,10 +16,11 @@
         <module name="SpringMVC-demo4" />
         <module name="SpringMVC-demo3" />
         <module name="MyBatis-MBG" />
+        <module name="SpringMVC-jsp" />
         <module name="RabbitMQ-hello" />
         <module name="SpringMVC-rest" />
         <module name="SSM" />
-        <module name="SpringMVC-jsp" />
+        <module name="RabbitMQ-springboot" />
         <module name="mybatis_plus_datasource" />
         <module name="MyBatis-demo3" />
         <module name="MyBatis-demo2" />
@@ -53,6 +54,7 @@
       <module name="MybatisX" target="1.8" />
       <module name="RabbitMQ" target="1.8" />
       <module name="RabbitMQ-hello" target="8" />
+      <module name="RabbitMQ-springboot" target="1.8" />
       <module name="redis_springboot" target="1.8" />
       <module name="SpringBoot-demo1" target="1.8" />
       <module name="SpringBoot-helloworld" target="1.8" />
@@ -74,6 +76,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JavaCode" options="-parameters" />
       <module name="MybatisX" options="-parameters" />
+      <module name="RabbitMQ-springboot" options="-parameters" />
       <module name="SpringBoot-Mybatis" options="-parameters" />
       <module name="SpringBoot-demo1" options="-parameters" />
       <module name="SpringBoot-helloworld" options="-parameters" />

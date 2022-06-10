@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/MybatisPlus/MybatisX/MybatisX.iml" filepath="$PROJECT_DIR$/MybatisPlus/MybatisX/MybatisX.iml" />
       <module fileurl="file://$PROJECT_DIR$/RabbitMQ/RabbitMQ.iml" filepath="$PROJECT_DIR$/RabbitMQ/RabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/RabbitMQ/RabbitMQ-hello/RabbitMQ-hello.iml" filepath="$PROJECT_DIR$/RabbitMQ/RabbitMQ-hello/RabbitMQ-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RabbitMQ/RabbitMQ-springboot/RabbitMQ-springboot.iml" filepath="$PROJECT_DIR$/RabbitMQ/RabbitMQ-springboot/RabbitMQ-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/Redis.iml" filepath="$PROJECT_DIR$/Redis/Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQL/SQL.iml" filepath="$PROJECT_DIR$/SQL/SQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
