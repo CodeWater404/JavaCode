@@ -1,6 +1,6 @@
 package com.codewater.rabbitmqspringboot.controller;
 
-import com.codewater.rabbitmqspringboot.config.DelayQueueConfig;
+import com.codewater.rabbitmqspringboot.config.DelayedQueueConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,8 +59,8 @@ public class SendMsgController {
         log.info("当前时间：{} ， 发送一条延迟{}毫秒的信息给队列：delayed.queue:{}" , new Date() ,
                 delayTime , message );
         
-        rabbitTemplate.convertAndSend(DelayQueueConfig.DELAYED_EXCHANGE_NAME , 
-                DelayQueueConfig.DELAYED_ROUTING_KEY,
+        rabbitTemplate.convertAndSend(DelayedQueueConfig.DELAYED_EXCHANGE_NAME , 
+                DelayedQueueConfig.DELAYED_ROUTING_KEY,
                 message , msg -> {
             //发送消息的时候延迟时长  ms
                     msg.getMessageProperties().setDelay( delayTime );

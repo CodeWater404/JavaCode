@@ -233,6 +233,16 @@ JQuery、Ajax暂时不做了解；了解一下json
 
 
 
+## Rabbitmq
+
+消息队列练习
+
+
+
+## Redis
+
+nosql数据库练习，笔记在notes中
+
 
 
 
@@ -490,12 +500,6 @@ HttpMessageController
 设计模式
 
 笔记在notes中
-
-
-
-## Redis
-
-nosql数据库，笔记在notes中
 
 
 

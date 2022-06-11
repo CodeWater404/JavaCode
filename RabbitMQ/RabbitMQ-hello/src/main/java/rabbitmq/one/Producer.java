@@ -1,8 +1,12 @@
 package rabbitmq.one;
 
+import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author ： CodeWater
@@ -36,7 +40,25 @@ public class Producer {
          * 4.是否自动删除 最后一个消费者端开连接以后 该队列是否自动删除 true 自动删除
          * 5.其他参数
          */
-        channel.queueDeclare( QUEUE_NAME , false , false , false , null );
+        //模拟优先队列
+        Map<String , Object> arguments = new HashMap<>();
+        //官方允许是0-255之间  此处设置10  允许优化级范围为0-10  不要设置过大浪费CPU与内存
+        arguments.put("x-max-priority" , 10 );
+        channel.queueDeclare( QUEUE_NAME , true , false , false , arguments );
+        
+        for( int i = 0 ; i < 11 ; i++ ){
+            String message = "info" + i;
+            if( i == 5 ){
+                //消息5设置优先级5---------在消费者这边的现象就是消息5优先消费，其余的按次序
+                AMQP.BasicProperties properties = 
+                        new AMQP.BasicProperties().builder().priority(5).build();
+                channel.basicPublish("" , QUEUE_NAME , properties , message.getBytes() );
+            }else{
+                //其余消息默认优先级
+                channel.basicPublish("" , QUEUE_NAME , null , message.getBytes() );
+                
+            }
+        }
         
         //发消息的内容
         String message = "hello world";
@@ -48,7 +70,7 @@ public class Producer {
          * 3.其他的参数信息
          * 4.发送消息的消息体
          */
-        channel.basicPublish( "" , QUEUE_NAME , null , message.getBytes() );
+//        channel.basicPublish( "" , QUEUE_NAME , null , message.getBytes() );
 
         System.out.println( "消息发送完毕！！！！！" );
 

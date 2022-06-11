@@ -18,7 +18,7 @@ import java.util.Map;
  * 
  */
 @Configuration
-public class DelayQueueConfig {
+public class DelayedQueueConfig {
     
     //队列
     public static final String DELAYED_QUEUE_NAME = "delayed.queue";
@@ -49,6 +49,7 @@ public class DelayQueueConfig {
     }
     
     //绑定交换机和队列
+    @Bean
     public Binding bindingDelayedQueue(@Qualifier("delayedQueue") Queue queue,
                                        @Qualifier("delayedExchange") CustomExchange delayedExchange ){
         return BindingBuilder.bind( queue ).to( delayedExchange ).with(DELAYED_ROUTING_KEY ).noargs();
