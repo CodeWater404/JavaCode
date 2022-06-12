@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Basics/Basics.iml" filepath="$PROJECT_DIR$/Basics/Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesignPattern/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/Dubbo.iml" filepath="$PROJECT_DIR$/Dubbo/Dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Basics/FunctionProgram/FunctionProgram.iml" filepath="$PROJECT_DIR$/Basics/FunctionProgram/FunctionProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaCode.iml" filepath="$PROJECT_DIR$/.idea/JavaCode.iml" />
@@ -35,12 +36,17 @@
       <module fileurl="file://$PROJECT_DIR$/SpringMVC-rest/SpringMVC-rest.iml" filepath="$PROJECT_DIR$/SpringMVC-rest/SpringMVC-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Web/Web.iml" filepath="$PROJECT_DIR$/Web/Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebTomcat/WebTomcat.iml" filepath="$PROJECT_DIR$/WebTomcat/WebTomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/boot-order-service-consumer/boot-order-service-consumer.iml" filepath="$PROJECT_DIR$/Dubbo/boot-order-service-consumer/boot-order-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/boot-user-service-provider/boot-user-service-provider.iml" filepath="$PROJECT_DIR$/Dubbo/boot-user-service-provider/boot-user-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/gmall-interface/gmall-interface.iml" filepath="$PROJECT_DIR$/Dubbo/gmall-interface/gmall-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld.iml" filepath="$PROJECT_DIR$/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/jedis-shangguigu/jedis-shangguigu.iml" filepath="$PROJECT_DIR$/Redis/jedis-shangguigu/jedis-shangguigu.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatisPlusDataSource/mybatis_plus_datasource.iml" filepath="$PROJECT_DIR$/MyBatisPlusDataSource/mybatis_plus_datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/MybatisPlus/mybatisplus.iml" filepath="$PROJECT_DIR$/MybatisPlus/mybatisplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/order-service-consumer/order-service-consumer.iml" filepath="$PROJECT_DIR$/Dubbo/order-service-consumer/order-service-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/redis_springboot/redis_springboot.iml" filepath="$PROJECT_DIR$/Redis/redis_springboot/redis_springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-helloworld.iml" filepath="$PROJECT_DIR$/springboot-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/user-service-provider/user-service-provider.iml" filepath="$PROJECT_DIR$/Dubbo/user-service-provider/user-service-provider.iml" />
     </modules>
   </component>
 </project>

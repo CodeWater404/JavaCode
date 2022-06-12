@@ -7,25 +7,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaCode" />
+        <module name="RabbitMQ-springboot" />
         <module name="SpringMVC-demo2" />
         <module name="redis_springboot" />
         <module name="SpringMVC" />
+        <module name="order-service-consumer" />
         <module name="mybatisplus" />
         <module name="MyBaits" />
         <module name="SpringMVC-demo4" />
         <module name="SpringMVC-demo3" />
         <module name="MyBatis-MBG" />
-        <module name="SpringMVC-jsp" />
-        <module name="RabbitMQ-hello" />
+        <module name="MyBatis-demo3" />
+        <module name="boot-order-service-consumer" />
+        <module name="JavaCode" />
         <module name="SpringMVC-rest" />
         <module name="SSM" />
-        <module name="RabbitMQ-springboot" />
-        <module name="mybatis_plus_datasource" />
-        <module name="MyBatis-demo3" />
-        <module name="MyBatis-demo2" />
         <module name="MybatisX" />
+        <module name="SpringMVC-jsp" />
+        <module name="user-service-provider" />
+        <module name="mybatis_plus_datasource" />
+        <module name="gmall-interface" />
+        <module name="MyBatis-demo2" />
+        <module name="boot-user-service-provider" />
         <module name="FunctionProgram" />
+        <module name="RabbitMQ-hello" />
         <module name="jedis-shangguigu" />
       </profile>
       <profile name="Annotation profile for web" enabled="true">
@@ -40,7 +45,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="boot-order-service-consumer" target="1.8" />
+      <module name="boot-user-service-provider" target="1.8" />
+      <module name="Dubbo" target="1.8" />
       <module name="FunctionProgram" target="1.8" />
+      <module name="gmall-interface" target="1.8" />
       <module name="JavaCode" target="1.8" />
       <module name="jedis-shangguigu" target="1.8" />
       <module name="Maven" target="1.7" />
@@ -52,6 +61,7 @@
       <module name="mybatis_plus_datasource" target="1.8" />
       <module name="mybatisplus" target="1.8" />
       <module name="MybatisX" target="1.8" />
+      <module name="order-service-consumer" target="1.8" />
       <module name="RabbitMQ" target="1.8" />
       <module name="RabbitMQ-hello" target="8" />
       <module name="RabbitMQ-springboot" target="1.8" />
@@ -70,6 +80,7 @@
       <module name="SpringMVC-jsp" target="1.8" />
       <module name="SpringMVC-rest" target="1.8" />
       <module name="SSM" target="1.8" />
+      <module name="user-service-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -82,6 +93,8 @@
       <module name="SpringBoot-helloworld" options="-parameters" />
       <module name="SpringBoot-web01" options="-parameters" />
       <module name="SpringBoot_mybatis" options="-parameters" />
+      <module name="boot-order-service-consumer" options="-parameters" />
+      <module name="boot-user-service-provider" options="-parameters" />
       <module name="mybatis_plus_datasource" options="-parameters" />
       <module name="mybatisplus" options="-parameters" />
       <module name="redis_springboot" options="-parameters" />

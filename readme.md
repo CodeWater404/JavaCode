@@ -99,6 +99,28 @@ Java基础复习（参考的是黑马）
 
 
 
+## Design Pattern
+
+设计模式（参考尚硅谷）
+
+笔记在notes中
+
+
+
+
+
+## Dubbo
+
+dubbo练习（参考尚硅谷）
+
+Apache Dubbo (incubating) |ˈdʌbəʊ| 是一款高性能、轻量级的开源Java RPC框架，它提供了三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册和发现。
+
+官网：
+
+http://dubbo.apache.org/
+
+
+
 
 
 ### FunctionProgram
@@ -490,16 +512,6 @@ HttpMessageController
 </project>
 
 ```
-
-
-
-
-
-## Design Pattern
-
-设计模式
-
-笔记在notes中
 
 
 

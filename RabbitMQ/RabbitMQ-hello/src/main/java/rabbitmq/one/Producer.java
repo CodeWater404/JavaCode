@@ -56,7 +56,7 @@ public class Producer {
             }else{
                 //其余消息默认优先级
                 channel.basicPublish("" , QUEUE_NAME , null , message.getBytes() );
-                
+                 
             }
         }
         
