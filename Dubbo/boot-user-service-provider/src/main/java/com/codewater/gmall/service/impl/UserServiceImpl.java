@@ -1,6 +1,7 @@
 package com.codewater.gmall.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import gmall.bean.UserAddress;
 import gmall.service.UserService;
 import org.springframework.stereotype.Component;
@@ -13,6 +14,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
 	
+	@HystrixCommand  //捕获服务异常的
 	@Override
 	public List<UserAddress> getUserAddressList(String userId) {
 		System.out.println("UserServiceImpl.....old...");
@@ -25,6 +27,12 @@ public class UserServiceImpl implements UserService {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}*/
+		
+		//模拟服务出现异常
+		if( Math.random() > 0.5 ){
+			throw new RuntimeException();
+		}
+		
 		return Arrays.asList(address1,address2);
 	}
 

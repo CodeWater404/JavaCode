@@ -123,3 +123,42 @@
 4. 启动，浏览器：localhost:8081/initOrder?uid=1会出现对应的用户地址信息
 
    
+
+# 配置
+
+1. 本地存根，符合条件，消费方就继续调用，不符合，就不远程调用。需要配置文件和实现类。
+
+   一般放在远程接口项目里面，本例就是gmall项目中
+
+2. 对于boot项目，如果想要更加精确的配置，还是需要原生的xml配置，properties配置就不用
+
+3. 引入服务容错`Hystrix`依赖的时候，处理这个
+
+   ```java
+   <dependency>
+               <groupId>org.springframework.cloud</groupId>
+               <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+               <version>1.4.4.RELEASE</version>
+           </dependency>
+   
+   ```
+
+   还需要在`project`标签下引入这个插件
+
+   ```java
+   <dependencyManagement>
+   		<dependencies>
+   			<dependency>
+   				<groupId>org.springframework.cloud</groupId>
+   				<artifactId>spring-cloud-dependencies</artifactId>
+   				<version>Finchley.SR1</version>
+   				<type>pom</type>
+   				<scope>import</scope>
+   			</dependency>
+   		</dependencies>
+   	</dependencyManagement>
+   ```
+
+   > 没启动成功。可能是因为cloud没有配什么东西把。也没有学过。。。搜到的相关的cloud的依赖问题，但是尚硅谷的也只是一个boot项目。。。。
+
+4. 

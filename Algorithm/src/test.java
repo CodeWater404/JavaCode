@@ -1,5 +1,8 @@
 import org.junit.Test;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.NumberFormat;
 
 /**
@@ -47,4 +50,22 @@ public class test {
         return value;
     }
 
+    //测试bufferedReader先用read再用readline是不是按照顺序读取输入
+    @Test
+    public void test4() throws IOException {
+        BufferedReader br = new BufferedReader( new InputStreamReader(System.in ) );
+        String[] str = br.readLine().split(" ");
+        int[] h = new int[5];
+        int[] f = new int[5];
+        for( int i = 0 ; i < 5 ;i++ ){
+            h[i] = br.read() - '0';
+            System.out.println("h[i]: " + h[i] );
+        }
+
+        for( int i = 0 ; i < 5 ;i++ ){
+            str = br.readLine().split(" ") ;
+            f[i] = Integer.parseInt(str[0]);
+            System.out.println("h[i]: " + h[i] );
+        }
+    }
 }

@@ -3,6 +3,7 @@ package com.codewater.gmall;
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 /**
  * 1、导入依赖；
@@ -17,7 +18,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *  		将每一个组件手动创建到容器中,让dubbo来扫描其他的组件
  */
 @SpringBootApplication
-@EnableDubbo
+//@EnableDubbo  //基于注解，properties配置的
+//@ImportResource( locations = "classpath:provider.xml")  //使用原生xml配置
+@EnableDubbo( scanBasePackages = "com.codewater.gmall")    //基于配置类的
+@EnableHystrix  //开启服务容错
 public class BootUserServiceProviderApplication {
 
     public static void main(String[] args) {
