@@ -50,7 +50,7 @@ public class test {
         return value;
     }
 
-    //测试bufferedReader先用read再用readline是不是按照顺序读取输入
+    //测试bufferedReader先用read再用readline是不是按照顺序读取输入----------------未完成---------------
     @Test
     public void test4() throws IOException {
         BufferedReader br = new BufferedReader( new InputStreamReader(System.in ) );
@@ -68,4 +68,44 @@ public class test {
             System.out.println("h[i]: " + h[i] );
         }
     }
+    
+    //求公式和：1*2 + 3*4 + ... + 19 * 20 = ？
+    @Test
+    public void sum(){
+        int res = 0;
+        for( int i = 1 , j = 2 ; i <= 19 && j <= 20 ; i+=2 , j+=2 ){
+            res += i * j;
+        }
+        System.out.println( res );
+    }
+    
+    //求序列中第20个数：1 , 1 , 2, 3 , 5 , 8......
+    @Test
+    public void fibo(){
+        int num = 0 ;
+        int a = 1 , b = 1;
+        for( int i = 3 ; i <= 20 ; i++ ){
+            num = a + b;
+            a = b;
+            b = num;
+        }
+        System.out.println( num );
+    }
+    
+    /** sql 1:查询没有被任何一个学生选修的课程信息
+     * select * 
+     * from subjects 
+     * where subjects.jid not in (
+     *             select jid
+     *             from subjects ;      
+     *     );
+     */
+    
+    //sql 2:查询各学生选修了那些课程信息，要完整的学生信息和课程信息
+    /**
+     * select st.sid , st.sn , su.jid , su.jn 
+     * from student st,subjects su , selects se 
+     * where se.sid = st.sid and se.jid = su.jid;
+     */
+    
 }

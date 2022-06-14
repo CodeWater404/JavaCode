@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/Dubbo/pom.xml" />
         <option value="$PROJECT_DIR$/Dubbo/boot-user-service-provider/pom.xml" />
         <option value="$PROJECT_DIR$/Dubbo/boot-order-service-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/Elasticsearch/pom.xml" />
       </list>
     </option>
   </component>
