@@ -7,32 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringMVC-demo2" />
+        <module name="user-service-provider" />
+        <module name="JavaCode" />
         <module name="MyBaits" />
+        <module name="RabbitMQ-hello" />
         <module name="redis_springboot" />
-        <module name="Elasticsearch" />
         <module name="SpringMVC" />
         <module name="order-service-consumer" />
-        <module name="boot-order-service-consumer" />
+        <module name="mybatisplus" />
         <module name="RabbitMQ-springboot" />
         <module name="SpringMVC-demo4" />
         <module name="SpringMVC-demo3" />
-        <module name="MyBatis-MBG" />
-        <module name="mybatisplus" />
-        <module name="SpringMVC-rest" />
+        <module name="SpringMVC-demo2" />
+        <module name="jedis-shangguigu" />
+        <module name="es-spring" />
+        <module name="boot-order-service-consumer" />
         <module name="SSM" />
-        <module name="FunctionProgram" />
-        <module name="MybatisX" />
+        <module name="MyBatis-MBG" />
         <module name="SpringMVC-jsp" />
-        <module name="user-service-provider" />
-        <module name="JavaCode" />
-        <module name="gmall-interface" />
         <module name="MyBatis-demo3" />
+        <module name="mybatis_plus_datasource" />
+        <module name="gmall-interface" />
         <module name="MyBatis-demo2" />
         <module name="boot-user-service-provider" />
-        <module name="mybatis_plus_datasource" />
-        <module name="RabbitMQ-hello" />
-        <module name="jedis-shangguigu" />
+        <module name="MybatisX" />
+        <module name="FunctionProgram" />
+        <module name="SpringMVC-rest" />
       </profile>
       <profile name="Annotation profile for web" enabled="true">
         <sourceOutputDir name="../target/generated-sources/annotations" />
@@ -50,6 +50,7 @@
       <module name="boot-user-service-provider" target="1.8" />
       <module name="Dubbo" target="1.8" />
       <module name="Elasticsearch" target="1.8" />
+      <module name="es-spring" target="1.8" />
       <module name="FunctionProgram" target="1.8" />
       <module name="gmall-interface" target="1.8" />
       <module name="JavaCode" target="1.8" />
@@ -97,6 +98,7 @@
       <module name="SpringBoot_mybatis" options="-parameters" />
       <module name="boot-order-service-consumer" options="-parameters" />
       <module name="boot-user-service-provider" options="-parameters" />
+      <module name="es-spring" options="-parameters" />
       <module name="mybatis_plus_datasource" options="-parameters" />
       <module name="mybatisplus" options="-parameters" />
       <module name="redis_springboot" options="-parameters" />
