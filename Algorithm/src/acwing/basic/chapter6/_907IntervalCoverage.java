@@ -11,9 +11,9 @@ import java.util.Arrays;
  * @Function Description ：907.区间覆盖
  */
 
-class Range{
+class Range3{
     int l , r;
-    public Range(int l , int r ){
+    public Range3(int l , int r ){
         this.l = l ;
         this.r = r ;
     }
@@ -21,7 +21,7 @@ class Range{
 public class _907IntervalCoverage {
 
     public static int N = 100010 , n ;
-    public static Range[] range = new Range[N];
+    public static Range3[] Range3 = new Range3[N];
 
     public static void main( String[] args ) throws IOException {
         BufferedReader br = new BufferedReader( new InputStreamReader(System.in) );
@@ -33,11 +33,11 @@ public class _907IntervalCoverage {
         for( int i = 0 ; i < n ; i++ ){
             str = br.readLine().split(" ");
             int l = Integer.parseInt(str[0] ) , r = Integer.parseInt(str[1]);
-            range[i] = new Range(l , r);
+            Range3[i] = new Range3(l , r);
         }
 
         // 对左端点排序
-        Arrays.sort(range , 0 , n , (o1, o2) -> o1.l - o2.l );
+        Arrays.sort(Range3 , 0 , n , (o1, o2) -> o1.l - o2.l );
 
         // res答案
         int res = 0;
@@ -49,9 +49,9 @@ public class _907IntervalCoverage {
             // 用双指针来扫描，j表示当前区间，r表示当前能覆盖的一个区间右端点最大值
             int j = i , r = (int)-2e9;
             // j在区间数量之内，同时当前区间j的左端点要小于目标区间st的左端点
-            while( j < n && range[j].l <= st ){//其实就是做的图解中的第二步
+            while( j < n && Range3[j].l <= st ){//其实就是做的图解中的第二步
                 // 更新r
-                r = Math.max(r , range[j].r);
+                r = Math.max(r , Range3[j].r);
                 j++;
             }
 

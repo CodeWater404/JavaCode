@@ -1,7 +1,5 @@
 package acwing.basic.chapter6;
 
-import acwing.basic.chapter3.PII;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

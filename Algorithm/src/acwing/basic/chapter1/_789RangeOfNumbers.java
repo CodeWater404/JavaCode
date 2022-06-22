@@ -68,7 +68,7 @@ public class _789RangeOfNumbers {
                 int mid = l + r >> 1;
 //               必须 这么判断好像是确定范围的下界，所以先缩小r
                 if (q[mid] >= x) r = mid;
-                else l = mid + 1;
+                else l = mid + 1; //+1和下面的-1都是为了防止漏掉一些边界数据
             }
 
 //            System.out.println("l: " + l + "   r: " + r + "    x: " + x );

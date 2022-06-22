@@ -14,9 +14,9 @@ import java.util.Queue;
  * 906.区间分组
  */
 
-class Range{
+class Range2{
     int l , r;
-    public Range( int l , int  r ){
+    public Range2( int l , int  r ){
         this.l = l;
         this.r = r;
     }
@@ -26,7 +26,7 @@ public class _906IntervalGrouping {
 
     public static int N = 100010 , n ;
     // 所有区间
-    public static Range[] range = new Range[N];
+    public static Range2[] Range2 = new Range2[N];
 
     public static void main( String[] args ) throws IOException {
         BufferedReader br = new BufferedReader( new InputStreamReader(System.in ) );
@@ -35,17 +35,17 @@ public class _906IntervalGrouping {
         for( int i = 0 ; i < n ; i++ ){
             str = br.readLine().split(" ");
             int l = Integer.parseInt(str[0]) , r = Integer.parseInt(str[1]);
-            range[i] = new Range(l , r);
+            Range2[i] = new Range2(l , r);
         }
 
         // 对于左端点进行排序
-        Arrays.sort(range , 0 , n , (o1 , o2) -> o1.l - o2.l );
+        Arrays.sort(Range2 , 0 , n , (o1 , o2) -> o1.l - o2.l );
 
         // 小根堆维护所有组（默认自然排序），对于每一组堆中存储的是组中最大的一个右端点
         Queue<Integer> heap = new PriorityQueue<>();
         // 从小到大枚举所有区间
         for( int i = 0 ; i < n ; i++ ){
-            Range r = range[i];
+            Range2 r = Range2[i];
             // 当前堆中为空或者堆顶的值大于等于当前区间的左端点（有交集），说明要新开一个组，放入堆中
             if( heap.isEmpty() || heap.peek() >= r.l ) heap.offer(r.r);
             else{

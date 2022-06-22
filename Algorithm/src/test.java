@@ -108,4 +108,40 @@ public class test {
      * where se.sid = st.sid and se.jid = su.jid;
      */
     
+    /** 
+     * 测试位运算符的操作对象类型：&  |  ^  ~  <<  >>  >>>
+     * 位运算符，应用于整数类型(int)，长整型(long)，短整型(short)，
+     * 字符型(char)，和字节型(byte)等类型。作用在所有的位上，并且按位运算
+     * */
+    @Test
+    public void test7(){
+        int l = -10000 , r = 1000;
+        int mid = l + r >> 1;
+        System.out.println(mid); //可以打印
+        
+//        double ll = -10000 , rr = 10000;
+//        //在这里直接编译报错：Operator'>>'cannot be applied to 'double','int'
+//        double mid2 = ll + rr >> 1; 
+//        System.out.println(mid2);
+        
+        char ll = '1' , rr = '5';
+//        不兼容的类型：从int转换到char可能会有损失
+//        char mid3 = ll + rr >> 1;
+//        -------------正确写法
+        char mid3 = (char) (ll + rr >> 1);
+
+        byte a = -1 , b = 1 ;
+//        不兼容的类型：从int转换到byte可能会有损失
+//        byte mid2 = a + b >> 1;
+//        -------正确写法
+        byte mid2 = (byte) (a + b >> 1);
+        
+//        short ll = -10 , rr = 5;
+//        // 不兼容的类型：从int转换到byte可能会有损失
+//        short mid2 = ll + rr >> 1;
+        //正确写法
+////        short mid2 = (short) (ll + rr >> 1);
+//        System.out.println(mid2);
+    }
+    
 }
