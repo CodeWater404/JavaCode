@@ -51,7 +51,7 @@ public class _826SingleLinkedList {
     public static int N = 100010;
     // head头指针，并不是头结点！！！！头插的是偶头结点一直在变；同时head也在变，指向第一个
     public static int head = -1;
-    // 下标
+    // 标志当前结点的下标
     public static int idx = 0;
     // 存储链表的值
     public static int[] e = new int[N];
@@ -75,12 +75,13 @@ public class _826SingleLinkedList {
                 k = Integer.parseInt(str[1]);
                 // 如果删除的是第一个插入的，head更新指向要删除的下一个结点
                 if (k == 0) head = ne[head];
-                    // 下标从0开始，所以k应该是k-1。这里必须要写else，不然会出错越界。不知道为啥cpp不用。。。
+  // 下标从0开始，所以k应该是k-1。这里必须要写else，不然会出错越界。不知道为啥cpp不用。。。
                 else remove(k - 1);
             } else if (op.equals("I")) {
 
                 k = Integer.parseInt(str[1]);
                 x = Integer.parseInt(str[2]);
+//                下标从0开始，所以k应该是k-1
                 add(k - 1, x);
             }
         }
@@ -102,6 +103,7 @@ public class _826SingleLinkedList {
         idx++;
     }
 
+//------------注意题目中的下标idx是从0开始的，所以第k个结点其实是第k-1个结点----------------------------
     public static void add(int k, int x) {
         e[idx] = x;
         // 把第k个结点指向k+1结点的指针赋给当前这个结点

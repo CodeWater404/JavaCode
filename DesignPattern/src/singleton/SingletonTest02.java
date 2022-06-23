@@ -16,7 +16,7 @@ public class SingletonTest02 {
     }
 }
 
-//饿汉式(静态变量)
+//饿汉式(静态代码块)
 class Singleton2 {
     //1. 构造器私有化, 防止外部能 new
     private Singleton2() {

@@ -4,6 +4,8 @@ package acwing.interview.chapter1;
  * @author ： CodeWater
  * @create ：2022-06-22-23:54
  * @Function Description ：34.链表中环的入口结点
+ * 做法：两个指针(快指针走二步，慢指针走一步)从head开始走，第一次相遇在c点，相遇之后让第一个点回到起点，
+ * 然后两个指针再同时开始走，第二次相遇就会在入口。
  */
 
 /**

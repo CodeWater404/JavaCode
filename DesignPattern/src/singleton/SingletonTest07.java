@@ -19,8 +19,6 @@ public class SingletonTest07 {
 // 静态内部类完成， 推荐使用
 class Singleton7 {
 
-    private static volatile Singleton7 instance;
-
     //构造器私有化
     private Singleton7() {
     }
@@ -28,6 +26,8 @@ class Singleton7 {
     //写一个静态内部类,该类中有一个静态属性 Singleton7
     private static class Singleton7Instance {
         //                //不会在singleton7构造的时候执行，而是当调佣这个类的时候在执行（懒加载
+//       第一次调用的时候，instance没有初始化所以才会走到new创建；第二次再调用的时候，因为对于这个类来说已经有了，所以不会
+//       走到这里创建，直接在getInstance那里返回了！！！！
         private static final Singleton7 INSTANCE = new Singleton7();
     }
 

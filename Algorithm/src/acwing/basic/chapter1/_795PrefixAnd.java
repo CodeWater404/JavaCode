@@ -25,7 +25,7 @@ public class _795PrefixAnd {
         int m = Integer.parseInt(str[1]);
         str = br.readLine().split(" ");
 
-
+//----------其实可以放在一个for里面----------------
         for (int i = 1; i <= n; i++) a[i] = Integer.parseInt(str[i - 1]);
         for (int i = 1; i <= n; i++) s[i] = s[i - 1] + a[i];
 
