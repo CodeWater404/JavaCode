@@ -114,7 +114,7 @@ public class test {
      * 字符型(char)，和字节型(byte)等类型。作用在所有的位上，并且按位运算
      * */
     @Test
-    public void test7(){
+    public void test5(){
         int l = -10000 , r = 1000;
         int mid = l + r >> 1;
         System.out.println(mid); //可以打印
@@ -143,5 +143,27 @@ public class test {
 ////        short mid2 = (short) (ll + rr >> 1);
 //        System.out.println(mid2);
     }
-    
+
+    /**
+     * char转string
+     * 更多方法：https://blog.csdn.net/weixin_32396347/article/details/114628726
+     */
+    @Test
+    public void test6(){
+        char a  = 'a';
+        System.out.println(a);
+//        不能直接转
+//        String b = (String) a;
+        String b = String.valueOf(a);
+    }
+
+    /**
+     * 测试string的length（）下标是从0开始还是1---------------------------------1
+     */
+    @Test
+    public void test7(){
+        String a = "123";
+        System.out.println(a.length());
+        System.out.println(a.charAt(0));
+    }
 }
