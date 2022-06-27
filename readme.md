@@ -99,6 +99,19 @@ Java基础复习（参考的是黑马）
 
 
 
+## cache_demo
+
+`SpringCache`
+
+1. `#result.id`是从函数返回值中取
+2. `#p0.id  #user.id  #arg.id`都是从参数中取，然后缓存
+3. `condition`是满足条件才缓存
+4. `unless`满足条件不缓存
+
+![image-20220627164236823](pictures/image-20220627164236823.png)
+
+
+
 ## Design Pattern
 
 设计模式（参考尚硅谷）
