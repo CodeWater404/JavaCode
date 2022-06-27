@@ -38,4 +38,24 @@ public class _3FindRepeatNumber {
         return repeat;
 
     }
+    
+    /*方法三： 比较交换的。。。==================================================*/
+    // 把下标和数组存储的元素一一对应
+    public int findRepeatNumber3(int[] nums) {
+        int i = 0 ;
+        while( i < nums.length ) {
+            // 下标和当前元素正好相等，下一个
+            if( nums[i] == i ){
+                i++;
+                continue;
+            }
+            // 两个不同下标的数组元素相同
+            if( nums[nums[i]]  == nums[i] ) return nums[i];
+            // 不同就交换！！！
+            int temp = nums[i];
+            nums[i] = nums[temp];
+            nums[temp] = temp;
+        }
+        return -1;
+    }
 }
