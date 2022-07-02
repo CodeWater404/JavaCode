@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
  */
 public class _798DifferenceMatrix {
     public static int N = 1010;
-    // a前缀和数组 ， b差分数组
+    // a前缀和数组，a[i][j]是b数组的前缀和 ， b差分数组
     public static int[][] a = new int[N][N];
     public static int[][] b = new int[N][N];
     // n行m列，q次询问
@@ -43,7 +43,7 @@ public class _798DifferenceMatrix {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-                // 输出：加上当前位置、前一个位置、上方减掉左上方
+                 //要得到a变化之后得矩阵，就是求一下b的前缀和矩阵
                 b[i][j] += b[i - 1][j] - b[i - 1][j - 1] + b[i][j - 1];
                 System.out.print(b[i][j] + " ");
             }
@@ -61,6 +61,10 @@ public class _798DifferenceMatrix {
     }
 
     // 处理单个字符转换成int；当输入比较多的时候写个函数简化一下
+    /*在（x1,y1）点加上c之后，后面的点在求a矩阵的时候都会加上c
+从而达到a矩阵一个范围内都加上了c，但是有之前的图就可以知道，不必要
+的地方也加上了c（对角线两个位置处），所以需要减掉，减掉之后有的地方多减了一次（右下角），所以还
+需要再补回来。*/
     public static int toInt(String str) {
         return Integer.parseInt(str);
     }
