@@ -36,20 +36,22 @@ build/
 
 
 # Mobile Tools for Java (J2ME)
-  .mtj.tmp/
-  .logs/*
-  **/*.iml
-  # Package Files #
-  *.jar
-  **/*.jar
-  *.war
-  *.ear
-  target
-  .idea
-  .DS_Store
-  exports
-  # virtual machine crash logs, see                 
-  http://www.java.com/en/download/help/error_hotspot.xml
-  hs_err_pid*
-  .tags
-  .tags_sorted_by_file
+.mtj.tmp/
+.logs/*
+**/*.iml
+# Package Files #
+*.jar
+**/*.jar
+*.war
+*.ear
+target
+.idea
+.DS_Store
+exports
+# virtual machine crash logs, see                 
+http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.tags
+.tags_sorted_by_file
+ 
+Algorithm/src/leetCode/subject/number1801_1850/test.java
