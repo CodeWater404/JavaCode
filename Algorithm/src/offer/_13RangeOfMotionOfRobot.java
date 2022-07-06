@@ -29,7 +29,7 @@ import java.util.Queue;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class _13RangeOfMotionOfRobot {
-
+//==========================广搜============================
     public int movingCount(int m, int n, int k) {
         //  k为0，机器人只能在当前这个格子
         if (k == 0) return 1;
@@ -70,4 +70,24 @@ public class _13RangeOfMotionOfRobot {
     }
 
 
+    //==========================深搜============================
+    class Solution {
+        int m , n , k ;
+        boolean[][] visited;
+        public int movingCount(int m, int n, int k) {
+            this.m = m ; this.n = n ; this.k = k ;
+            this.visited = new boolean[m][n];
+            return dfs( 0 , 0 , 0 , 0 );
+        }
+
+        // si表示i行标的数位和，sj表示j列标的数位和
+        public int dfs( int i , int j , int si , int sj ){
+//            1.不在合理范围内  2.k < si + sj 行列数位和超出k   3. 已经访问过该位置
+            if( i >= m || j >= n || k < si + sj || visited[i][j] )return 0;
+            visited[i][j] = true;
+            return 1 + dfs( i + 1 , j , (i + 1) % 10 != 0 ? si + 1 : si - 8 , sj ) +
+                    dfs( i , j + 1 , si , (j + 1) % 10 != 0 ? sj + 1 : sj - 8 );
+        }
+
+    }
 }
