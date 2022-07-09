@@ -5,6 +5,7 @@ package proxy.dynamic;
  * @create ：2022-06-25-0:42
  * @Function Description ：
  * 目标对象，也就是被代理的对象
+ * 被代理对象===========================需要实现接口了！！！！代理对象不需要实现接口
  */
 public class TeacherDao implements ITeacherDao {
     @Override

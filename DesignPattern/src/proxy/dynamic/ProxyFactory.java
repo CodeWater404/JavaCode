@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
  * @author ： CodeWater
  * @create ：2022-06-25-0:42
  * @Function Description ：
- * 代理对象===========================不需要实现接口了！！！！
+ * 代理对象===========================不需要实现接口了！！！！被代理对象需要实现接口
  */
 public class ProxyFactory {
     //维护一个目标对象 , Object
