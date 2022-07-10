@@ -72,11 +72,11 @@ public class _827DoubleLinkedList {
             String op = str[0];
             int k, x;
             if (op.equals("L")) {
-                // 在左端插入就是在0号点的右边插入
+                // 在最左端插入就是在0号点的右边插入
                 x = Integer.parseInt(str[1]);
                 add(0, x);
             } else if (op.equals("R")) {
-                // 在右端插入就是在1号点的左边插入
+                // 在最右端插入就是在1号点的左边插入
                 x = Integer.parseInt(str[1]);
                 add(l[1], x);
             } else if (op.equals("D")) {
@@ -97,11 +97,11 @@ public class _827DoubleLinkedList {
         }
 
 //        注意这个遍历的开始是从0的右指针指向的结点开始！！！！！不是从i=0开始
-        for (int i = r[0]; i != 1; i = r[i])
+        for (int i = r[0]; i != 1; i = r[i]) //从开始结点0一直遍历到最右端点1
             System.out.print(e[i] + " ");
     }
 
-    // 0号点表示左端点；1号点表示右端点
+    // 初始就有的两个：0号点表示左端点；1号点表示右端点
     public static void init() {
         r[0] = 1;
         l[1] = 0;
