@@ -23,7 +23,7 @@ public class _55_1TheDepthOfTheBinaryTree {
         public int maxDepth(TreeNode root) {
             if( root == null ) return 0;
 //            queue本层结点， temp下一层结点
-            List<TreeNode> queue = new LinkedList<>(){{ add(root); }} , temp;
+            List<TreeNode> queue = new LinkedList<TreeNode>(){{ add(root); }} , temp;
             int res = 0;
             while( queue.size() != 0 ){
                 temp = new LinkedList<>();

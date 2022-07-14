@@ -75,7 +75,7 @@ public class _154SlidingWindow {
         // System.out.println( str.length );
         for (int i = 0; i < n; i++) a[i] = toInt(str[i]);
 
-
+        // 递增的队列，输出最小值
         for (int i = 0; i < n; i++) {
   /*首先判断当前队头元素还是不是在窗口的内部，如果不在的话就要删掉
          i此时是窗口右侧的端点，i - k + 1得到的是窗口左侧的端点，这样就可以判断
@@ -83,8 +83,9 @@ public class _154SlidingWindow {
          */
             if (hh <= tt && q[hh] < i - k + 1) hh++;
             //当队列不空，并且队尾元素比当前要加入进来的元素大，那就把他删掉
+//            （对于递增队列来说，其实是把较小的值插到队列的前面。所以队尾大于当前元素，队尾指针减减）
             while (hh <= tt && a[q[tt]] >= a[i]) tt--;
-            // a的下标存储进队列
+            // a的下标存储进队列（到这一步就会把最小的入队）-----这里不用判断hh<= tt因为tt最多减到-1
             q[++tt] = i;
 
             //当窗口满足k个数时，才输出最小值
@@ -95,12 +96,15 @@ public class _154SlidingWindow {
         // 这里要记得重新初始化队列长度
         hh = 0;
         tt = -1;
+        //递减队列，输出最大值
         for (int i = 0; i < n; i++) {
             if (hh <= tt && q[hh] < i - k + 1) hh++;
             //当队列不空，并且队尾元素比当前要加入进来的元素小，那就把他删掉
+            //            （对于递减队列来说，其实是把较大的值插到队列的前面）
             while (hh <= tt && a[q[tt]] <= a[i]) tt--;
             q[++tt] = i;
 
+//            满足有k个窗口的时候，直接输出队头即可
             if (i >= k - 1) System.out.print(a[q[hh]] + " ");
         }
 

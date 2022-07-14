@@ -35,6 +35,7 @@ public class _830MonotoneStack {
     public static int tt = 0;
     public static int n;
 
+    //==========================可以覆盖最近比当前数较大的，所以是单调栈============================
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] str = br.readLine().split(" ");
@@ -53,7 +54,7 @@ public class _830MonotoneStack {
                 // 否则输出栈顶元素
                 System.out.print(stk[tt] + " ");
             }
-            // 然后把当前元素记录到找中
+            // 然后把当前元素记录到栈中（这一步其实就已经覆盖栈中最小大于当前数的了）
             stk[++tt] = x;
             // 遍历的变量加加
             i++;
