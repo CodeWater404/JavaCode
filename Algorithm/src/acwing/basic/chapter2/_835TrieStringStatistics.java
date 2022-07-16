@@ -39,6 +39,8 @@ import java.io.InputStreamReader;
  * 1
  */
 public class _835TrieStringStatistics {
+    //==========================Trie字典树============================
+    
     //因为字符串长度是10^5，所以N是这么多而不是2*10^4.
     public static int N = 100010;
     // trie树数组：第一维表示共有多长的结点，第二维表示每一个结点有多少种类型，这里英文26种
