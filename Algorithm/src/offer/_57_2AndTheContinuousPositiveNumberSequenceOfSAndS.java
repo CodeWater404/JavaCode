@@ -31,7 +31,7 @@ public class _57_2AndTheContinuousPositiveNumberSequenceOfSAndS {
     }
     
     //==========================双指针============================
-    class Solution {
+    class Solution2 {
         public int[][] findContinuousSequence(int target) {
             int i = 1 , j =  2 , s = 3;
             List<int[]> res = new ArrayList<>();
