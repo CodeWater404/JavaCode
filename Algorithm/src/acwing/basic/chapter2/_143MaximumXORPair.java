@@ -32,7 +32,7 @@ public class _143MaximumXORPair {
     public static int N = 100010;
     // trie树的最大结点数：最多有10w个数，每个数最多有31位的长度,一个结点只能表示一位
     public static int M = 3000000;
-    // son是Trie树，第一维表示结点数；第二维是结点的类型，记录该位0还是1。数组值表示其在trie树中第几个的索引结点
+    // son是Trie树，(下标)第一维表示结点数；第二维是结点的类型，记录该位0还是1。数组值表示其在trie树中第几个的索引结点
     public static int[][] son = new int[M][2];
     // trie的当前指针，0是根结点
     public static int idx = 0;
@@ -77,7 +77,7 @@ public class _143MaximumXORPair {
         // for走完，一个数的二进制位在trie中就构建完成
     }
 
-
+//    查询x对应的在trie数中存在的最大异或对
     public static int query(int x) {
         // res记录当前数x的最大异或对是几。p遍历指针
         int res = 0, p = 0;
