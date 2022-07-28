@@ -49,6 +49,7 @@ public class _788ReverseOrderNumber {
     }
 
     public static long mergeSort(int[] q, int l, int r) {
+//    为什么返回0：遍历到最深的一层，也就是只有一个数的时候，自然逆序对就是0！！！！
         if (l >= r) return 0;
         int mid = l + r >> 1;
         // res答案必须定义成long，不然过不了
@@ -57,6 +58,11 @@ public class _788ReverseOrderNumber {
         while (i <= mid && j <= r) {
             if (q[i] <= q[j]) temp[k++] = q[i++];
             else {
+                
+    /*注意这里是mid-i+1 , 不是res++
+    这道题是归并的变形，根据逆序对的定义，我们可以发现排序的第二种情况：左半边的起始值到i这部分都
+    大于右半边的mid。 所以直接用左半边的右边界mid - i（起始处）+1 就可以得到当前逆序对的数量。
+    */
                 res += mid - i + 1;
                 temp[k++] = q[j++];
             }
