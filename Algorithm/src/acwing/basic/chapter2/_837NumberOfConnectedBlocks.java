@@ -70,6 +70,7 @@ public class _837NumberOfConnectedBlocks {
                 if (find(a) == find(b)) continue;
                 // 把a合并到b中，同时更新b集合的数量
                 cnt[find(b)] += cnt[find(a)];
+//                a集合的根结点的父亲 是 b集合的根结点
                 p[find(a)] = find(b);
             } else if (str[0].equals("Q1")) {
                 // 查找两个集合是否在一个集合中
@@ -87,7 +88,9 @@ public class _837NumberOfConnectedBlocks {
 
     // 查找一个数属于哪个集合，路径压缩：一旦查找到其根结点这条路上所有都指向根
     public static int find(int x) {
+//       p[x]!=x。说明x不是自己这个集合的根，然后就继续从他的父结点p[x]开始遍历递归find(p[x])
         if (p[x] != x) p[x] = find(p[x]);
+//        如果p[x]=x，说明已经遍历到这个集合的最底层了，也就是集合的根，这个时候返回p[x]即可
         return p[x];
     }
 }
