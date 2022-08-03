@@ -6,10 +6,10 @@ import java.util.List;
 /**
  * @author ： CodeWater
  * @create ：2022-04-25-13:19
- * @Function Description ：螺旋矩阵
+ * @Function Description ：54.螺旋矩阵
  * https://leetcode-cn.com/problems/spiral-matrix/
  */
-public class _54LeetCode {
+public class _54SpiralMatrix {
     class Solution {
         public List<Integer> spiralOrder(int[][] matrix) {
             List<Integer> ans = new ArrayList<>();
